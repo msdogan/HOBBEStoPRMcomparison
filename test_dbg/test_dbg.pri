@@ -10,22 +10,30 @@ ZWFRQ     STOR FLOW(KAF)
 ..        ***** NODE DEFINITIONS *****
 ..
 NODE      DBUGSRC                                 
+ND        Dummy source node to test infeasibilities                             
 ..
 NODE      DBUGSNK                                 
+ND        Dummy source node to test infeasibilities                             
 ..
 NODE      C142                                    
+ND        Colorado River return from Palo Verde Ag                              
 ..
 NODE      D714                                    
+ND        Pacheco Tunnel deliveries to South Bay Area                           
 ..
 NODE      GW_SC        425.000             425.000
+ND        Santa Clara groundwater basin                                         
 ..
 NODE      HGPSC                                   
 ..
 NODE      D848                                    
+ND        Coastal Aqueduct                                                      
 ..
 NODE      D849                                    
+ND        California Aqueduct - Coastal Branch                                  
 ..
 NODE      EXT_SB_SLO                              
+ND        Urban exterior Only the SWP Imports are modeled (DAU 67, 68, 71, 74, 7
 ..
 NODE      HNP406                                  
 ..
@@ -34,104 +42,141 @@ NODE      HP406
 NODE      HXI406                                  
 ..
 NODE      INT_SB_SLO                              
+ND        Only the SWP Imports are modeled (DAU 67, 68, 71, 74, 75)             
 ..
 NODE      U406                                    
+ND        water supply input node for SB-SLO                                    
 ..
 NODE      WTP406                                  
 ..
 NODE      WWP406                                  
+ND        wastewater return flow node for SB-SLO                                
 ..
 NODE      GW_HF        250.000             250.000
+ND        Hayfield Storage Basin                                                
 ..
 NODE      HARHF                                   
+ND        Hayfield recharge ponds                                               
 ..
 NODE      HGPHF                                   
 ..
 NODE      PMP_Eagle                               
+ND        Formerly part of Colorado Pumping Plant - second pumping station along
 ..
 NODE      PMP_JH                                  
+ND        Formerly part of Colorado Pumping Plant - third pumping station along 
 ..
 NODE      A507                                    
 ..
 NODE      AGG_COACH                               
+ND        Coachella Groundwater demand                                          
 ..
 NODE      AGS_COACH                               
+ND        Coachella ag supplied by surface water                                
 ..
 NODE      HSD507                                  
 ..
 NODE      HSU507C147                              
 ..
 NODE      HU507                                   
+ND        Hidden node for coachella Ag                                          
 ..
 NODE      C136                                    
+ND        Colorado River Aqueduct                                               
 ..
 NODE      C145                                    
+ND        Coachella Urban GW recharge junction node                             
 ..
 NODE      C146                                    
+ND        Imperial System - Whitewater River inflow to Coachella Urban recharge 
 ..
 NODE      C147                                    
+ND        End of Coachella Canal and farm gate to Coachella Ag                  
 ..
 NODE      C157                                    
+ND        Diversion for Coachella Desalting Facility                            
 ..
 NODE      C158                                    
+ND        Artificial recharge on Coachella Lower Valley (Martinez and La Quinta)
 ..
 NODE      GW_CH       3500.000            3500.000
+ND        Coachella Valley Groundwater                                          
 ..
 NODE      HARCH                                   
+ND        Hidden node for artifical recharge of groundwater                     
 ..
 NODE      HGPCH                                   
 ..
 NODE      HGRCH                                   
 ..
 NODE      EXT_COACH                               
+ND        DAU 348, 349 Exterior Res/Landscape                                   
 ..
 NODE      HNP507                                  
 ..
 NODE      HP507                                   
+ND        Hidden node for exapanded wastewater recycling for Coachella Urban    
 ..
 NODE      HXI507                                  
 ..
 NODE      INT_COACH                               
+ND        DAU 348, 349 Ind/Interior Res/Comm Demand                             
 ..
 NODE      U507                                    
+ND        Coachella IN                                                          
 ..
 NODE      WTP507                                  
 ..
 NODE      WWP507                                  
+ND        Coachella OUT                                                         
 ..
 NODE      WTPA507                                 
+ND        Desalting facility                                                    
 ..
 NODE      A512                                    
+ND        Hidden GW-SW Aggregation node for Bard WD                             
 ..
 NODE      AgS_Bard                                
+ND        Bard Water District (Yuma)                                            
 ..
 NODE      HSU512C143                              
+ND        Hidden Ag Water Supply node for Bard WD                               
 ..
 NODE      HU512                                   
+ND        Hidden Reuse node for Bard WD ag demand area                          
 ..
 NODE      A508                                    
 ..
 NODE      AGS_Palo                                
+ND        Palo Verde Ag supplied by surface water                               
 ..
 NODE      HSD508                                  
 ..
 NODE      HSU508C141                              
 ..
 NODE      HU508                                   
+ND        Surface supply to Palo Verde Ag                                       
 ..
 NODE      C134                                    
+ND        Colorado River diversion to Colorado River Aqueduct                   
 ..
 NODE      C141                                    
+ND        Colorado River diversion to Palo Verde Ag                             
 ..
 NODE      C143                                    
+ND        Colorado River diversion to All American Canal                        
 ..
 NODE      SR_CR1         0.010    0.0000     0.010
+ND        First priority Colorado River 4.4 water for Policy 4a (661.43 taf/yr) 
 ..
 NODE      SR_CR2         0.010    0.0000     0.010
+ND        Second priority Colorado River 4.4 water for Policy 4a (3.55 maf/yr)  
 ..
 NODE      SR_CR3         0.010    0.0000     0.000
+ND        Colorado River Storage for MWD (850 taf/yr)                           
 ..
 NODE      EXT_Blythe                              
+ND        DAU 333-347 Interior Res/Landscape                                    
 ..
 NODE      HNP508                                  
 ..
@@ -140,32 +185,42 @@ NODE      HP508
 NODE      HXI508                                  
 ..
 NODE      INT_Blythe                              
+ND        DAU 333-347 Ind/Interior Res/Comm                                     
 ..
 NODE      U508                                    
+ND        Water Treatment Node for Blythe                                       
 ..
 NODE      WTP508                                  
 ..
 NODE      WWP508                                  
+ND        Wastewater Treatment node for Blythe                                  
 ..
 NODE      A510                                    
 ..
 NODE      AGS_IMP                                 
+ND        Imperial Valley Ag supplied by surface water                          
 ..
 NODE      HSD510                                  
 ..
 NODE      HSU510C152                              
 ..
 NODE      HU510                                   
+ND        Hidden node for Imperial Ag                                           
 ..
 NODE      C148                                    
+ND        Imperial System node - New River Inflow to Salton Sea                 
 ..
 NODE      C149                                    
+ND        All American Canal diversion to Coachella Canal                       
 ..
 NODE      C151                                    
+ND        All Amercian Canal diversion to artificial recharge for GW-IM         
 ..
 NODE      C152                                    
+ND        All American Canal into East Highline, Central, Main and Westside Cana
 ..
 NODE      GW_IM        930.000             930.000
+ND        Imperial Valley Groundwater                                           
 ..
 NODE      HARIM                                   
 ..
@@ -174,10 +229,13 @@ NODE      HGPIM
 NODE      HGRIM                                   
 ..
 NODE      PWP_AAC                                 
+ND        Imperial System Power Plant                                           
 ..
 NODE      SR_SS       6941.000    0.0170  6941.000
+ND        Salton Sea                                                            
 ..
 NODE      EXT_El_Cen                              
+ND        DAU 353-357 Exterior Res/Landscape demand                             
 ..
 NODE      HNP510                                  
 ..
@@ -186,178 +244,255 @@ NODE      HP510
 NODE      HXI510                                  
 ..
 NODE      INT_El_Cen                              
+ND        DAU 353-357 Ind/Interior Res/Comm Demand                              
 ..
 NODE      U510                                    
+ND        Urban water treatment node for El Centro                              
 ..
 NODE      WTP510                                  
 ..
 NODE      WWP510                                  
+ND        Wastewater treatment node for El Centro                               
 ..
 NODE      PMP_Iron                                
+ND        Formerly part of Colorado Pumping Plant - first pumping station along 
 ..
 NODE      Desal                                   
+ND        Proposed desalination facility for coastal cities                     
 ..
 NODE      Mexico                                  
+ND        Colorado River excess                                                 
 ..
 NODE      D94                                     
+ND        Trinity River release to Clear Creek                                  
 ..
 NODE      SR_CLE      2053.000    0.0061  1774.070
+ND        Clair Engle Lake                                                      
 ..
 NODE      A104                                    
+ND        CVPM 4 Delivery                                                       
 ..
 NODE      CVPM04G                                 
+ND        junction node for CVPM 4                                              
 ..
 NODE      CVPM04S                                 
+ND        junction node for CVPM 4                                              
 ..
 NODE      HSD104                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU104D30                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU104                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      A204                                    
+ND        CVPM7 delivery                                                        
 ..
 NODE      CVPM07G                                 
+ND        junction node for CVPM 7                                              
 ..
 NODE      CVPM07S                                 
+ND        junction node for CVPM 7                                              
 ..
 NODE      HSD204                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU204C33                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU204C67                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU204D42                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU204                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      C105                                    
+ND        Freeport Project Pipeline bifurcation point                           
 ..
 NODE      C107                                    
+ND        Folsom South Canal Extension from the Freeport Project                
 ..
 NODE      C173                                    
+ND        Fols. S. California Aqueductn. Diversion to Mok. River Aqu.           
 ..
 NODE      C25                                     
+ND        Thermalito FB return to Feather River                                 
 ..
 NODE      C301                                    
+ND        Colusa Basin Drain inflow to Sacramento River                         
 ..
 NODE      C304                                    
+ND        DA12 loCalifornia Aqueductl inflow                                    
 ..
 NODE      C307                                    
+ND        CVPM 5 return                                                         
 ..
 NODE      C308                                    
+ND        Accretion to Bear River                                               
 ..
 NODE      C31                                     
+ND        Yuba River inflow to Feather River                                    
 ..
 NODE      C313                                    
+ND        Knights Landing diversion to CVPM8                                    
 ..
 NODE      C32                                     
+ND        Feather River Diversion to CVPM5                                      
 ..
 NODE      C33                                     
+ND        Bear River release to CVPM7                                           
 ..
 NODE      C67                                     
+ND        Sacramento River Diversion to CVPM6                                   
 ..
 NODE      C7                                      
+ND        CVPM7 return to Sacramento River                                      
 ..
 NODE      C8                                      
+ND        American River inflow to Sacramento River                             
 ..
 NODE      C80                                     
+ND        Feather River diversions to CVPM 6                                    
 ..
 NODE      C83                                     
+ND        Yuba River outflow from DA67                                          
 ..
 NODE      D31                                     
+ND        Sacramento River diversion to RD1500 Drain                            
 ..
 NODE      D37                                     
+ND        Bear River inflow to Feather River                                    
 ..
 NODE      D42                                     
+ND        CVPM 5 return to Feather River                                        
 ..
 NODE      D43                                     
+ND        Feather River inflow to Sacramento River                              
 ..
 NODE      D43a                                    
+ND        Temporary until Reg1 and 2 are linked as this is DA14 inflow to Feathe
 ..
 NODE      D61B                                    
 ..
 NODE      D64                                     
+ND        American River Diversion To Sacramento Urban                          
 ..
 NODE      D66A                                    
 ..
 NODE      D85                                     
+ND        American River losses                                                 
 ..
 NODE      D9                                      
+ND        Lake Natoma                                                           
 ..
 NODE      GW_04      60728.000           60508.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      GW_05      91113.000           90457.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      GW_07      56539.000           51210.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      HGP04                                   
+ND        Hidden node for calibration of GW-4                                   
 ..
 NODE      HGP05                                   
+ND        Hidden node for calibration of GW-5                                   
 ..
 NODE      HGP07                                   
+ND        Hidden node for calibration of GW-7                                   
 ..
 NODE      HGR04                                   
+ND        Hidden node for calibration of GW-4                                   
 ..
 NODE      HGR05                                   
+ND        Hidden node for calibration of GW-5                                   
 ..
 NODE      HGR07                                   
+ND        Hidden node for calibration of GW-7                                   
 ..
 NODE      HSR201                                  
+ND        Hidden surface water node for Gray Lodge Refuge                       
 ..
 NODE      HSR202                                  
+ND        Hidden surface water node for Sutter Refuge                           
 ..
 NODE      HSUR201                                 
+ND        Hidden node for supply into the Gray Lodge Refuge                     
 ..
 NODE      HSUR202                                 
+ND        Hidden SW and GW diversion node for Sutter Refuge                     
 ..
 NODE      N13                                     
 ..
 NODE      N14                                     
 ..
 NODE      N203                                    
+ND        Sutter Bypass                                                         
 ..
 NODE      R201                                    
+ND        SW and GW aggregation node for Gray Lodge Refuge                      
 ..
 NODE      R202                                    
+ND        SW and GW aggregation node for Sutter Refuge                          
 ..
 NODE      R_GLD                                   
+ND        Gray Lodge Refuge                                                     
 ..
 NODE      R_SUT                                   
+ND        Sutter Wildlife Refuge Area                                           
 ..
 NODE      SR_FOL       549.000    0.0112   649.750
+ND        Folsom Lake                                                           
 ..
 NODE      SR_TAB        49.400    0.0700    10.890
+ND        Thermalito Afterbay                                                   
 ..
 NODE      EXT_CVPM04                              
+ND        100% of DAU 164, exterior                                             
 ..
 NODE      INT_CVPM04                              
+ND        100% of DAU 164, interior                                             
 ..
 NODE      U104                                    
 ..
 NODE      EXT_CVPM05                              
+ND        17% of DAU 159 & 168, 100% of 166 & 171, exterior                     
 ..
 NODE      INT_CVPM05                              
+ND        17% of DAU 159 & 168, 100% of 166 & 171, Interior                     
 ..
 NODE      U202                                    
 ..
 NODE      EXT_SAC                                 
+ND        Includes Placerville and Auburn (DAU 158, 161, 172, 173, 186).        
 ..
 NODE      HNP204                                  
 ..
 NODE      HP204                                   
+ND        Hidden node for wastewater recycling for Greater Sacramento           
 ..
 NODE      HXI204                                  
 ..
 NODE      INT_SAC                                 
+ND        Includes Placerville and Auburn (DAU 158, 161, 172, 173, 186).        
 ..
 NODE      U204                                    
+ND        Sacramento IN                                                         
 ..
 NODE      WTP204                                  
 ..
 NODE      WWP204                                  
+ND        Sacramento OUT                                                        
 ..
 NODE      EXT_YUBA                                
+ND        Exterior demand for Yuba City et al. Includes Yuba City and parts of B
 ..
 NODE      HNP201                                  
 ..
@@ -366,120 +501,170 @@ NODE      HP201
 NODE      HXI201                                  
 ..
 NODE      INT_YUBA                                
+ND        Urban demand node for Yuba city et al. Includes Yuba City and parts of
 ..
 NODE      U201                                    
 ..
 NODE      WTP201                                  
+ND        Water treatment node into Yuba                                        
 ..
 NODE      WWP201                                  
+ND        Wastewater Treatment node from Yuba                                   
 ..
 NODE      A103A                                   
+ND        CVPM 3 delivery                                                       
 ..
 NODE      A103B                                   
 ..
 NODE      CVPM03AG                                
+ND        junction node for CVPM 3                                              
 ..
 NODE      CVPM03AS                                
+ND        junction node for CVPM 3                                              
 ..
 NODE      CVPM03BG                                
 ..
 NODE      CVPM03BS                                
 ..
 NODE      A203                                    
+ND        CVPM 6 delivery                                                       
 ..
 NODE      CVPM06G                                 
+ND        junction node for CVPM 6                                              
 ..
 NODE      CVPM06S                                 
+ND        junction node for CVPM 6                                              
 ..
 NODE      HSD203                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU203C16                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU203C21                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU203C314                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU203                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      C15                                     
+ND        Colusa Basin Drain                                                    
 ..
 NODE      C150                                    
+ND        Cache Creek Consumptive Use                                           
 ..
 NODE      C155                                    
+ND        Putah Creek Consumptive Use                                           
 ..
 NODE      C16                                     
+ND        Capay Diversion Dam                                                   
 ..
 NODE      C18                                     
+ND        CVPM 6 return to Yolo BP                                              
 ..
 NODE      C19                                     
+ND        Putah CRiver Diversion To Putah S. California Aqueductnal             
 ..
 NODE      C21                                     
+ND        Putah S. California Aqueductnal Diversion To CVPM6                    
 ..
 NODE      C305                                    
+ND        Sacramento West Refuges return                                        
 ..
 NODE      C306                                    
+ND        Knights Landing Ridge Cut                                             
 ..
 NODE      C313b                                   
+ND        Knights Landing Ridge Cut (CUP 2014)                                  
 ..
 NODE      C314                                    
+ND        CVPM 8 delivery                                                       
 ..
 NODE      D30                                     
+ND        Sacramento River diversion to CVPM 4                                  
 ..
 NODE      D61                                     
+ND        CVPM 4 return to Sacramento River                                     
 ..
 NODE      D66                                     
+ND        Sacramento River DA15 loss                                            
 ..
 NODE      D76b                                    
+ND        Stony Creek inflow to Sacramento River                                
 ..
 NODE      GW_03     132687.000          131748.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      GW_06     174968.000          175275.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      HGP03                                   
+ND        Hidden node for calibration of GW-3                                   
 ..
 NODE      HGP06                                   
+ND        Hidden node for calibration of GW-6                                   
 ..
 NODE      HGR03                                   
+ND        Hidden node for calibration of GW-3                                   
 ..
 NODE      HGR06                                   
+ND        Hidden node for calibration of GW-6                                   
 ..
 NODE      HSD103A                                 
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSD103B                                 
 ..
 NODE      HSR101                                  
+ND        Hidden surface water node for West of Sac River Refuges               
 ..
 NODE      HSU103AC13                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU103AC30                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU103AD66                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU103BC11                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU_C21                                 
 ..
 NODE      HSU_D55                                 
+ND        NB Aqu. Delivery to Sacramento Urban                                  
 ..
 NODE      HSUR101                                 
+ND        Hidden diversion refuge node                                          
 ..
 NODE      HU103A                                  
+ND        Hidden diversion calibration node                                     
 ..
 NODE      HU103B                                  
 ..
 NODE      R101                                    
+ND        SW and GW aggretation node for West of Sac River Refuges              
 ..
 NODE      R_SRW                                   
+ND        Sacramento West Refuges                                               
 ..
 NODE      SR_CLK_INV   306.700    0.0326   306.700
+ND        Clear Lake & Indian Valley Reservoir                                  
 ..
 NODE      EXT_CVPM03                              
+ND        100% of DAU 163, exterior                                             
 ..
 NODE      INT_CVPM03                              
+ND        100% of DAU 163, interior                                             
 ..
 NODE      U103                                    
 ..
 NODE      EXT_CVPM06                              
+ND        100% of DAU 162, 9% of DAU 191, 40 & 41, exterior                     
 ..
 NODE      HNP203                                  
 ..
@@ -488,6 +673,7 @@ NODE      HP203
 NODE      HXI203                                  
 ..
 NODE      INT_CVPM06                              
+ND        100% of DAU 162, 9% of DAU 191, 40 & 41, interior                     
 ..
 NODE      U203                                    
 ..
@@ -496,6 +682,7 @@ NODE      WTP203
 NODE      WWP203                                  
 ..
 NODE      ERES_NAPA                               
+ND        Exterior Urban Residential includes Napa & Solano Co. M&I surface wate
 ..
 NODE      HNP205                                  
 ..
@@ -504,130 +691,189 @@ NODE      HP205
 NODE      HXI205                                  
 ..
 NODE      IND_NAPA                                
+ND        Includes Napa & Solano Co. M&I surface water demand (DAU 191, 40 , 41)
 ..
 NODE      IRES_NAPA                               
+ND        Interior urban includes Napa & Solano Co. M&I surface water demand (DA
 ..
 NODE      U205                                    
+ND        Napa-Solano IN                                                        
 ..
 NODE      WTP205                                  
 ..
 NODE      WWP205                                  
+ND        Napa-Solano OUT                                                       
 ..
 NODE      C104                                    
+ND        Sacramento River at Freeport                                          
 ..
 NODE      C20                                     
+ND        Putah Creek Inflow to Yolo BP                                         
 ..
 NODE      C38                                     
+ND        Cosumnes River inflow to Mokel. River                                 
 ..
 NODE      D44                                     
+ND        Sacramento Urban return to Sacramento River                           
 ..
 NODE      D503                                    
+ND        Sacramento River diversion to Isolated Facility                       
 ..
 NODE      D507                                    
+ND        Sacramento River diversion to CVPM 9                                  
 ..
 NODE      D511                                    
+ND        Sacramento River Diversion to Delta Cross Channel                     
 ..
 NODE      D513                                    
+ND        Delta - ?                                                             
 ..
 NODE      D517                                    
+ND        CVPM 8 return to Mokelumne River                                      
 ..
 NODE      D55                                     
+ND        Yolo Bypass inflow to Sacramento River                                
 ..
 NODE      D98                                     
+ND        Mokelumne River Diversion To CVPM 8                                   
 ..
 NODE      PMP_ISOL_F                              
+ND        Isolated Facility Pumping Plant                                       
 ..
 NODE      C5                                      
+ND        CVPM 1 return to Sacramento River                                     
 ..
 NODE      C86                                     
 ..
 NODE      C87                                     
+ND        Sacramento River, confluence with Paynes Creek                        
 ..
 NODE      D75                                     
+ND        Thomes Creek and Elder Creek inflow to Sacramento River               
 ..
 NODE      SR_SHA      2496.000    0.0065  3699.320
+ND        Shasta Lake                                                           
 ..
 NODE      A101                                    
+ND        CVPM 1 delivery                                                       
 ..
 NODE      CVPM01G                                 
+ND        junction node for CVPM 1                                              
 ..
 NODE      CVPM01S                                 
+ND        junction node for CVPM 1                                              
 ..
 NODE      HSD101                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU101D5                                
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU101D74                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU101SR3                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU101                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      A102                                    
+ND        CVPM 2 delivery                                                       
 ..
 NODE      CVPM02G                                 
+ND        junction node for CVPM 2                                              
 ..
 NODE      CVPM02S                                 
+ND        junction node for CVPM 2                                              
 ..
 NODE      HSD102                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU102C1                                
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU102C11                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU102C9                                
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU102D77                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU102                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      C1                                      
+ND        Sacramento River Diversion To CVPM 2                                  
 ..
 NODE      C11                                     
+ND        Tehama Colusa California Aqueductnal                                  
 ..
 NODE      C12                                     
+ND        Stony Creek diversion to CVPM 3                                       
 ..
 NODE      C13                                     
+ND        Glenn Colusa California Aqueductnal                                   
 ..
 NODE      C2                                      
+ND        Cottonwood Creek Inflow                                               
 ..
 NODE      C4                                      
+ND        CVPM2 return to Sacramento River                                      
 ..
 NODE      C69                                     
+ND        Glenn Colusa California Aqueductnal                                   
 ..
 NODE      C9                                      
 ..
 NODE      D5                                      
+ND        Keswick Reservoir                                                     
 ..
 NODE      D73                                     
+ND        Clear Creek inflow To Sacramento River                                
 ..
 NODE      D74                                     
+ND        Sacramento River diversion to CVPM1                                   
 ..
 NODE      D77                                     
+ND        Red Bluff Diversion Dam                                               
 ..
 NODE      GW_01      38447.000           39437.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      GW_02     136494.000          136494.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      HGP01                                   
+ND        Hidden node for calibration of GW-1                                   
 ..
 NODE      HGP02                                   
+ND        Hidden calibration for GW-2                                           
 ..
 NODE      HGR01                                   
+ND        Hidden node for calibration on GW-1                                   
 ..
 NODE      HGR02                                   
+ND        Hidden node for calibration of GW-2                                   
 ..
 NODE      SR_BLB        80.200    0.0185    80.200
+ND        Black Butte Lake                                                      
 ..
 NODE      SR_WHI       200.000    0.0125   235.000
+ND        Whiskeytown Lake                                                      
 ..
 NODE      EXT_CVPM02                              
+ND        Exterior Urban demand node for 100% of DAU 142                        
 ..
 NODE      INT_CVPM02                              
+ND        Interior Urban demand node for 100% of DAU 142                        
 ..
 NODE      U102                                    
 ..
 NODE      EXT_Reddin                              
+ND        Redding Area demand is a  time series of monthly withdrawals from Shas
 ..
 NODE      HNP101                                  
 ..
@@ -636,172 +882,243 @@ NODE      HP101
 NODE      HXI101                                  
 ..
 NODE      INT_Reddin                              
+ND        Redding Area demand is a  time series of monthly withdrawals from Shas
 ..
 NODE      U101                                    
+ND        Water treatment node for the urban areas of Redding                   
 ..
 NODE      WTP101                                  
 ..
 NODE      WWP101                                  
+ND        Wastewater treatment node for Redding                                 
 ..
 NODE      A202                                    
+ND        CVPM 5 Delivery                                                       
 ..
 NODE      CVPM05G                                 
+ND        junction node for CVPM 5                                              
 ..
 NODE      CVPM05S                                 
+ND        junction node for CVPM 5                                              
 ..
 NODE      HSD202                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU202C35                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU202C77                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU202C80                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU202C83                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU202D31                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU202D43A                              
+ND        Butte Creek Diversions to CVPM 05                                     
 ..
 NODE      HSU202SR_6                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU202                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      C23                                     
+ND        Feather River Diversion to Therm. FB                                  
 ..
 NODE      C27                                     
+ND        Confluence of Yuba River forks                                        
 ..
 NODE      C28                                     
+ND        Deer Dreek                                                            
 ..
 NODE      C29                                     
+ND        Dry Creek                                                             
 ..
 NODE      C35                                     
+ND        Bear River upstream of CFW Reservoir                                  
 ..
 NODE      C77                                     
+ND        Feather River above Lake Oroville                                     
 ..
 NODE      CN2                                     
+ND        Calibration flow node for Region 2                                    
 ..
 NODE      D17                                     
+ND        American River diversion To CVPM 7                                    
 ..
 NODE      N201                                    
 ..
 NODE      N202                                    
 ..
 NODE      SR_BUL       600.000    0.0051   600.000
+ND        New Bullards Bar Res                                                  
 ..
 NODE      SR_CFW        35.000    0.0026    35.000
+ND        Camp Far West Reservoir                                               
 ..
 NODE      SR_ENG        66.000    0.0102    66.000
+ND        Englebright Lake                                                      
 ..
 NODE      SR_ORO      2555.000    0.0041  2633.350
+ND        Lake Oroville                                                         
 ..
 NODE      SR_RLL_CMB    48.669    0.0102    48.669
+ND        Rollins Reservoir and Lake Combie                                     
 ..
 NODE      SR_BER       806.300    0.0097   806.300
+ND        Lake Berryessa                                                        
 ..
 NODE      D509                                    
+ND        Delta - ?                                                             
 ..
 NODE      D541                                    
+ND        Delta - ?                                                             
 ..
 NODE      Surp_Delta                              
+ND        Surplus Delta Outflow                                                 
 ..
 NODE      C201                                    
+ND        Mokelumne River Aqueduct                                              
 ..
 NODE      C315                                    
+ND        SR-SCV release                                                        
 ..
 NODE      C323                                    
+ND        Mokelumne Aqueduct and Los Vacqueros Pipeline crossover               
 ..
 NODE      C71                                     
+ND        Mallard Slough inflow to Contra Costa Urban                           
 ..
 NODE      D528                                    
+ND        Delta - ?                                                             
 ..
 NODE      D891                                    
+ND        South Bay Aqueduct diversion to Lake Del Valle                        
 ..
 NODE      D892                                    
+ND        Lake Del Valle release to South Bay Aqueduct                          
 ..
 NODE      D896                                    
+ND        South Bay Aqueduct diversion to South Bay Urban demands               
 ..
 NODE      D897                                    
+ND        South Bay Aqueduct losses                                             
 ..
 NODE      HARSC                                   
+ND        Return to GW-SC                                                       
 ..
 NODE      HGRSC                                   
 ..
 NODE      PMP_DValle                              
+ND        Del Valle Pumping Plant                                               
 ..
 NODE      PMP_Mallar                              
+ND        Mallard Slough Pumping Plant                                          
 ..
 NODE      PMP_Walnut                              
+ND        Walnut Creek Pumping Plant                                            
 ..
 NODE      Req_Delta                               
+ND        Required Delta Outflow                                                
 ..
 NODE      SR_DLV        28.000    0.0122    24.630
+ND        Lake Del Valle                                                        
 ..
 NODE      SR_EBMUD     117.900    0.0107   117.900
+ND        EBMUD aggregate                                                       
 ..
 NODE      SR_SCAGG      94.000    0.0204    94.000
+ND        Santa Clara Aggregate                                                 
 ..
 NODE      SR_SFAGG     128.000    0.0191   128.000
+ND        SF aggregate                                                          
 ..
 NODE      ERES_CC                                 
+ND        Exterior Urban Residential Part of DAU 46 and all of 192              
 ..
 NODE      HNP208                                  
 ..
 NODE      HP208                                   
+ND        Hidden node for wastewater recycling for CCWD                         
 ..
 NODE      HXI208                                  
 ..
 NODE      IND_CCWD                                
+ND        Part of DAU 46 and all of 192                                         
 ..
 NODE      IRES_CC                                 
+ND        Interior urban residential Part of DAU 46 and all of 192              
 ..
 NODE      U208                                    
+ND        CCWD IN                                                               
 ..
 NODE      WTP208                                  
 ..
 NODE      WWP208                                  
+ND        CCWD OUT                                                              
 ..
 NODE      C78                                     
+ND        Hayward diversion point from the Hetch-Hetchy Aqueduct for the purpose
 ..
 NODE      ERES_EBMUD                              
+ND        EBMUD exterior urban demand Parts of DAU 46 & 47                      
 ..
 NODE      HNP209                                  
 ..
 NODE      HP209                                   
+ND        Hidden node for wastewater recycling for EMBUD                        
 ..
 NODE      HXI209                                  
 ..
 NODE      IND_EBMUD                               
+ND        Parts of DAU 46 & 47                                                  
 ..
 NODE      IRES_EBMUD                              
+ND        EBMUD interior urban demand Parts of DAU 46 & 47                      
 ..
 NODE      U209                                    
+ND        EBMUD IN                                                              
 ..
 NODE      WTP209                                  
 ..
 NODE      WWP209                                  
+ND        EBMUD OUT                                                             
 ..
 NODE      C79                                     
+ND        Hetch Hetchy Aqueduct                                                 
 ..
 NODE      ERes_SCV                                
+ND        Exterior Urban Residential this includes Santa Clara Valley WD, ACWD, 
 ..
 NODE      HNP304                                  
 ..
 NODE      HP304                                   
+ND        Expanded wastewater treatment for SCV                                 
 ..
 NODE      HXI304                                  
 ..
 NODE      Ind_SCV                                 
+ND        This includes Santa Clara Valley WD, ACWD, and Alameda Zone 7 (All of 
 ..
 NODE      IRES_SCV                                
+ND        Interior Urban Residential This includes Santa Clara Valley WD, ACWD, 
 ..
 NODE      U304                                    
+ND        Santa Clara Valley+ IN                                                
 ..
 NODE      WTP304                                  
 ..
 NODE      WWP304                                  
+ND        Santa Clara Valley+ OUT                                               
 ..
 NODE      ERES_SF                                 
+ND        Exterior Urban Residential includes all of DAU 43                     
 ..
 NODE      HNP301                                  
 ..
@@ -810,128 +1127,188 @@ NODE      HP301
 NODE      HXI301                                  
 ..
 NODE      IND_SFPUC                               
+ND        Includes all of DAU 43                                                
 ..
 NODE      IRES_SF                                 
+ND        Interior Urban Residential includes all of DAU 43                     
 ..
 NODE      U301                                    
+ND        SFPUC IN                                                              
 ..
 NODE      WTP301                                  
 ..
 NODE      WWP301                                  
+ND        SFPUC OUT                                                             
 ..
 NODE      A206                                    
+ND        CVPM  9 delivery                                                      
 ..
 NODE      CVPM09G                                 
+ND        junction node for CVPM 9                                              
 ..
 NODE      CVPM09S                                 
+ND        junction node for CVPM 9                                              
 ..
 NODE      HSD206                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU206D507                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU206D515                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU206D521                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU206D523                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU206                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      C309                                    
+ND        Old River diversion to Contra Costa Urban                             
 ..
 NODE      C310                                    
+ND        Diversion to Los Vaqueros Reservoir                                   
 ..
 NODE      C42                                     
+ND        California Aqueductlav. River inflow to S. Joaq. River                
 ..
 NODE      D515                                    
+ND        Delta - ?                                                             
 ..
 NODE      D521                                    
+ND        Delta Cross Channel inflow to San Joaquin River                       
 ..
 NODE      D522                                    
+ND        Delta - ?                                                             
 ..
 NODE      D523                                    
+ND        Delta - ?                                                             
 ..
 NODE      D525                                    
+ND        Delta - ?                                                             
 ..
 NODE      D550                                    
+ND        Delta - ?                                                             
 ..
 NODE      D59                                     
+ND        Old River diversion to California Aqueduct Aqueduct                   
 ..
 NODE      GW_09     139472.000          139843.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      HGP09                                   
+ND        Hidden node for calibration of GW-9                                   
 ..
 NODE      HGR09                                   
+ND        Hidden node for calibration of GW-9                                   
 ..
 NODE      PMP_Banks                               
+ND        Banks Pumping Plant                                                   
 ..
 NODE      PMP_CC1                                 
+ND        Contra Costa 1 Pumping Plant                                          
 ..
 NODE      PMP_Old_R                               
+ND        Old River Pumping Plant                                               
 ..
 NODE      PMP_Tracy                               
+ND        Tracy Pumping Plant                                                   
 ..
 NODE      EXT_CVPM09                              
+ND        100% of DAU185, exterior                                              
 ..
 NODE      INT_CVPM09                              
+ND        100% of DAU185, interior                                              
 ..
 NODE      U206                                    
 ..
 NODE      C72                                     
+ND        Millerton Lake diversions to Madera Canal                             
 ..
 NODE      D622                                    
+ND        Madera California Aqueduct inflow to Fresno River                     
 ..
 NODE      D624                                    
+ND        Fresno River diversion to CVPM 13                                     
 ..
 NODE      D632                                    
+ND        Madera California Aqueduct inflow to Chowchilla River                 
 ..
 NODE      D634                                    
+ND        Chowchilla River diversion to CVPM 13                                 
 ..
 NODE      D642                                    
+ND        Merced River accretion                                                
 ..
 NODE      SR_BUC        58.000    0.0087    39.040
+ND        Eastman Lake                                                          
 ..
 NODE      SR_HID        24.000    0.0134    39.120
+ND        Hensley Lake                                                          
 ..
 NODE      SR_MCR       229.000    0.0064   834.590
+ND        Lake McClure                                                          
 ..
 NODE      SR_MIL       176.000    0.0088   213.150
+ND        Millerton Lake                                                        
 ..
 NODE      A207                                    
+ND        CVPM8 delivery                                                        
 ..
 NODE      CVPM08G                                 
+ND        junction node for CVPM 8                                              
 ..
 NODE      CVPM08S                                 
+ND        junction node for CVPM 8                                              
 ..
 NODE      HSD207                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU207C173                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU207C37                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU207C43                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU207D98                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU207                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      C37                                     
+ND        Cosumnes River inflow                                                 
 ..
 NODE      C39                                     
+ND        Folsom South Canal inflow to Mokelumne River Aqueduct                 
 ..
 NODE      C40                                     
+ND        California Aqueductlaveras River                                      
 ..
 NODE      C41                                     
+ND        California Aqueductla. River Diversion to CVPM8                       
 ..
 NODE      GW_08     190665.000          182829.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      HGP08                                   
+ND        Hidden node for calibration of GW-8                                   
 ..
 NODE      HGR08                                   
+ND        Hidden node for calibration of GW-8                                   
 ..
 NODE      SR_CMN       200.000    0.0056   235.000
+ND        Camanche Res                                                          
 ..
 NODE      EXT_CVPM08                              
+ND        100% of DAU 180, exterior                                             
 ..
 NODE      HNP207                                  
 ..
@@ -940,14 +1317,18 @@ NODE      HP207
 NODE      HXI207                                  
 ..
 NODE      INT_CVPM08                              
+ND        100% of DAU 180, interior                                             
 ..
 NODE      U207                                    
+ND        Water treatment node for all of CVPM 8, representing Galt             
 ..
 NODE      WTP207                                  
 ..
 NODE      WWP207                                  
+ND        Wastewater treatment node for all of CVPM 8, representing the town of 
 ..
 NODE      EXT_STOCK                               
+ND        Exterior urban return flows                                           
 ..
 NODE      HNP210                                  
 ..
@@ -956,180 +1337,267 @@ NODE      HP210
 NODE      HXI210                                  
 ..
 NODE      INT_STOCK                               
+ND        DAU 182 interior urban flows                                          
 ..
 NODE      U210                                    
+ND        Stockton IN                                                           
 ..
 NODE      WTP210                                  
 ..
 NODE      WWP210                                  
+ND        Stockton OUT                                                          
 ..
 NODE      C43                                     
+ND        Stan. River diversion to Stockton Urban                               
 ..
 NODE      C44                                     
+ND        Lower Cherry Creek Aqueduct inflow to Hetch Hetchy Aqueduct           
 ..
 NODE      C88                                     
+ND        Hetch Hetchy Aqueduct                                                 
 ..
 NODE      D662                                    
+ND        La Grange Dam                                                         
 ..
-NODE      D670                                                                   
+NODE      D670                                    
+ND        Stanislaus River diversion                                                   
 ..
 NODE      SR_DNP       373.000    0.0058  1695.130
+ND        New Don Pedro Reservoir                                               
 ..
 NODE      SR_HTH       330.600    0.0054   330.600
+ND        Hetch Hetchy Reservoir                                                
 ..
 NODE      SR_LL_ENR    216.600    0.0082   216.600
+ND        Lake Lloyd/Lake Eleanor                                               
 ..
 NODE      SR_NHG       159.000    0.0112    92.000
+ND        New Hogan Lake                                                        
 ..
 NODE      SR_NML      1000.000    0.0046   792.560
+ND        New Melones Reservoir                                                 
 ..
 NODE      SR_PAR       195.000    0.0073   203.000
+ND        Pardee Reservoir                                                      
 ..
 NODE      SR_TUL        65.000    0.0192    65.000
+ND        Tulloch Reservoir                                                     
 ..
 NODE      A302                                    
+ND        CVPM 11 farm gate                                                     
 ..
 NODE      CVPM11G                                 
+ND        junction node for CVPM 11                                             
 ..
 NODE      CVPM11S                                 
+ND        junction node for CVPM 11                                             
 ..
 NODE      HSD302                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU302D16                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU302D662                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU302D664                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU302D672                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU302D689                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU302                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      A305                                    
+ND        CVPM 12 farm gate                                                     
 ..
 NODE      CVPM12G                                 
+ND        junction node for CVPM 12                                             
 ..
 NODE      CVPM12S                                 
+ND        junction node for CVPM 12                                             
 ..
 NODE      HSD305                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU305D645                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU305D649                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU305D662                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU305D664                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU305D699                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU305                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      A306                                    
+ND        CVPM 13 farm gate                                                     
 ..
 NODE      CVPM13G                                 
+ND        junction node for CVPM 13                                             
 ..
 NODE      CVPM13S                                 
+ND        junction node for CVPM 13                                             
 ..
 NODE      HSD306                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU306C72                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU306D606                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU306D624                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU306D634                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU306D645                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU306D649                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU306D694                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU306D731                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU306                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      C47                                     
+ND        Chowchilla River Inflow to Chowchilla Bypass                          
 ..
 NODE      C48                                     
+ND        Fresno River Inflow to Chowchilla Bypass                              
 ..
 NODE      D16                                     
+ND        Stanislaus River diversion to CVPM11                                  
 ..
 NODE      D609                                    
+ND        San Joaquin River diversion to Chowchilla Bypass                      
 ..
 NODE      D612                                    
+ND        CVPM 10 return to S Joaquin River                                     
 ..
 NODE      D619                                    
+ND        Eastside Bypass inflow to San Joaquin River                           
 ..
 NODE      D643                                    
+ND        Merced River depletion                                                
 ..
 NODE      D645                                    
+ND        Merced River diversion to North & Main California Aqueduct            
 ..
 NODE      D646                                    
+ND        Merced River accretion                                                
 ..
 NODE      D647                                    
+ND        Merced River depletion                                                
 ..
 NODE      D649                                    
+ND        Merced River diversion to CVPM 13                                     
 ..
 NODE      D653a                                   
+ND        Stanislaus River (accretion moved MJ)                                 
 ..
 NODE      D653b                                   
+ND        Stanislaus River accretion & depletion                                
 ..
 NODE      D663                                    
+ND        Tuolumne River accretion                                              
 ..
 NODE      D664                                    
+ND        Tuolumne River diversion to CVPM 11                                   
 ..
 NODE      D672                                    
+ND        Stanislaus River diversion to CVPM 11                                 
 ..
 NODE      D675                                    
+ND        CVPM11 return to Stanislaus River                                     
 ..
 NODE      D691                                    
+ND        Mud Slough & Salt Slough inflow to S Joaquin R                        
 ..
 NODE      D692                                    
+ND        Eastside Bypass accretion                                             
 ..
 NODE      D695                                    
+ND        Merced River inflow to San Joaquin River                              
 ..
 NODE      D697                                    
+ND        CVPM12 return to San Joaquin River                                    
 ..
 NODE      D699                                    
+ND        San Joaquin River diversion to CVPM10                                 
 ..
 NODE      D732                                    
+ND        San Joaquin River diversion to Refuge 2                               
 ..
 NODE      GW_11      58838.000           58246.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      GW_12      42602.000           40865.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      GW_13     138216.000          128560.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      HAR13                                   
+ND        Artificial Recharge to subregion 13 from Chowchilla R riparian        
 ..
 NODE      HGP11                                   
+ND        Hidden node for calibration of GW-11                                  
 ..
 NODE      HGP12                                   
+ND        Hidden node for calibration of GW-12                                  
 ..
 NODE      HGP13                                   
+ND        Hidden node for calibration of GW-13                                  
 ..
 NODE      HGR11                                   
+ND        Hidden node for calibration of GW-11                                  
 ..
 NODE      HGR12                                   
+ND        Hidden node for calibration of GW-12                                  
 ..
 NODE      HGR13                                   
+ND        Hidden node for calibration of GW-13                                  
 ..
 NODE      HSR301                                  
+ND        Hidden surface water node for East of San Joaquin Refuges             
 ..
 NODE      HSUR301                                 
+ND        Hidden surface and groundwater diversion node for East San Joaquin ref
 ..
 NODE      HSUR302                                 
+ND        SW and GW diversion to East of San Joaquin River Refuges              
 ..
 NODE      R301                                    
+ND        SW and GW aggregation node for East of San Joaquin Refuges            
 ..
 NODE      R_SJE                                   
+ND        East of San Joaquin Refuges                                           
 ..
 NODE      EXT_CVPM11                              
+ND        100% of DAU 205 & 206, exterior                                       
 ..
 NODE      HNP302                                  
 ..
@@ -1138,14 +1606,18 @@ NODE      HP302
 NODE      HXI302                                  
 ..
 NODE      INT_CVPM11                              
+ND        100% of DAU 205 & 206, interior                                       
 ..
 NODE      U302                                    
+ND        Modesto/Manteca CVPM11 Urban IN                                       
 ..
 NODE      WTP302                                  
 ..
 NODE      WWP302                                  
+ND        WWTP For Modesto (out)                                                
 ..
 NODE      EXT_CVPM12                              
+ND        100% of DAU 208, exterior                                             
 ..
 NODE      HNP305                                  
 ..
@@ -1154,14 +1626,18 @@ NODE      HP305
 NODE      HXI305                                  
 ..
 NODE      INT_CVPM12                              
+ND        100% of DAU 208, interior                                             
 ..
 NODE      U305                                    
+ND        Turlock/Ceres CVPM12 Urban IN                                         
 ..
 NODE      WTP305                                  
 ..
 NODE      WWP305                                  
+ND        Turlock/Ceres CVPM12 Urban OUT                                        
 ..
 NODE      EXT_CVPM13                              
+ND        100% of DAU 210 & 213, exterior                                       
 ..
 NODE      HNP306                                  
 ..
@@ -1170,136 +1646,197 @@ NODE      HP306
 NODE      HXI306                                  
 ..
 NODE      INT_CVPM13                              
+ND        100% of DAU 210 & 213, Interior                                       
 ..
 NODE      U306                                    
+ND        Merced CVPM13 Urban IN                                                
 ..
 NODE      WWP306                                  
+ND        Merced CVPM13 Urban OUT                                               
 ..
 NODE      A303                                    
+ND        CVPM 10 farm gate                                                     
 ..
 NODE      CVPM10G                                 
+ND        junction node for CVPM 10                                             
 ..
 NODE      CVPM10S                                 
+ND        junction node for CVPM 10                                             
 ..
 NODE      HSD303                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU303C10                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU303C30                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU303C85                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU303D731                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU303D803                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU303                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      C10                                     
+ND        San Joaquin River riparian delivery to CVPM-10                        
 ..
 NODE      C30                                     
+ND        Delta Mendota Canal delivery to CVPM-10                               
 ..
 NODE      C85                                     
+ND        Diversion to CVPM10                                                   
 ..
 NODE      C92                                     
+ND        California Aqueduct, aggregation of DWRSIM 754, 746, & 748            
 ..
 NODE      D608                                    
+ND        Mendota Pool                                                          
 ..
 NODE      D616                                    
+ND        San Joaquin River diversion to CVPM 10                                
 ..
 NODE      D676                                    
+ND        Stan River inflow to San Joaquin River                                
 ..
 NODE      D683                                    
+ND        Tuolumne River inflow to San Joaquin River                            
 ..
 NODE      D689                                    
+ND        San Joaquin River diversion to CVPM 10                                
 ..
 NODE      D694                                    
+ND        San Joaquin River diversion to CVPM13                                 
 ..
 NODE      D700                                    
 ..
 NODE      D701                                    
+ND        Delta Mendota  Canal diversion to CVPM10                              
 ..
 NODE      D703                                    
+ND        Delta Mendota Canal losses                                            
 ..
 NODE      D710                                    
+ND        Delta Mendota Canal diversion to California Aqueduct                  
 ..
 NODE      D712                                    
+ND        Delta Mendota Canal inflow from California Aqueduct                   
 ..
 NODE      D722                                    
+ND        Delta Mendota Canal diversion to CVPM 10                              
 ..
 NODE      D723                                    
+ND        Delta Mendota Canal diversion to Refuge                               
 ..
 NODE      D731                                    
+ND        San Joaquin River diversion to CVPM 10                                
 ..
 NODE      D742                                    
+ND        California Aqueduct diversion to CVPM 10                              
 ..
 NODE      D743                                    
+ND        California Aqueduct losses                                            
 ..
 NODE      D743a                                   
 ..
 NODE      D744                                    
+ND        California Aqueduct diversion to CVPM 10                              
 ..
 NODE      D744a                                   
 ..
 NODE      D745                                    
+ND        California Aqueduct losses R4                                         
 ..
 NODE      D803                                    
+ND        California Aqueduct diversion to CVPM10                               
 ..
 NODE      D804                                    
+ND        California Aqueduct losses                                            
 ..
 NODE      D814                                    
+ND        California Aqueduct diversion to San Luis Reservoir                   
 ..
 NODE      D816                                    
+ND        San Luis Reservoir release to California Aqueduct                     
 ..
 NODE      GW_10      90210.000           87055.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      HGP10                                   
+ND        Hidden node for calibration of GW-10                                  
 ..
 NODE      HGU10                                   
+ND        Hidden node for calibration of GW-10                                  
 ..
 NODE      HSR302                                  
+ND        Hidden surface water node for West of San Joaquin Refuges             
 ..
 NODE      HSR303                                  
+ND        Hidden surface water node for Mendota Refuge                          
 ..
 NODE      PMP_DAmigo                              
+ND        Dos Amigos Pumping Plant                                              
 ..
 NODE      PMP_ONeill                              
+ND        ONeill Pumping Plant                                                  
 ..
 NODE      PWP_ONeill                              
+ND        ONeill Power Plant                                                    
 ..
 NODE      R302                                    
+ND        SW and GW aggregation node for West of San Joaquin Refuges            
 ..
 NODE      R303                                    
+ND        SW and GW aggregation node for Mendota Refuge                         
 ..
 NODE      R_SJW                                   
+ND        West of San Joaquin River Refuges                                     
 ..
 NODE      EXT_CVPM10                              
+ND        100% of DAU 216, exterior                                             
 ..
 NODE      INT_CVPM10                              
+ND        100% of DAU 216, interior                                             
 ..
 NODE      U303                                    
 ..
 NODE      PMP_Gianel                              
+ND        Gianelli Pumping Plant                                                
 ..
 NODE      PWP_Gianel                              
+ND        Gianelli Power Plant                                                  
 ..
 NODE      SR_SNL       525.000    0.0100   492.640
+ND        San Luis Reservoir                                                    
 ..
 NODE      C70                                     
+ND        Contra Costa Canal inflow from Los Vaqueros Reservoir                 
 ..
 NODE      D800                                    
 ..
 NODE      D801                                    
+ND        California Aqueduct diversion to South Bay Aqueduct                   
 ..
 NODE      PMP_LosVaq                              
+ND        Los Vaqueros Pumping Plant                                            
 ..
 NODE      PMP_SoBay                               
+ND        South Bay Pumping Plant                                               
 ..
 NODE      SR_LVQ        88.300    0.0101    88.300
+ND        Los Vaqueros Reservoir                                                
 ..
 NODE      ERes_CMWD                               
+ND        DAU's 87 89 90 92 96 114 and part of 100, External residential and lan
 ..
 NODE      GW_MWD       750.000             750.000
+ND        Additional empty GW Capacity in MWD Service Area                      
 ..
 NODE      HARMWD                                  
 ..
@@ -1310,20 +1847,26 @@ NODE      HGRMWD
 NODE      HNP504                                  
 ..
 NODE      HP504                                   
+ND        Hidden node for exapanded wastewater recycling for CMWD               
 ..
 NODE      HXCMWD                                  
+ND        Hidden node for year type variation in demand, central mwd            
 ..
 NODE      HXI504                                  
 ..
 NODE      Ind_CMWD                                
+ND        DAUs 87,89,90.92,96,114 and part of 100 - Urban Deamnd for Industrial 
 ..
 NODE      IRes_CMWD                               
+ND        DAUs 87,89,90.92,96,114 and part of 100 - Urban Demand for Interior Re
 ..
 NODE      U504                                    
+ND        Central MWD IN                                                        
 ..
 NODE      WTP504                                  
 ..
 NODE      WWP504                                  
+ND        Central MWD OUT                                                       
 ..
 NODE      A511                                    
 ..
@@ -1334,18 +1877,25 @@ NODE      AGS_SD
 NODE      HSU511N8                                
 ..
 NODE      HU511                                   
+ND        Hidden Node for San Diego Ag                                          
 ..
 NODE      C153                                    
+ND        MWD San Diego Pipelines 1, 2, 4 &6 (treated water,except 6)           
 ..
 NODE      C154                                    
+ND        MWD E&W supply junction node                                          
 ..
 NODE      C156                                    
+ND        MWD San Diego Pipelines 1, 2, & 4 (treated water)                     
 ..
 NODE      ERes_SDWD                               
+ND        DAU 120, & 350-352 Exterior Residential/landscape demand              
 ..
 NODE      GW_EW       7000.000            7000.000
+ND        E&W MWD groundwater basin                                             
 ..
 NODE      GW_SD       7000.000            7000.000
+ND        San Diego groundwater                                                 
 ..
 NODE      HGPEW                                   
 ..
@@ -1354,54 +1904,73 @@ NODE      HGPSD
 NODE      HGRSD                                   
 ..
 NODE      N5                                      
+ND        Node to route inland feeder around pumping plant                      
 ..
 NODE      N6                                      
+ND        Diamond Valley lake forebay                                           
 ..
 NODE      N8                                      
+ND        T30 San Diego IN                                                      
 ..
 NODE      PMP_Wads                                
+ND        MWD Eastside Reservoir (Diamond Valley Lake) Pumping Plant            
 ..
 NODE      PWP_Wads                                
+ND        Wadsworth Power Plant                                                 
 ..
 NODE      SR_DMV       600.000    0.0051   600.000
+ND        Diamond Valley Lake (Formerly Eastside reservoir)                     
 ..
 NODE      SR_SKN        33.800    0.0279    33.800
+ND        Lake Skinner input because of its separation of nodes and wq importanc
 ..
 NODE      HNP509                                  
 ..
 NODE      HP509                                   
+ND        Hidden node for exapanded wastewater recycling for EMWD               
 ..
 NODE      HXEWMWD                                 
+ND        Hidden node for year type variation in demand, e&w mwd                
 ..
 NODE      HXI509                                  
 ..
 NODE      Ind_EMWD                                
+ND        DAU 98, 104, 110 - Urban Demand for Industrial Sector                 
 ..
 NODE      IRes_EMWD                               
+ND        DAU 98, 104, 110 - Urban Demand for Interior Res/Comm                 
 ..
 NODE      U509                                    
+ND        E and W MWD IN                                                        
 ..
 NODE      WTP509                                  
 ..
 NODE      WWP509                                  
+ND        E and W MWD OUT                                                       
 ..
 NODE      HNP511                                  
 ..
 NODE      HP511                                   
+ND        Hidden node for exapanded wastewater recycling for San Diego          
 ..
 NODE      HXI511                                  
 ..
 NODE      HXSD                                    
+ND        Hidden node for year type variation in demand, SAN DIEGO              
 ..
 NODE      Ind_SDMWD                               
+ND        DAU 120 Urban Demand for Industrial Sector                            
 ..
 NODE      IRes_SDWD                               
+ND        DAU 120, 350, 351,352 - Urban Demand for Interior Res/Comm            
 ..
 NODE      U511                                    
+ND        San Diego IN                                                          
 ..
 NODE      WTP511                                  
 ..
 NODE      WWP511                                  
+ND        San Diego OUT                                                         
 ..
 NODE      A509                                    
 ..
@@ -1410,20 +1979,28 @@ NODE      AGG_EW
 NODE      HSU509C154                              
 ..
 NODE      HU509                                   
+ND        Hidden node for E&W MWD Ag                                            
 ..
 NODE      C129                                    
+ND        East Branch SWP diversion to MWD Inland Feeder                        
 ..
 NODE      C131                                    
+ND        East Branch SWP Santa Ana Pipeline diversion to SBV Urban             
 ..
 NODE      C138                                    
+ND        Colorado River Aqueduct                                               
 ..
 NODE      D876                                    
+ND        East Branch SWP Node Represented in DWRSIM Network D122698            
 ..
 NODE      D881                                    
+ND        East Branch SWP Node Represented in DWRSIM Network D122698            
 ..
 NODE      ERES_EWMWD                              
+ND        Exterior residential demand for eastern & western municipal water dist
 ..
 NODE      GW_SBV      2500.000            2500.000
+ND        SBV groundwater                                                       
 ..
 NODE      HGPSBV                                  
 ..
@@ -1432,76 +2009,103 @@ NODE      HGREW
 NODE      HGRSBV                                  
 ..
 NODE      N1                                      
+ND        Junction node for SBMWD foothill feeder intertie                      
 ..
 NODE      N2                                      
+ND        Junction node for SBVMWD foothill feedeer intertie                    
 ..
 NODE      N3                                      
+ND        Junction near Lake Perris                                             
 ..
 NODE      N4                                      
+ND        Inland feeder junction                                                
 ..
 NODE      PWP_Devils                              
+ND        East Branch SWP Power Plant                                           
 ..
 NODE      SR_MHW       100.100    0.0175   100.100
+ND        Lake Mathews of MWDSC                                                 
 ..
 NODE      SR_PRR       108.000    0.0183   108.380
+ND        Lake Perris                                                           
 ..
 NODE      ERes_SBV                                
+ND        DAU 308 & part of 100 - Urban Demand for Exterior Res/landscape       
 ..
 NODE      HARSBV                                  
 ..
 NODE      HNP506                                  
 ..
 NODE      HP506                                   
+ND        Hidden node for exapanded wastewater recycling for SBV                
 ..
 NODE      HXI506                                  
 ..
 NODE      Ind_SBV                                 
+ND        DAU 308 & part of 100 Urban Demand for Industrial Sector              
 ..
 NODE      IRes_SBV                                
+ND        DAU 308 & part of 100 - Urban Demand for Interior Res/Comm            
 ..
 NODE      U506                                    
+ND        San Bernadino Valley IN                                               
 ..
 NODE      WTP506                                  
 ..
 NODE      WWP506                                  
+ND        San Bernadino VWD OUT                                                 
 ..
 NODE      A501                                    
 ..
 NODE      AGG_VENT                                
+ND        Ventura Ag supplied by Groundwater                                    
 ..
 NODE      AGS_VENT                                
 ..
 NODE      HSU501C106                              
 ..
 NODE      HU501                                   
+ND        Hidden node for ventura ag supplied by surface water                  
 ..
 NODE      C106                                    
+ND        West Branch SWP diversion to Ventura Co.                              
 ..
 NODE      D885                                    
+ND        West Branch SWP Node Represented in DWRSIM Network D122696            
 ..
 NODE      D886                                    
+ND        West Branch SWP Node Represented in DWRSIM Network D122696            
 ..
 NODE      D887                                    
+ND        West Branch SWP Node Represented in DWRSIM Network D122696            
 ..
 NODE      D888                                    
+ND        West Branch SWP Node Represented in DWRSIM Network D122697            
 ..
 NODE      D889                                    
+ND        West Branch SWP Node Represented in DWRSIM Network D122698            
 ..
 NODE      GW_VC        275.000             275.000
+ND        Ventura County Groundwater                                            
 ..
 NODE      HGPVC                                   
 ..
 NODE      HGRVC                                   
 ..
 NODE      PWP_Castai                              
+ND        West Branch SWP Power Plant                                           
 ..
 NODE      PWP_Warne                               
+ND        West Branch SWP Power Plant                                           
 ..
 NODE      SR_CAS       294.000    0.0080   299.000
+ND        Castaic Lake                                                          
 ..
 NODE      SR_PYM       170.000    0.0072   143.940
+ND        Pyramid Lake                                                          
 ..
 NODE      EXT_CLWA                                
+ND        DAU 83 Exterior Res/Landscape demand                                  
 ..
 NODE      HNP503                                  
 ..
@@ -1510,14 +2114,18 @@ NODE      HP503
 NODE      HXI503                                  
 ..
 NODE      INT_CLWA                                
+ND        DAU 83 Ind/Interior Res/Comm Demand                                   
 ..
 NODE      U503                                    
+ND        Castaic Lake Water Delivery                                           
 ..
 NODE      WTP503                                  
 ..
 NODE      WWP503                                  
+ND        Castaic Lake Water Authority Wastewater                               
 ..
 NODE      ERes_VENT                               
+ND        DAU 81 - exterior residential/landscape use                           
 ..
 NODE      HNP501                                  
 ..
@@ -1526,168 +2134,227 @@ NODE      HP501
 NODE      HXI501                                  
 ..
 NODE      IND_VENT                                
+ND        Fixed SWP Imports to VCFCWCD                                          
 ..
 NODE      IRES_VENT                               
+ND        DAU 81 - Interior residential/commercial use                          
 ..
 NODE      U501                                    
+ND        Water Treatment node to Ventura Co                                    
 ..
 NODE      WTP501                                  
 ..
 NODE      WWP501                                  
+ND        Wastewater treatment node for Ventura Co.                             
 ..
 NODE      A502                                    
 ..
 NODE      AGG_AV                                  
+ND        Antelope Valley Ag supplied by GW                                     
 ..
 NODE      HSU502N7                                
 ..
 NODE      HU502                                   
+ND        Hidden node for Antelope Valley ag supplied by SW                     
 ..
 NODE      C124                                    
+ND        East Branch SWP diversion to GW-MJ - Morongo & Mojave Pipelines       
 ..
 NODE      C161                                    
+ND        MWD Central supply junction node                                      
 ..
 NODE      D865                                    
+ND        West Branch SWP Node Represented in DWRSIM Network D122696            
 ..
 NODE      D868                                    
+ND        West Branch SWP Node Represented in DWRSIM Network D122698            
 ..
 NODE      D870                                    
+ND        East Branch SWP Node Represented in DWRSIM Network D122698            
 ..
 NODE      D871                                    
+ND        East Branch SWP Node Represented in DWRSIM Network D122698            
 ..
 NODE      D884                                    
+ND        West Branch SWP Node Represented in DWRSIM Network D122696            
 ..
 NODE      GW_AV      20000.000           20000.000
+ND        Antelope Valley Groundwater                                           
 ..
 NODE      HARAV                                   
 ..
 NODE      HARMJ                                   
+ND        Hidden node for artificial groundwater recharge                       
 ..
 NODE      HGPAV                                   
 ..
 NODE      HGRAV                                   
 ..
 NODE      N7                                      
+ND        Juntion node for untreated SWP water coming into Antelope Valley      
 ..
 NODE      PMP_OSO                                 
+ND        West Branch SWP Pumping Plant                                         
 ..
 NODE      PMP_Pearb                               
+ND        East Branch SWP Pumping Plant                                         
 ..
 NODE      PWP_Alamo                               
+ND        East Branch SWP Power Plant                                           
 ..
 NODE      EXT_AV                                  
+ND        DAU 299-307, Exterior Res/Landscape                                   
 ..
 NODE      HNP502                                  
 ..
 NODE      HP502                                   
+ND        Hidden node for exapanded wastewater recycling for Antelope Valley    
 ..
 NODE      HXI502                                  
 ..
 NODE      INT_AV                                  
+ND        DAU 299-377 Urban demand: Ind/Interior Res/Comm                       
 ..
 NODE      U502                                    
+ND        Antelope IN                                                           
 ..
 NODE      WTP502                                  
 ..
 NODE      WWP502                                  
+ND        Antelope OUT                                                          
 ..
 NODE      C122                                    
+ND        LAA System                                                            
 ..
 NODE      PWP_Owens2                              
+ND        LAA System Power Plant                                                
 ..
 NODE      SR_LA         52.000    0.0316    52.000
+ND        LAA Storage                                                           
 ..
 NODE      D872                                    
+ND        East Branch SWP Node Represented in DWRSIM Network D122698            
 ..
 NODE      GW_MJ       2580.000            2580.000
+ND        Mojave River Valley Groundwater                                       
 ..
 NODE      HGPMJ                                   
 ..
 NODE      HGRMJ                                   
 ..
 NODE      PWP_Mojave                              
+ND        East Branch SWP Power Plant                                           
 ..
 NODE      SR_SLW        50.000    0.0056    45.640
+ND        Silverwood Lake                                                       
 ..
 NODE      EXT_MR                                  
+ND        DAU 308-332 Exterior Res/Landscape Demand                             
 ..
 NODE      HNP505                                  
 ..
 NODE      HP505                                   
+ND        Hidden node for exapanded wastewater recycling for Mojave             
 ..
 NODE      HXI505                                  
 ..
 NODE      INT_MR                                  
+ND        DAU 308-332 Ind/Interior Res/Comm demand                              
 ..
 NODE      U505                                    
+ND        Mojave IN                                                             
 ..
 NODE      WTP505                                  
 ..
 NODE      WWP505                                  
+ND        Mojave OUT                                                            
 ..
 NODE      A500                                    
 ..
 NODE      AgS_Owens                               
+ND        Owens Valley Ag                                                       
 ..
 NODE      HU500                                   
 ..
 NODE      C116                                    
+ND        LAA System                                                            
 ..
 NODE      C120                                    
+ND        LAA System                                                            
 ..
 NODE      GW_OW      30000.000           30000.000
+ND        Owens Valley                                                          
 ..
 NODE      HAROW                                   
 ..
 NODE      HGPOW                                   
 ..
 NODE      PWP_Owens1                              
+ND        LAA System Power Plant                                                
 ..
 NODE      SR_CRW        92.500    0.0243    92.500
+ND        Long Valley Reservoir (Lake Crowley)                                  
 ..
 NODE      SR_GNT        26.000    0.0225    26.000
+ND        Grant Lake                                                            
 ..
 NODE      SR_ML       2939.541    0.0140  
+ND        Mono Lake                                                             
 ..
 NODE      SR_OL          0.010    0.0000     
+ND        Owens Lake                                                            
 ..
 NODE      A408A                                   
+ND        CVPM 19 farm gate                                                     
 ..
 NODE      A408B                                   
 ..
 NODE      A409A                                   
+ND        CVPM 21 farm gate                                                     
 ..
 NODE      A409B                                   
 ..
 NODE      A409C                                   
 ..
 NODE      CVPM19AG                                
+ND        junction node for CVPM 19                                             
 ..
 NODE      CVPM19AS                                
+ND        junction node for CVPM 19                                             
 ..
 NODE      CVPM19BG                                
 ..
 NODE      CVPM19BS                                
 ..
 NODE      A407                                    
+ND        CVPM 20 farm gate                                                     
 ..
 NODE      CVPM20G                                 
+ND        junction node for CVPM 20                                             
 ..
 NODE      CVPM20S                                 
+ND        junction node for CVPM 20                                             
 ..
 NODE      HSD407                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU407C63                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU407C64                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU407C65                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU407                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      CVPM21AG                                
+ND        junction node for CVPM 21                                             
 ..
 NODE      CVPM21AS                                
+ND        junction node for CVPM 21                                             
 ..
 NODE      CVPM21BG                                
 ..
@@ -1698,78 +2365,114 @@ NODE      CVPM21CG
 NODE      CVPM21CS                                
 ..
 NODE      C62                                     
+ND        Friant-Kern Canal delivery to CVPM-19                                 
 ..
 NODE      C64                                     
+ND        Friant-Kern Canal                                                     
 ..
 NODE      C65                                     
+ND        Kern River                                                            
 ..
 NODE      C689                                    
+ND        Friant-Kern Canal terminal structure                                  
 ..
 NODE      C73                                     
+ND        CVPM-19,20,21 surface return flow                                     
 ..
 NODE      C74                                     
+ND        Cross Valley Canal delivery to CVPM-21                                
 ..
 NODE      C95                                     
+ND        California Aqueduct                                                   
 ..
 NODE      C97                                     
+ND        Kern River                                                            
 ..
 NODE      C98                                     
+ND        SWP deliveries to CVPM 21                                             
 ..
 NODE      D752                                    
+ND        California Aqueduct                                                   
 ..
 NODE      D847                                    
+ND        Coastal Aqueduct                                                      
 ..
 NODE      D850                                    
+ND        California Aqueduct                                                   
 ..
 NODE      D851                                    
+ND        California Aqueduct                                                   
 ..
 NODE      D853                                    
+ND        California Aqueduct                                                   
 ..
 NODE      D855                                    
+ND        offtake from California Aqueduct for active recharge of Kern Water Ban
 ..
 NODE      D859                                    
+ND        California Aqueduct                                                   
 ..
 NODE      D860                                    
+ND        California Aqueduct                                                   
 ..
 NODE      D861                                    
+ND        California Aqueduct                                                   
 ..
 NODE      D862A                                   
+ND        California Aqueduct                                                   
 ..
 NODE      D862B                                   
+ND        California Aqueduct                                                   
 ..
 NODE      D863                                    
+ND        California Aqueduct                                                   
 ..
 NODE      GW_19     141750.000          128223.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      GW_21     341142.000          324302.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      GW_KRN                        
+ND        Extra groundwater storage for SWP beyond the Tehachapi mountains - Ker
 ..
 NODE      HAR19                                   
+ND        Artifical recharge node for subregion 19                              
 ..
 NODE      HAR20                                   
+ND        Artificial Recharge node                                              
 ..
 NODE      HAR21                                   
+ND        Artificial recharge node                                              
 ..
 NODE      HARKRN                                  
+ND        Recharge facilite for aggregated Kern-Semitropic-Arvin/Adison groundwa
 ..
 NODE      HGP19                                   
+ND        Hidden node for calibration of GW-19                                  
 ..
 NODE      HGP20                                   
+ND        Hidden node for calibration of GW-20                                  
 ..
 NODE      HGP21                                   
+ND        Hidden node for pumping calibration of GW-21                          
 ..
 NODE      HGPKRN                                  
 ..
 NODE      HGR19                                   
+ND        Hidden node for calibration of GW-19                                  
 ..
 NODE      HGR20                                   
+ND        Return flow from urban CVPM20 to GW                                   
 ..
 NODE      HGR21                                   
+ND        Hidden node for calibration of GW-21                                  
 ..
 NODE      HSD21                                   
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSD408A                                 
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSD408B                                 
 ..
@@ -1778,16 +2481,22 @@ NODE      HSD409B
 NODE      HSD409C                                 
 ..
 NODE      HSR401                                  
+ND        Hidden surface water node for Kern Refuge                             
 ..
 NODE      HSU408AC74                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU408AN10                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU408AN11                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU408AN12                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU408BC65                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU408BN10                              
 ..
@@ -1796,22 +2505,28 @@ NODE      HSU408BN11
 NODE      HSU408BN12                              
 ..
 NODE      HSU409AC65                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU409AC68                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU409AC74                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU409BD86                              
 ..
 NODE      HSU409CD86                              
 ..
 NODE      HSUR401                                 
+ND        Hidden node for conveyance loss for deliveries to Kern NWR            
 ..
 NODE      HU408A                                  
+ND        Hidden diversion calibration node                                     
 ..
 NODE      HU408B                                  
 ..
 NODE      HU409A                                  
+ND        Hidden diversion calibration node                                     
 ..
 NODE      HU409B                                  
 ..
@@ -1824,20 +2539,28 @@ NODE      N11
 NODE      N12                                     
 ..
 NODE      PMP_Buena                               
+ND        Buena Vista Pumping Plant                                             
 ..
 NODE      PMP_Edmons                              
+ND        Edmonston Pumping Plant                                               
 ..
 NODE      PMP_Wheelr                              
+ND        Wheeler Ridge Pumping Plant                                           
 ..
 NODE      PMPChris                                
+ND        Chrisman Pumping Plant                                                
 ..
 NODE      R401                                    
+ND        SW and GW aggregation node for Kern Refuge                            
 ..
 NODE      R_KER                                   
+ND        Kern NWR                                                              
 ..
 NODE      SR_BVLB        0.001    0.0000     
+ND        Buena Vista Lake Bed                                                  
 ..
 NODE      EXT_BAKER                               
+ND        DAU 254  exterior urban flows                                         
 ..
 NODE      HNP410                                  
 ..
@@ -1846,20 +2569,26 @@ NODE      HP410
 NODE      HXI410                                  
 ..
 NODE      INT_BAKER                               
+ND        DAU 254 interior urban flows                                          
 ..
 NODE      U410                                    
+ND        Bakersfield IN                                                        
 ..
 NODE      WTP410                                  
 ..
 NODE      WWP410                                  
+ND        Bakersfield OUT                                                       
 ..
 NODE      Ext_CVPM19                              
+ND        100% of DAU 255, 259 & 260, exterior                                  
 ..
 NODE      INT_CVPM19                              
+ND        100% of DAU 255, 259 & 260, interior                                  
 ..
 NODE      U408                                    
 ..
 NODE      EXT_CVPM20                              
+ND        100% of DAU 256 & 257; includes cities of Delano and Wasco, exterior  
 ..
 NODE      HNP407                                  
 ..
@@ -1868,170 +2597,244 @@ NODE      HP407
 NODE      HXI407                                  
 ..
 NODE      INT_CVPM20                              
+ND        100% of DAU 256 & 257; includes cities of Delano and Wasco, interior  
 ..
 NODE      U407                                    
+ND        Delano/Wasco CVPM20 Urban IN                                          
 ..
 NODE      WTP407                                  
 ..
 NODE      WWP407                                  
+ND        Delano/Wasco CVPM20 Urban OUT                                         
 ..
 NODE      EXT_CVPM21                              
+ND        100% of DAU 258 and 26, exterior                                      
 ..
 NODE      INT_CVPM21                              
+ND        100% of DAU 258 and 26, interior                                      
 ..
 NODE      U409                                    
 ..
 NODE      A404A                                   
+ND        CVPM 15 farm gate                                                     
 ..
 NODE      A404B                                   
 ..
 NODE      CVPM15AG                                
+ND        junction node for CVPM 15                                             
 ..
 NODE      CVPM15AS                                
+ND        junction node for CVPM 15                                             
 ..
 NODE      CVPM15BG                                
 ..
 NODE      CVPM15BS                                
 ..
 NODE      A401                                    
+ND        CVPM-16 farm gate                                                     
 ..
 NODE      CVPM16G                                 
+ND        junction node for CVPM 16                                             
 ..
 NODE      CVPM16S                                 
+ND        junction node for CVPM 16                                             
 ..
 NODE      HSD401                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU401C49                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU401C53                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU401D606                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU401                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      A403                                    
+ND        CVPM 17 farm gate                                                     
 ..
 NODE      CVPM17G                                 
+ND        junction node for CVPM 17                                             
 ..
 NODE      CVPM17S                                 
+ND        junction node for CVPM 17                                             
 ..
 NODE      HSD403                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU403C53                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU403C76                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU403                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      A405                                    
+ND        CVPM 18 farm gate                                                     
 ..
 NODE      CVPM18G                                 
+ND        junction node for CVPM 18                                             
 ..
 NODE      CVPM18S                                 
+ND        junction node for CVPM 18                                             
 ..
 NODE      HSD405                                  
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSU405C56                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU405C58                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU405C688                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HU405                                   
+ND        Hidden diversion calibration node                                     
 ..
 NODE      C49                                     
+ND        Friant-Kern California Aqueductnal delivery to CVPM-16 and City of Fre
 ..
 NODE      C52                                     
+ND        Kings River                                                           
 ..
 NODE      C54                                     
+ND        Crescent Weir                                                         
 ..
 NODE      C56                                     
+ND        Kaweah River                                                          
 ..
 NODE      C57                                     
+ND        Tule River                                                            
 ..
 NODE      C58                                     
+ND        Tule River                                                            
 ..
 NODE      C59                                     
+ND        Inflow to Tulare Lake                                                 
 ..
 NODE      C688                                    
+ND        Friant-Kern Canal                                                     
 ..
 NODE      C76                                     
+ND        Friant-Kern Canal delivery to CVPM-17 and CVPM-18                     
 ..
 NODE      C89                                     
+ND        Kaweah River                                                          
 ..
 NODE      D605                                    
+ND        San Joaquin River depletion                                           
 ..
 NODE      D606                                    
+ND        San Joaquin River diversion to CVPM13                                 
 ..
 NODE      GW_15     309643.000          306666.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      GW_16      64696.000           64438.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      GW_17      97214.000           93653.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      GW_18     321375.000          321375.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      GW_20     137073.000          125136.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      HAR15                                   
+ND        Artificial recharge node to GW-15                                     
 ..
 NODE      HAR16                                   
+ND        Artificial recharge node                                              
 ..
 NODE      HAR17                                   
+ND        Artificial recharge node for subregion 17                             
 ..
 NODE      HAR18                                   
+ND        Artificial recharge node                                              
 ..
 NODE      HGP15                                   
+ND        Hidden node for calibration of GW-15                                  
 ..
 NODE      HGP16                                   
+ND        Hidden node for calibration of GW-16                                  
 ..
 NODE      HGP17                                   
+ND        Hidden node for calibration of GW-17                                  
 ..
 NODE      HGP18                                   
+ND        Hidden node for calibration of GW-18                                  
 ..
 NODE      HGR15                                   
+ND        Hidden node for calibration of GW-15                                  
 ..
 NODE      HGR16                                   
+ND        Hidden node for calibration of GW-16                                  
 ..
 NODE      HGR17                                   
+ND        CVPM17 Return Flow to GW                                              
 ..
 NODE      HGR18                                   
+ND        Node for RF from urban CVPM18                                         
 ..
 NODE      HSD404A                                 
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSD404B                                 
 ..
 NODE      HSR402                                  
+ND        Hidden surface water node for Pixley Refuge                           
 ..
 NODE      HSU402AD60                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU404AC49                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU404AC52                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU404AC56                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU404AD60                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU404BN9                               
 ..
 NODE      HSUR402                                 
+ND        Hidden node for conveyance loss for deliveries to Pixley NWR          
 ..
 NODE      HU404A                                  
+ND        Hidden diversion calibration node                                     
 ..
 NODE      HU404B                                  
 ..
 NODE      N9                                      
 ..
 NODE      R402                                    
+ND        SW and GW aggregation node for Pixley Refuge                          
 ..
 NODE      R_MDT                                   
+ND        Mendota Wildlife Area                                                 
 ..
 NODE      R_PIX                                   
+ND        Pixley NWR                                                            
 ..
 NODE      SR_TL          0.001    0.0000     
+ND        Tulare Lake Bed                                                       
 ..
 NODE      EXT_CVPM17                              
+ND        100% of DAU 236, 239 & 240; includes cities of Sanger, Selma, Reedley,
 ..
 NODE      HNP403                                  
 ..
@@ -2040,12 +2843,16 @@ NODE      HP403
 NODE      HXI403                                  
 ..
 NODE      INT_CVPM17                              
+ND        100% of DAU 236, 239 & 240; includes cities of Sanger, Selma, Reedley,
 ..
 NODE      U403                                    
+ND        Sanger CVPM17 Urban IN                                                
 ..
 NODE      WWP403                                  
+ND        Sanger CVPM17 Urban OUT                                               
 ..
 NODE      EXT_CVPM18                              
+ND        100% of DAU 242 & 243; includes cities of Visalia and Tulare, exterior
 ..
 NODE      HNP405                                  
 ..
@@ -2054,14 +2861,18 @@ NODE      HP405
 NODE      HXI405                                  
 ..
 NODE      INT_CVPM18                              
+ND        100% of DAU 242 & 243; includes cities of Visalia and Tulare, interior
 ..
 NODE      U405                                    
+ND        Visalia/Tulare CVPM18 Urban IN                                        
 ..
 NODE      WTP405                                  
 ..
 NODE      WWP405                                  
+ND        Visalia/Tulare CVPM18 Urban OUT                                       
 ..
 NODE      EXT_FRESN                               
+ND        DAU 233  Exterior Urban Residential                                   
 ..
 NODE      HNP401                                  
 ..
@@ -2070,64 +2881,88 @@ NODE      HP401
 NODE      HXI401                                  
 ..
 NODE      INT_FRESN                               
+ND        DAU 233 interior urban                                                
 ..
 NODE      U401                                    
+ND        Fresno IN                                                             
 ..
 NODE      WTP401                                  
 ..
 NODE      WWP401                                  
+ND        Fresno OUT                                                            
 ..
 NODE      A402A                                   
+ND        CVPM 14 farm gate                                                     
 ..
 NODE      A402B                                   
 ..
 NODE      CVPM14AG                                
+ND        junction node for CVPM 14                                             
 ..
 NODE      CVPM14AS                                
+ND        junction node for CVPM 14                                             
 ..
 NODE      CVPM14BG                                
 ..
 NODE      CVPM14BS                                
 ..
 NODE      C75                                     
+ND        California Aqueduct, aggregation of DWRSIM 841, 842, 843, 844         
 ..
 NODE      D613                                    
+ND        CVPM 14 return                                                        
 ..
 NODE      D747                                    
+ND        California Aqueduct losses R5                                         
 ..
 NODE      D749                                    
+ND        California Aqueduct losses R6                                         
 ..
 NODE      D750                                    
+ND        California Aqueduct delivery to the Cities of Huron and Coalinga, CVPM
 ..
 NODE      D751                                    
+ND        California Aqueduct losses R-7                                        
 ..
 NODE      D845                                    
+ND        California Aqueduct                                                   
 ..
 NODE      GW_14     178840.000          172009.000
+ND        Central Valley groundwater basin                                      
 ..
 NODE      HGP14                                   
+ND        Hidden node for calibration of GW-14                                  
 ..
 NODE      HGR14                                   
+ND        Hidden node for calibration of GW-14                                  
 ..
 NODE      HSD402A                                 
+ND        Hidden surface water calibration node                                 
 ..
 NODE      HSD402B                                 
 ..
 NODE      HSU402AD74                              
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSU404AN9                               
+ND        Hidden node on surface water conveyance channel                       
 ..
 NODE      HSUR303                                 
+ND        Hidden surface and groundwater diversion node for Mendota NWR         
 ..
 NODE      HU402A                                  
+ND        Hidden diversion calibration node                                     
 ..
 NODE      HU402B                                  
 ..
 NODE      PMP_Badger                              
+ND        Badger Hill Pumping Plant                                             
 ..
 NODE      PMP_LPeril                              
+ND        Las Perillas Pumping Plant                                            
 ..
 NODE      Ext_CVPM14                              
+ND        100% of DAU 244 & 245, exterior                                       
 ..
 NODE      HNP402                                  
 ..
@@ -2136,6 +2971,7 @@ NODE      HP402
 NODE      HXI402                                  
 ..
 NODE      INT_CVPM14                              
+ND        100% of DAU 244 & 245, interior                                       
 ..
 NODE      U402                                    
 ..
@@ -2144,91 +2980,122 @@ NODE      WTP402
 NODE      WWP402                                  
 ..
 NODE      EXT_CVPM15                              
+ND        100% of DAU 238, 235, 237, 241, & 246, exterior                       
 ..
 NODE      INT_CVPM15                              
+ND        100% of DAU 238, 235, 237, 241, & 246, interior                       
 ..
 NODE      U404                                    
 ..
 NODE      C103                                    
+ND        California Aqueduct d/s of Edmonston pumping plant                    
 ..
 NODE      C51                                     
+ND        Kings River                                                           
 ..
 NODE      C53                                     
+ND        Kings River                                                           
 ..
 NODE      SR_ISB       281.900    0.0114   281.900
+ND        Lake Isabella                                                         
 ..
 NODE      SR_PNF       550.000    0.0038   550.000
+ND        Pine Flat Reservoir                                                   
 ..
 NODE      SR_SCC        41.900    0.0224    41.900
+ND        Lake Success                                                          
 ..
 NODE      SR_TRM        77.100    0.0059    77.100
+ND        Lake Kaweah                                                           
 ..
 ..        ***** INFLOW DEFINITIONS *****
 ..
 LINK      INFL      SOURCE    GW_SC     1.000     0.000                                   
+LD        Santa Clara groundwater basin                                                   
 IN        A= B=GW_SC C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C146      1.000     0.000                                   
+LD        Imperial System - Whitewater River inflow to Coachella Urban recharge and Salton
 IN        A= B=C146 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_CH     1.000     0.000                                   
+LD        Coachella Valley Groundwater                                                    
 IN        A= B=GW_CH C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_CR3    1.000     0.000                                   
+LD        Colorado River Storage for MWD (850 taf/yr)                                     
 IN        A= B=SR_CR3 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C148      1.000     0.000                                   
+LD        Imperial System node - New River Inflow to Salton Sea                           
 IN        A= B=C148 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_IM     1.000     0.000                                   
+LD        Imperial Valley Groundwater                                                     
 IN        A= B=GW_IM C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    Desal     1.000     0.000                                   
+LD        Proposed desalination facility for coastal cities                               
 IN        A= B=Desal C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D94       1.000     0.000                                   
+LD        Trinity River release to Clear Creek                                            
 IN        A= B=D94 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_CLE    1.000     0.000                                   
+LD        Clair Engle Lake                                                                
 IN        A= B=SR_CLE C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C304      1.000     0.000                                   
+LD        DA12 loCalifornia Aqueductl inflow                                              
 IN        A= B=C304 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C308      1.000     0.000                                   
+LD        Accretion to Bear River                                                         
 IN        A= B=C308 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C32       1.000     0.000                                   
+LD        Feather River Diversion to CVPM5                                                
 IN        A= B=C32 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C7        1.000     0.000                                   
+LD        CVPM7 return to Sacramento River                                                
 IN        A= B=C7 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D31       1.000     0.000                                   
+LD        Sacramento River diversion to RD1500 Drain                                      
 IN        A= B=D31 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D37       1.000     0.000                                   
+LD        Bear River inflow to Feather River                                              
 IN        A= B=D37 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D43a      1.000     0.000                                   
+LD        Temporary until Reg1 and 2 are linked as this is DA14 inflow to Feather at Sac  
 IN        A= B=D43a C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D64       1.000     0.000                                   
+LD        American River Diversion To Sacramento Urban                                    
 IN        A= B=D64 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D85       1.000     0.000                                   
+LD        American River losses                                                           
 IN        A= B=D85 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D9        1.000     0.000                                   
+LD        Lake Natoma                                                                     
 IN        A= B=D9 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_04     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_04 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_05     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_05 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_07     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_07 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    N13       1.000     0.000                                   
@@ -2238,93 +3105,121 @@ LINK      INFL      SOURCE    N14       1.000     0.000
 IN        A= B=N14 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_FOL    1.000     0.000                                   
+LD        Folsom Lake                                                                     
 IN        A= B=SR_FOL C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D66       1.000     0.000                                   
+LD        Sacramento River DA15 loss                                                      
 IN        A= B=D66 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D76b      1.000     0.000                                   
+LD        Stony Creek inflow to Sacramento River                                          
 IN        A= B=D76b C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_03     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_03 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_06     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_06 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_CLK_INV1.000     0.000                                   
+LD        Clear Lake & Indian Valley Reservoir                                            
 IN        A= B=SR_CLK_INV C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    WTP205    1.000     0.000                                   
 IN        A= B=WTP205 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C38       1.000     0.000                                   
+LD        Cosumnes River inflow to Mokel. River                                           
 IN        A= B=C38 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D98       1.000     0.000                                   
+LD        Mokelumne River Diversion To CVPM 8                                             
 IN        A= B=D98 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C5        1.000     0.000                                   
+LD        CVPM 1 return to Sacramento River                                               
 IN        A= B=C5 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C86       1.000     0.000                                   
 IN        A= B=C86 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C87       1.000     0.000                                   
+LD        Sacramento River, confluence with Paynes Creek                                  
 IN        A= B=C87 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D75       1.000     0.000                                   
+LD        Thomes Creek and Elder Creek inflow to Sacramento River                         
 IN        A= B=D75 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_SHA    1.000     0.000                                   
+LD        Shasta Lake                                                                     
 IN        A= B=SR_SHA C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C2        1.000     0.000                                   
+LD        Cottonwood Creek Inflow                                                         
 IN        A= B=C2 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D73       1.000     0.000                                   
+LD        Clear Creek inflow To Sacramento River                                          
 IN        A= B=D73 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D74       1.000     0.000                                   
+LD        Sacramento River diversion to CVPM1                                             
 IN        A= B=D74 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D77       1.000     0.000                                   
+LD        Red Bluff Diversion Dam                                                         
 IN        A= B=D77 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_01     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_01 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_02     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_02 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_BLB    1.000     0.000                                   
+LD        Black Butte Lake                                                                
 IN        A= B=SR_BLB C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_WHI    1.000     0.000                                   
+LD        Whiskeytown Lake                                                                
 IN        A= B=SR_WHI C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C23       1.000     0.000                                   
+LD        Feather River Diversion to Therm. FB                                            
 IN        A= B=C23 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C27       1.000     0.000                                   
+LD        Confluence of Yuba River forks                                                  
 IN        A= B=C27 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C28       1.000     0.000                                   
+LD        Deer Dreek                                                                      
 IN        A= B=C28 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C29       1.000     0.000                                   
+LD        Dry Creek                                                                       
 IN        A= B=C29 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C35       1.000     0.000                                   
+LD        Bear River upstream of CFW Reservoir                                            
 IN        A= B=C35 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C77       1.000     0.000                                   
+LD        Feather River above Lake Oroville                                               
 IN        A= B=C77 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    CN2       1.000     0.000                                   
+LD        Calibration flow node for Region 2                                              
 IN        A= B=CN2 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D17       1.000     0.000                                   
+LD        American River diversion To CVPM 7                                              
 IN        A= B=D17 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    N201      1.000     0.000                                   
@@ -2334,263 +3229,345 @@ LINK      INFL      SOURCE    N202      1.000     0.000
 IN        A= B=N202 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_BUL    1.000     0.000                                   
+LD        New Bullards Bar Res                                                            
 IN        A= B=SR_BUL C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_CFW    1.000     0.000                                   
+LD        Camp Far West Reservoir                                                         
 IN        A= B=SR_CFW C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_RLL_CMB1.000     0.000                                   
+LD        Rollins Reservoir and Lake Combie                                               
 IN        A= B=SR_RLL_CMB C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_BER    1.000     0.000                                   
+LD        Lake Berryessa                                                                  
 IN        A= B=SR_BER C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D509      1.000     0.000                                   
+LD        Delta - ?                                                                       
 IN        A= B=D509 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_SCAGG  1.000     0.000                                   
+LD        Santa Clara Aggregate                                                           
 IN        A= B=SR_SCAGG C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_09     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_09 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D642      1.000     0.000                                   
+LD        Merced River accretion                                                          
 IN        A= B=D642 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_BUC    1.000     0.000                                   
+LD        Eastman Lake                                                                    
 IN        A= B=SR_BUC C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_HID    1.000     0.000                                   
+LD        Hensley Lake                                                                    
 IN        A= B=SR_HID C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_MCR    1.000     0.000                                   
+LD        Lake McClure                                                                    
 IN        A= B=SR_MCR C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_MIL    1.000     0.000                                   
+LD        Millerton Lake                                                                  
 IN        A= B=SR_MIL C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C37       1.000     0.000                                   
+LD        Cosumnes River inflow                                                           
 IN        A= B=C37 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C40       1.000     0.000                                   
+LD        California Aqueductlaveras River                                                
 IN        A= B=C40 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_08     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_08 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_DNP    1.000     0.000                                   
+LD        New Don Pedro Reservoir                                                         
 IN        A= B=SR_DNP C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_HTH    1.000     0.000                                   
+LD        Hetch Hetchy Reservoir                                                          
 IN        A= B=SR_HTH C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_LL_ENR 1.000     0.000                                   
+LD        Lake Lloyd/Lake Eleanor                                                         
 IN        A= B=SR_LL_ENR C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_NHG    1.000     0.000                                   
+LD        New Hogan Lake                                                                  
 IN        A= B=SR_NHG C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_NML    1.000     0.000                                   
+LD        New Melones Reservoir                                                           
 IN        A= B=SR_NML C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_PAR    1.000     0.000                                   
+LD        Pardee Reservoir                                                                
 IN        A= B=SR_PAR C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_TUL    1.000     0.000                                   
+LD        Tulloch Reservoir                                                               
 IN        A= B=SR_TUL C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D612      1.000     0.000                                   
+LD        CVPM 10 return to S Joaquin River                                               
 IN        A= B=D612 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D646      1.000     0.000                                   
+LD        Merced River accretion                                                          
 IN        A= B=D646 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D653b     1.000     0.000                                   
+LD        Stanislaus River accretion & depletion                                          
 IN        A= B=D653b C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D663      1.000     0.000                                   
+LD        Tuolumne River accretion                                                        
 IN        A= B=D663 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D691      1.000     0.000                                   
+LD        Mud Slough & Salt Slough inflow to S Joaquin R                                  
 IN        A= B=D691 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D692      1.000     0.000                                   
+LD        Eastside Bypass accretion                                                       
 IN        A= B=D692 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_11     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_11 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_12     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_12 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_13     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_13 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D616      1.000     0.000                                   
+LD        San Joaquin River diversion to CVPM 10                                          
 IN        A= B=D616 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_10     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_10 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
-LINK      INFL      SOURCE    GW_MWD     1.000     0.000                                   
+LINK      INFL      SOURCE    GW_MWD    1.000     0.000                                   
+LD        Additional empty GW Capacity in MWD Service Area                                
 IN        A= B=GW_MWD C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    HXCMWD    1.000     0.000                                   
+LD        Hidden node for year type variation in demand, central mwd                      
 IN        A= B=HXCMWD C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C154      1.000     0.000                                   
+LD        MWD E&W supply junction node                                                    
 IN        A= B=C154 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_EW     1.000     0.000                                   
+LD        E&W MWD groundwater basin                                                       
 IN        A= B=GW_EW C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_SD     1.000     0.000                                   
+LD        San Diego groundwater                                                           
 IN        A= B=GW_SD C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    N8        1.000     0.000                                   
+LD        T30 San Diego IN                                                                
 IN        A= B=N8 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    HXEWMWD   1.000     0.000                                   
+LD        Hidden node for year type variation in demand, e&w mwd                          
 IN        A= B=HXEWMWD C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    HXSD      1.000     0.000                                   
+LD        Hidden node for year type variation in demand, SAN DIEGO                        
 IN        A= B=HXSD C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_SBV    1.000     0.000                                   
+LD        SBV groundwater                                                                 
 IN        A= B=GW_SBV C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    N1        1.000     0.000                                   
+LD        Junction node for SBMWD foothill feeder intertie                                
 IN        A= B=N1 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C106      1.000     0.000                                   
+LD        West Branch SWP diversion to Ventura Co.                                        
 IN        A= B=C106 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D889      1.000     0.000                                   
+LD        West Branch SWP Node Represented in DWRSIM Network D122698                      
 IN        A= B=D889 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_VC     1.000     0.000                                   
+LD        Ventura County Groundwater                                                      
 IN        A= B=GW_VC C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    WTP503    1.000     0.000                                   
 IN        A= B=WTP503 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C161      1.000     0.000                                   
+LD        MWD Central supply junction node                                                
 IN        A= B=C161 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_AV     1.000     0.000                                   
+LD        Antelope Valley Groundwater                                                     
 IN        A= B=GW_AV C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    N7        1.000     0.000                                   
+LD        Juntion node for untreated SWP water coming into Antelope Valley                
 IN        A= B=N7 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_MJ     1.000     0.000                                   
+LD        Mojave River Valley Groundwater                                                 
 IN        A= B=GW_MJ C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C116      1.000     0.000                                   
+LD        LAA System                                                                      
 IN        A= B=C116 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_OW     1.000     0.000                                   
+LD        Owens Valley                                                                    
 IN        A= B=GW_OW C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_CRW    1.000     0.000                                   
+LD        Long Valley Reservoir (Lake Crowley)                                            
 IN        A= B=SR_CRW C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_GNT    1.000     0.000                                   
+LD        Grant Lake                                                                      
 IN        A= B=SR_GNT C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C65       1.000     0.000                                   
+LD        Kern River                                                                      
 IN        A= B=C65 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_19     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_19 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_21     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_21 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C52       1.000     0.000                                   
+LD        Kings River                                                                     
 IN        A= B=C52 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C54       1.000     0.000                                   
+LD        Crescent Weir                                                                   
 IN        A= B=C54 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C57       1.000     0.000                                   
+LD        Tule River                                                                      
 IN        A= B=C57 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C89       1.000     0.000                                   
+LD        Kaweah River                                                                    
 IN        A= B=C89 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    D606      1.000     0.000                                   
+LD        San Joaquin River diversion to CVPM13                                           
 IN        A= B=D606 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_15     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_15 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_16     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_16 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_17     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_17 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_18     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_18 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_20     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_20 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    GW_14     1.000     0.000                                   
+LD        Central Valley groundwater basin                                                
 IN        A= B=GW_14 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    C51       1.000     0.000                                   
+LD        Kings River                                                                     
 IN        A= B=C51 C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_ISB    1.000     0.000                                   
+LD        Lake Isabella                                                                   
 IN        A= B=SR_ISB C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_PNF    1.000     0.000                                   
+LD        Pine Flat Reservoir                                                             
 IN        A= B=SR_PNF C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_SCC    1.000     0.000                                   
+LD        Lake Success                                                                    
 IN        A= B=SR_SCC C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 LINK      INFL      SOURCE    SR_TRM    1.000     0.000                                   
+LD        Lake Kaweah                                                                     
 IN        A= B=SR_TRM C=FLOW_LOC(KAF) D= E=1MON F=
 ..
 ..        ***** STORAGE LINK DEFINITIONS *****
 ..
 LINK      RSTO      GW_SC     GW_SC     1.000               160.0000  655.0000            
+LD        Santa Clara groundwater basin                                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_SC C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_HF     GW_HF     1.000                         500.0000            
+LD        Hayfield Storage Basin                                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_HF C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_CH     GW_CH     1.000                         4000.0000           
+LD        Coachella Valley Groundwater                                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_CH C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_CR1    SR_CR1    1.000                                             
+LD        First priority Colorado River 4.4 water for Policy 4a (661.43 taf/yr)           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CR1 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_CR2    SR_CR2    1.000                                             
+LD        Second priority Colorado River 4.4 water for Policy 4a (3.55 maf/yr)            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CR2 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_CR3    SR_CR3    1.000                         4400.0000           
+LD        Colorado River Storage for MWD (850 taf/yr)                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CR3 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      GW_IM     GW_IM     1.000                         1000.0000           
+LD        Imperial Valley Groundwater                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_IM C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_SS     SR_SS     1.000                                             
+LD        Salton Sea                                                                      
 EV        A= B=SR_SS C=EVAP_RATE(FT) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_SS C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_CLE    SR_CLE    1.000                                             
+LD        Clair Engle Lake                                                                
 QL        A= B=SR_CLE C=STOR_LBT(KAF) D= E=1MON F=
 BU        1850,1850,1850,1900,2000,2100,2300,2420,2447,2270,2150,1975
 EV        A= B=SR_CLE C=EVAP_RATE(FT) D= E=1MON F=
@@ -2609,18 +3586,22 @@ PS        MO=DEC A= B=SR_CLE C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_CLE C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_04     GW_04     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_04 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_05     GW_05     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_05 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_07     GW_07     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_07 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_FOL    SR_FOL    1.000               83.0000                       
+LD        Folsom Lake                                                                     
 QU        A= B=SR_FOL C=STOR_UBT(KAF) D= E=1MON F=
 EV        A= B=SR_FOL C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_FOL C=Q(KAF)-P_EDT D= E=JAN F=
@@ -2638,6 +3619,7 @@ PS        MO=DEC A= B=SR_FOL C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_FOL C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_TAB    SR_TAB    1.000               9.7000    11.8000             
+LD        Thermalito Afterbay                                                             
 EV        A= B=SR_TAB C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_TAB C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_TAB C=Q(KAF)-P_EDT D= E=FEB F=
@@ -2654,14 +3636,17 @@ PS        MO=DEC A= B=SR_TAB C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_TAB C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      GW_03     GW_03     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_03 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_06     GW_06     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_06 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_CLK_INVSR_CLK_INV1.000               0.0000                        
+LD        Clear Lake & Indian Valley Reservoir                                            
 BU        485.11,549.4,566.81,589.39,605.79,613.39,613.39,613.39,613.39,605.79,589.39,485.11
 EV        A= B=SR_CLK_INV C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_CLK_INV C=Q(KAF)-P_EDT D= E=JAN F=
@@ -2679,6 +3664,7 @@ PS        MO=DEC A= B=SR_CLK_INV C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_CLK_INV C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_SHA    SR_SHA    1.000                                             
+LD        Shasta Lake                                                                     
 QL        A= B=SR_SHA C=STOR_LBT(KAF) D= E=1MON F=
 BU        3828,4042,4330,4552,4552,4552,4300,4000,3700,3400,3252,3368
 EV        A= B=SR_SHA C=EVAP_RATE(FT) D= E=1MON F=
@@ -2697,14 +3683,17 @@ PS        MO=DEC A= B=SR_SHA C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_SHA C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_01     GW_01     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_01 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_02     GW_02     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_02 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_BLB    SR_BLB    1.000               10.0000                       
+LD        Black Butte Lake                                                                
 BU        57.39,57.82,77.19,125.33,147.3,150.46,150.46,150.46,133.45,98.76,79.84,68.92
 EV        A= B=SR_BLB C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_BLB C=Q(KAF)-P_EDT D= E=JAN F=
@@ -2722,6 +3711,7 @@ PS        MO=DEC A= B=SR_BLB C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_BLB C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_WHI    SR_WHI    1.000               10.0000                       
+LD        Whiskeytown Lake                                                                
 BU        217,206,206,206,206,217,240,240,240,240,240,235
 EV        A= B=SR_WHI C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_WHI C=Q(KAF)-P_EDT D= E=JAN F=
@@ -2739,6 +3729,7 @@ PS        MO=DEC A= B=SR_WHI C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_WHI C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_BUL    SR_BUL    1.000               251.0000                      
+LD        New Bullards Bar Res                                                            
 BU        600,600,685,825,930,890,830,755,705,660,645,645
 EV        A= B=SR_BUL C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_BUL C=Q(KAF)-P_EDT D= E=JAN F=
@@ -2756,6 +3747,7 @@ PS        MO=DEC A= B=SR_BUL C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_BUL C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_CFW    SR_CFW    1.000               1.0000    103.0000            
+LD        Camp Far West Reservoir                                                         
 EV        A= B=SR_CFW C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_CFW C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_CFW C=Q(KAF)-P_EDT D= E=FEB F=
@@ -2772,6 +3764,7 @@ PS        MO=DEC A= B=SR_CFW C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_CFW C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_ENG    SR_ENG    1.000               50.0000                       
+LD        Englebright Lake                                                                
 BU        62,62,64,65,66,66,67,67,67,66,64,62
 EV        A= B=SR_ENG C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_ENG C=Q(KAF)-P_EDT D= E=JAN F=
@@ -2789,6 +3782,7 @@ PS        MO=DEC A= B=SR_ENG C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_ENG C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_ORO    SR_ORO    1.000               29.6000                       
+LD        Lake Oroville                                                                   
 QU        A= B=SR_ORO C=STOR_UBT(KAF) D= E=1MON F=
 EV        A= B=SR_ORO C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_ORO C=Q(KAF)-P_EDT D= E=JAN F=
@@ -2806,10 +3800,12 @@ PS        MO=DEC A= B=SR_ORO C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_ORO C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_RLL_CMBSR_RLL_CMB1.000     -1.0000   6.5600    65.5600             
+LD        Rollins Reservoir and Lake Combie                                               
 EV        A= B=SR_RLL_CMB C=EVAP_RATE(FT) D= E=1MON F=
 QI        A=init B=SR_RLL_CMB C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_BER    SR_BER    1.000               10.3000   1602.3000           
+LD        Lake Berryessa                                                                  
 EV        A= B=SR_BER C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_BER C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_BER C=Q(KAF)-P_EDT D= E=FEB F=
@@ -2826,6 +3822,7 @@ PS        MO=DEC A= B=SR_BER C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_BER C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_DLV    SR_DLV    1.000               9.8000    40.0000             
+LD        Lake Del Valle                                                                  
 EV        A= B=SR_DLV C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_DLV C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_DLV C=Q(KAF)-P_EDT D= E=FEB F=
@@ -2842,6 +3839,7 @@ PS        MO=DEC A= B=SR_DLV C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_DLV C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_EBMUD  SR_EBMUD  1.000               83.0000                       
+LD        EBMUD aggregate                                                                 
 BU        143.05,148.59,151.21,152.81,150.44,146.28,141.53,136.67,133.68,132.4,132.24,135.97
 EV        A= B=SR_EBMUD C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_EBMUD C=Q(KAF)-P_EDT D= E=JAN F=
@@ -2859,6 +3857,7 @@ PS        MO=DEC A= B=SR_EBMUD C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_EBMUD C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_SCAGG  SR_SCAGG  1.000               37.0000   170.0000            
+LD        Santa Clara Aggregate                                                           
 EV        A= B=SR_SCAGG C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_SCAGG C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_SCAGG C=Q(KAF)-P_EDT D= E=FEB F=
@@ -2875,6 +3874,7 @@ PS        MO=DEC A= B=SR_SCAGG C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_SCAGG C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_SFAGG  SR_SFAGG  1.000               31.0000   225.0000            
+LD        SF aggregate                                                                    
 EV        A= B=SR_SFAGG C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_SFAGG C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_SFAGG C=Q(KAF)-P_EDT D= E=FEB F=
@@ -2891,10 +3891,12 @@ PS        MO=DEC A= B=SR_SFAGG C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_SFAGG C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      GW_09     GW_09     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_09 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_BUC    SR_BUC    1.000               10.0000                       
+LD        Eastman Lake                                                                    
 QU        A= B=SR_BUC C=STOR_UBT(KAF) D= E=1MON F=
 EV        A= B=SR_BUC C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_BUC C=Q(KAF)-P_EDT D= E=JAN F=
@@ -2912,6 +3914,7 @@ PS        MO=DEC A= B=SR_BUC C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_BUC C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_HID    SR_HID    1.000               4.0000                        
+LD        Hensley Lake                                                                    
 QU        A= B=SR_HID C=STOR_UBT(KAF) D= E=1MON F=
 EV        A= B=SR_HID C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_HID C=Q(KAF)-P_EDT D= E=JAN F=
@@ -2929,6 +3932,7 @@ PS        MO=DEC A= B=SR_HID C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_HID C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_MCR    SR_MCR    1.000               115.0000                      
+LD        Lake McClure                                                                    
 QU        A= B=SR_MCR C=STOR_UBT(KAF) D= E=1MON F=
 EV        A= B=SR_MCR C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_MCR C=Q(KAF)-P_EDT D= E=JAN F=
@@ -2946,6 +3950,7 @@ PS        MO=DEC A= B=SR_MCR C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_MCR C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_MIL    SR_MIL    1.000               120.0000                      
+LD        Millerton Lake                                                                  
 BU        436,435,521,521,521,521,521,521,521,436,436,436
 EV        A= B=SR_MIL C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_MIL C=Q(KAF)-P_EDT D= E=JAN F=
@@ -2963,10 +3968,12 @@ PS        MO=DEC A= B=SR_MIL C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_MIL C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      GW_08     GW_08     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_08 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_CMN    SR_CMN    1.000               4.0000                        
+LD        Camanche Res                                                                    
 QU        A= B=SR_CMN C=STOR_UBT(KAF) D= E=1MON F=
 EV        A= B=SR_CMN C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_CMN C=Q(KAF)-P_EDT D= E=JAN F=
@@ -2984,6 +3991,7 @@ PS        MO=DEC A= B=SR_CMN C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_CMN C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_DNP    SR_DNP    1.000               100.0000                      
+LD        New Don Pedro Reservoir                                                         
 QU        A= B=SR_DNP C=STOR_UBT(KAF) D= E=1MON F=
 EV        A= B=SR_DNP C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_DNP C=Q(KAF)-P_EDT D= E=JAN F=
@@ -3001,6 +4009,7 @@ PS        MO=DEC A= B=SR_DNP C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_DNP C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_HTH    SR_HTH    1.000               36.0000   360.0000            
+LD        Hetch Hetchy Reservoir                                                          
 EV        A= B=SR_HTH C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_HTH C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_HTH C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3017,6 +4026,7 @@ PS        MO=DEC A= B=SR_HTH C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_HTH C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_LL_ENR SR_LL_ENR 1.000               30.1000   301.3000            
+LD        Lake Lloyd/Lake Eleanor                                                         
 EV        A= B=SR_LL_ENR C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_LL_ENR C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_LL_ENR C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3033,6 +4043,7 @@ PS        MO=DEC A= B=SR_LL_ENR C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_LL_ENR C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_NHG    SR_NHG    1.000               17.5000                       
+LD        New Hogan Lake                                                                  
 QU        A= B=SR_NHG C=STOR_UBT(KAF) D= E=1MON F=
 EV        A= B=SR_NHG C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_NHG C=Q(KAF)-P_EDT D= E=JAN F=
@@ -3050,6 +4061,7 @@ PS        MO=DEC A= B=SR_NHG C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_NHG C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_NML    SR_NML    1.000               80.0000                       
+LD        New Melones Reservoir                                                           
 BU        1950,1950,2019,2206,2400,2400,2300,2150,2025,1975,1950,1950
 EV        A= B=SR_NML C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_NML C=Q(KAF)-P_EDT D= E=JAN F=
@@ -3067,6 +4079,7 @@ PS        MO=DEC A= B=SR_NML C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_NML C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_PAR    SR_PAR    1.000               12.2000                       
+LD        Pardee Reservoir                                                                
 BU        183,188,193,198,203,210,210,210,203,198,193,188
 EV        A= B=SR_PAR C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_PAR C=Q(KAF)-P_EDT D= E=JAN F=
@@ -3084,6 +4097,7 @@ PS        MO=DEC A= B=SR_PAR C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_PAR C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_TUL    SR_TUL    1.000               11.0000   67.0000             
+LD        Tulloch Reservoir                                                               
 EV        A= B=SR_TUL C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_TUL C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_TUL C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3100,22 +4114,27 @@ PS        MO=DEC A= B=SR_TUL C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_TUL C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_11     GW_11     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_11 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_12     GW_12     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_12 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_13     GW_13     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_13 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_10     GW_10     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_10 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_SNL    SR_SNL    1.000               80.0000   2038.0000           
+LD        San Luis Reservoir                                                              
 EV        A= B=SR_SNL C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_SNL C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_SNL C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3132,6 +4151,7 @@ PS        MO=DEC A= B=SR_SNL C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_SNL C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_LVQ    SR_LVQ    1.000               72.0000   104.8000            
+LD        Los Vaqueros Reservoir                                                          
 EV        A= B=SR_LVQ C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_LVQ C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_LVQ C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3148,34 +4168,42 @@ PS        MO=DEC A= B=SR_LVQ C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_LVQ C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      GW_MWD    GW_MWD    1.000                         1450.0000           
+LD        Additional empty GW Capacity in MWD Service Area                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_MWD C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_EW     GW_EW     1.000                         10000.0000          
+LD        E&W MWD groundwater basin                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_EW C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_SD     GW_SD     1.000                         10000.0000          
+LD        San Diego groundwater                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_SD C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_DMV    SR_DMV    1.000               230.4000  825.0000            
+LD        Diamond Valley Lake (Formerly Eastside reservoir)                               
 EV        A= B=SR_DMV C=EVAP_RATE(FT) D= E=1MON F=
 QI        A=init B=SR_DMV C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_SKN    SR_SKN    1.000               33.8000   44.0000             
+LD        Lake Skinner input because of its separation of nodes and wq importance         
 EV        A= B=SR_SKN C=EVAP_RATE(FT) D= E=1MON F=
 QI        A=init B=SR_SKN C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      GW_SBV    GW_SBV    1.000                         11620.0000          
+LD        SBV groundwater                                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_SBV C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_MHW    SR_MHW    1.000               78.5000   182.0000            
+LD        Lake Mathews of MWDSC                                                           
 EV        A= B=SR_MHW C=EVAP_RATE(FT) D= E=1MON F=
 QI        A=init B=SR_MHW C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_PRR    SR_PRR    1.000               4.1000    131.5000            
+LD        Lake Perris                                                                     
 EV        A= B=SR_PRR C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_PRR C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_PRR C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3192,10 +4220,12 @@ PS        MO=DEC A= B=SR_PRR C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_PRR C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_VC     GW_VC     1.000                         10000.0000          
+LD        Ventura County Groundwater                                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_VC C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_CAS    SR_CAS    1.000               18.6000   323.7000            
+LD        Castaic Lake                                                                    
 EV        A= B=SR_CAS C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_CAS C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_CAS C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3212,6 +4242,7 @@ PS        MO=DEC A= B=SR_CAS C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_CAS C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_PYM    SR_PYM    1.000               4.8000    171.2000            
+LD        Pyramid Lake                                                                    
 EV        A= B=SR_PYM C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_PYM C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_PYM C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3228,19 +4259,23 @@ PS        MO=DEC A= B=SR_PYM C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_PYM C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      GW_AV     GW_AV     1.000                         68000.0000          
+LD        Antelope Valley Groundwater                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_AV C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_LA     SR_LA     1.000               10.2000   102.5000            
+LD        LAA Storage                                                                     
 EV        A= B=SR_LA C=EVAP_RATE(FT) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_LA C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_MJ     GW_MJ     1.000                         4370.0000           
+LD        Mojave River Valley Groundwater                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_MJ C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_SLW    SR_SLW    1.000               20.0000   75.0000             
+LD        Silverwood Lake                                                                 
 EV        A= B=SR_SLW C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_SLW C=Q(KAF)-P_EDT D= E=JAN F=
 PS        MO=FEB A= B=SR_SLW C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3257,75 +4292,92 @@ PS        MO=DEC A= B=SR_SLW C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_SLW C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_OW     GW_OW     1.000                                             
+LD        Owens Valley                                                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_OW C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_CRW    SR_CRW    1.000               18.3000   183.5000            
+LD        Long Valley Reservoir (Lake Crowley)                                            
 EV        A= B=SR_CRW C=EVAP_RATE(FT) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CRW C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_GNT    SR_GNT    1.000               11.5000   47.5250             
+LD        Grant Lake                                                                      
 EV        A= B=SR_GNT C=EVAP_RATE(FT) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_GNT C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      SR_ML     SR_ML     1.000                                             
+LD        Mono Lake                                                                       
 BL        0,0,2939.54,0,0,0,0,0,0,0,0,0
 EV        A= B=SR_ML C=EVAP_RATE(FT) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_ML C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_OL     SR_OL     1.000                                             
+LD        Owens Lake                                                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_OL C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      RSTO      GW_19     GW_19     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_19 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_21     GW_21     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_21 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_KRN    GW_KRN    1.000                         950.0000            
+LD        Extra groundwater storage for SWP beyond the Tehachapi mountains - Kern-Delta, A
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      RSTO      SR_BVLB   SR_BVLB   1.000                                             
+LD        Buena Vista Lake Bed                                                            
 EV        A= B=SR_BVLB C=EVAP_RATE(FT) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_BVLB C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_15     GW_15     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_15 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_16     GW_16     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_16 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_17     GW_17     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_17 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_18     GW_18     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_18 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_20     GW_20     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_20 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_TL     SR_TL     1.000                                             
+LD        Tulare Lake Bed                                                                 
 EV        A= B=SR_TL C=EVAP_RATE(FT) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_TL C=STOR D= E=1MON F=
 ..
 LINK      RSTO      GW_14     GW_14     1.000                                             
+LD        Central Valley groundwater basin                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_14 C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_ISB    SR_ISB    1.000               0.1840                        
+LD        Lake Isabella                                                                   
 BU        183.36,331.41,364.37,426.25,485.38,534.09,563.67,499.63,367.26,241.37,185.13,183.83
 EV        A= B=SR_ISB C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_ISB C=Q(KAF)-P_EDT D= E=JAN F=
@@ -3343,6 +4395,7 @@ PS        MO=DEC A= B=SR_ISB C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_ISB C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_PNF    SR_PNF    1.000               45.3790                       
+LD        Pine Flat Reservoir                                                             
 BU        653.98,728.96,772.57,813.14,853.74,935.29,995.32,1000,1000,944.73,734.37,648.38
 EV        A= B=SR_PNF C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_PNF C=Q(KAF)-P_EDT D= E=JAN F=
@@ -3360,6 +4413,7 @@ PS        MO=DEC A= B=SR_PNF C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_PNF C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_SCC    SR_SCC    1.000               0.5570                        
+LD        Lake Success                                                                    
 BU        9.02,13.02,22.29,54.41,77.78,82.72,83.2,83.2,65.5,30.99,11.09,9.75
 EV        A= B=SR_SCC C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_SCC C=Q(KAF)-P_EDT D= E=JAN F=
@@ -3377,6 +4431,7 @@ PS        MO=DEC A= B=SR_SCC C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_SCC C=STOR D= E=1MON F=
 ..
 LINK      RSTO      SR_TRM    SR_TRM    1.000               0.5700                        
+LD        Lake Kaweah                                                                     
 BU        9.17,8.85,10.56,67.02,116.23,135.64,145.73,146.22,111.5,43.64,11.26,9.94
 EV        A= B=SR_TRM C=EVAP_RATE(FT) D= E=1MON F=
 PS        MO=JAN A= B=SR_TRM C=Q(KAF)-P_EDT D= E=JAN F=
@@ -3396,21 +4451,27 @@ QI        A=init B=SR_TRM C=STOR D= E=1MON F=
 ..        ***** LINK DEFINITIONS *****
 ..
 LINK      DIVR      SOURCE    DBUGSRC   1         2000000.00                              
+LD        Debug link from source to DBUGSOURCE with high unit cost.                       
 ..
 LINK      DIVR      DBUGSNK   SINK      1         2000000.00                              
+LD        Debug link from DBUGSINK to SINK with high unit cost.                           
 ..
 LINK      DIVR      C103      D865      1.0000                                            
+LD        California Aqueduct Flow from Region 4 to Region 5                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C103-D865 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C107      C39       1.0000    29.6000                                 
+LD        South Folsom Canal Extension to Mokelumne Aqueduct                              
 BU        9.5,8.6,9.2,9.5,9.5,9.2,9.5,9.5,9.2,9.5,9.2,9.5
 QI        A=init B=C107-C39 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C136      C138      1.0000    230.8800                                
+LD        Colorado Aqueduct                                                               
 QI        A=init B=C136-C138 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C141      C142      1.0000                                            
+LD        Colorado River                                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C141-C142 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3421,14 +4482,17 @@ LINK      DIVR      C142      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C142      C143      1.0000                                            
+LD        Colorado River                                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C142-C143 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C143      Mexico    1.0000                                            
+LD        Colorado R Diversion                                                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C143-Mexico C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C152      C156      1.0000    525.0000            0.0000              
+LD        Imperial-San Diego Canal (doesn't actually exist yet)                           
 QI        A=init B=C152-C156 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C161      HARMWD    1.0000    14.8000                                 
@@ -3439,6 +4503,7 @@ LINK      DIVR      C161      WTP504    1.0000    140.6000
 QI        A=init B=C161-WTP504 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C173      HSU207C1731.0000                        6.7000              
+LD        Folsom South Canal diversion to CVPM8                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C173-HSU207C173 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3446,31 +4511,39 @@ LINK      DIVR      C173      WTP207    1.0000    45.0000             0.0000
 QI        A=init B=C173-WTP207 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C310      C323      1.0000                        5.6000              
+LD        EBMUD and CCWD Intertie.  CCWD transfer to EBMUD                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C310-C323 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C323      C310      1.0000                                            
+LD        EBMUD and CCWD Intertie                                                         
 BU        9.5,8.6,9.5,9.2,9.5,9.2,9.5,9.5,9.2,9.5,9.2,9.5
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C323-C310 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C37       C38       1.0000                                            
+LD        Cosumnes River Reach                                                            
 QL        A= B=C37-C38 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C37-C38 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C39       PMP_Walnut1.0000    148.0000                                
+LD        Mokelumen River Aqueduct, both the gravity and the pump capacity.  There is a co
 BU        30.71,27.75,30.71,29.72,30.71,29.72,30.71,30.71,29.72,30.71,29.72,30.71
 QI        A=init B=C39-PMP_Walnut C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C54       D608      1.0000                                            
+LD        St.James and N.Kings River outflow from Region 4 to Region 3.  This is not the d
+QC        A= B=C54-D608 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C54-D608 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C70       C71       1.0000    45.0000                                 
+LD        Contra Costa Canal                                                              
 QI        A=init B=C70-C71 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C88       C78       1.0000                                            
+LD        Hetch Hetchy Aqueduct                                                           
 BU        28.54,25.76,28.54,27.62,28.54,27.62,28.54,28.54,27.62,28.54,27.62,28.54
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C88-C78 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -3498,6 +4571,8 @@ LINK      DIVR      HGPSC     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D848      SINK      1.0000                                            
+LD        Coastal Aqueduct deliveries to Castaic WA                                       
+QC        A= B=D848-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D848-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3508,10 +4583,12 @@ LINK      DIVR      D848      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D848      D849      1.0000                                            
+LD        Coastal Aqueduct                                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D848-D849 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D849      SINK      1.0000                                            
+LD        Coastal Aqueduct Overflow                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D849-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3561,6 +4638,7 @@ LINK      DIVR      HXI406    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI406    EXT_SB_SLO1.0000                                            
+LD        Total Urban Exterior Penalty Function                                           
 QU        A= B=HXI406-EXT_SB_SLO C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI406-EXT_SB_SLO C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI406-EXT_SB_SLO C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3583,6 +4661,7 @@ LINK      DIVR      INT_SB_SLODBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_SB_SLOWWP406    0.9000                                            
+LD        urban interior SB-SLO SW discharge to Pacific Ocean                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_SB_SLO-WWP406 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3597,6 +4676,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U406-HXI406 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U406      INT_SB_SLO1.0000                                            
+LD        Total Urban Interior Penalty Function                                           
 QU        A= B=U406-INT_SB_SLO C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U406-INT_SB_SLO C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U406-INT_SB_SLO C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3622,6 +4702,7 @@ LINK      DIVR      WTP406    U406      1.0000    375.9200
 QI        A=init B=WTP406-U406 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP406    SINK      1.0000                                            
+LD        SB-SLO outflow to ocean                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=WWP406-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3638,16 +4719,19 @@ LINK      DIVR      WWP406    HP406     1.0000    1800.0000           0.0000
 QI        A=init B=WWP406-HP406 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C134      PMP_Iron  1.0000                                            
+LD        Colorado Aqueduct                                                               
 BU        110.484,99.792,110.484,106.92,110.484,106.92,110.484,110.484,106.92,110.484,106.92,110.484
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C134-PMP_Iron C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C143      C149      1.0000                                            
+LD        Mid All American Canal                                                          
 BU        624.407,563.98,624.407,604.264,624.407,604.264,624.407,624.407,604.264,624.407,604.264,624.407
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C143-C149 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C146      SR_SS     1.0000                                            
+LD        White Water River flow into SR-SS                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C146-SR_SS C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3656,11 +4740,13 @@ BU        2.17,1.96,2.17,2.1,2.17,2.1,2.17,2.17,2.1,2.17,2.1,2.17
 QI        A=init B=C147-SR_SS C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C149      C147      0.8400                                            
+LD        Unlined Coachella Canal                                                         
 BU        80,72.2,80,77.4,80,77.4,80,80,77.4,80,77.4,80
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C149-C147 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C157      SR_SS     1.0000                                            
+LD        Ag return flow to Salton Sea (unconstrined)                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C157-SR_SS C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3681,6 +4767,7 @@ LINK      DIVR      HARHF     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HARHF     GW_HF     0.9500                                            
+LD        Artificial recharge in Hayfield (losses)                                        
 BU        11.5,10.4,11.5,11.1,11.5,11.1,11.5,11.5,11.1,11.5,11.1,11.5
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HARHF-GW_HF C=FLOW_DIV(KAF) D= E=1MON F=
@@ -3692,6 +4779,7 @@ LINK      DIVR      HGPHF     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGPHF     PMP_JH    1.0000    66.6000                                 
+LD        Water conveyance to pump Gw-Hayfield water back to the Colorado Aqueduct        
 BU        12.73,11.5,12.73,12.32,12.7,12.32,12.73,12.73,12.32,12.73,12.32,12.73
 QI        A=init B=HGPHF-PMP_JH C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3702,6 +4790,7 @@ LINK      DIVR      PMP_Eagle DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_Eagle PMP_JH    1.0000    10.4784                                 
+LD        Colorado River Aqueduct                                                         
 BU        110.48,99.79,110.48,106.92,110.48,106.92,110.48,110.48,106.92,110.48,106.92,110.48
 QI        A=init B=PMP_Eagle-PMP_JH C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3712,6 +4801,7 @@ LINK      DIVR      PMP_JH    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_JH    HARHF     1.0000    29.6000             0.0000              
+LD        Water conveyance facility for artificial recharge in Hayfield (include UB and co
 QI        A=init B=PMP_JH-HARHF C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   A507      1                                                 
@@ -3763,6 +4853,7 @@ LINK      DIVR      HU507     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HU507     AGG_COACH 1.0000                                            
+LD        Groundwater Supplies to Coachella Ag                                            
 QU        A= B=HU507-AGG_COACH C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HU507-AGG_COACH C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HU507-AGG_COACH C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3779,6 +4870,7 @@ PQ        MO=DEC A= B=HU507-AGG_COACH C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=HU507-AGG_COACH C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HU507     AGS_COACH 1.0000                                            
+LD        Surface water diversion for Coachella Ag                                        
 QU        A= B=HU507-AGS_COACH C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HU507-AGS_COACH C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HU507-AGS_COACH C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3805,6 +4897,7 @@ LINK      DIVR      C136      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C136      C145      1.0000                                            
+LD        CRA diversion to Coachella Urban (should have a capacity)                       
 BU        12.276,11.088,12.276,11.88,12.276,11.88,12.276,12.276,11.88,12.276,11.88,12.276
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C136-C145 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -3816,6 +4909,7 @@ LINK      DIVR      C145      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C145      HARCH     1.0000    12.4764                                 
+LD        GW-CH Upper Valley Artificial Recharge                                          
 BU        27.18,24.54,27.18,26.3,27.18,26.3,27.18,27.18,26.3,27.18,26.3,27.18
 QI        A=init B=C145-HARCH C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3826,6 +4920,7 @@ LINK      DIVR      C146      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C146      C145      1.0000                                            
+LD        White Water River diversion to GW-CH (assumed to be negligible)                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C146-C145 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3836,6 +4931,7 @@ LINK      DIVR      C147      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C147      C158      1.0000                                            
+LD        Diversion for artificial recharge in Coachella Lower Valley                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C147-C158 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3853,6 +4949,7 @@ LINK      DIVR      C157      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C157      WTPA507   1.0000                                            
+LD        Coachella diversion for desalting ag drain water for reuse                      
 BU        1.55,1.4,1.55,1.5,1.55,1.5,1.55,1.55,1.5,1.55,1.5,1.55
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C157-WTPA507 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -3864,6 +4961,7 @@ LINK      DIVR      C158      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C158      HARCH     1.0000    1.6724                                  
+LD        Artificial Recharge for Coachella                                               
 BU        6.79,6.14,6.79,6.56,6.79,6.56,6.79,6.79,6.56,6.79,6.56,6.79
 QI        A=init B=C158-HARCH C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3888,6 +4986,7 @@ LINK      DIVR      HARCH     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HARCH     GW_CH     0.9500                                            
+LD        Artificial Groundwater Recharge                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HARCH-GW_CH C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3940,6 +5039,7 @@ LINK      DIVR      HP507     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HP507     U507      1.0000                                            
+LD        Expanded wastewater recycling facility                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HP507-U507 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3950,6 +5050,7 @@ LINK      DIVR      HXI507    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI507    EXT_COACH 1.0000                                            
+LD        Urban supply to Coachella exterior                                              
 QU        A= B=HXI507-EXT_COACH C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI507-EXT_COACH C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI507-EXT_COACH C=Q(KAF)-P_EDT D= E=FEB F=
@@ -3972,6 +5073,7 @@ LINK      DIVR      INT_COACH DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_COACH WWP507    0.9000                                            
+LD        Urban Return Flow                                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_COACH-WWP507 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -3986,6 +5088,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U507-HXI507 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U507      INT_COACH 1.0000                                            
+LD        INTERIOR Penalty Function                                                       
 QU        A= B=U507-INT_COACH C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U507-INT_COACH C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U507-INT_COACH C=Q(KAF)-P_EDT D= E=FEB F=
@@ -4011,6 +5114,7 @@ LINK      DIVR      WTP507    U507      1.0000    409.9600
 QI        A=init B=WTP507-U507 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP507    SINK      1.0000                                            
+LD        SW Discharge to ??                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=WWP507-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4025,6 +5129,7 @@ BU        2.4,2.17,2.4,2.33,2.4,2.33,2.4,2.4,2.33,2.4,2.33,2.4
 QI        A=init B=WWP507-HNP507 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP507    HP507     1.0000    1480.0000           0.0000              
+LD        Expanded wastewater recycling facility for Coachella Urban                      
 QI        A=init B=WWP507-HP507 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   WTPA507   1                                                 
@@ -4034,13 +5139,16 @@ LINK      DIVR      WTPA507   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      WTPA507   C147      0.4400    222.0000                                
+LD        Desalinated drain ag water for golf and agricultural irrigation in Coachella Val
 BU        0.93,0.84,0.93,0.9,0.93,0.9,0.93,0.93,0.9,0.93,0.9,0.93
 QI        A=init B=WTPA507-C147 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP507    C145      1.0000    50.0000                                 
+LD        Municipal Waste Water for artificial recharge in the Upper Valley               
 QI        A=init B=WWP507-C145 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP507    C158      1.0000    74.0000                                 
+LD        WW reuse for recharge in the Coachella Lower Valley                             
 QI        A=init B=WWP507-C158 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   A512      1                                                 
@@ -4050,10 +5158,12 @@ LINK      DIVR      A512      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A512      HU512     1.0000                                            
+LD        Ag Reuse link for Bard WD                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A512-HU512 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      AgS_Bard  SINK      1.0000                                            
+LD        Bard WD return flow                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=AgS_Bard-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4070,6 +5180,7 @@ LINK      DIVR      HSU512C143DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU512C143A512      1.0000                                            
+LD        SW supply for Bard WD from All-American Canal                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU512C143-A512 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4080,6 +5191,7 @@ LINK      DIVR      HU512     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HU512     AgS_Bard  1.0000                                            
+LD        Bard WD Ag Demand Node (Only California portion of Yuma)                        
 QU        A= B=HU512-AgS_Bard C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HU512-AgS_Bard C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HU512-AgS_Bard C=Q(KAF)-P_EDT D= E=FEB F=
@@ -4112,6 +5224,7 @@ LINK      DIVR      AGS_Palo  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      AGS_Palo  HSD508    0.3200                                            
+LD        Combined Ag demand for Blythe(Palo Verde) & Yuma                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=AGS_Palo-HSD508 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4138,6 +5251,7 @@ LINK      DIVR      HU508     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HU508     AGS_Palo  1.0000                                            
+LD        Surface supplies to Palo Verde Ag                                               
 QU        A= B=HU508-AGS_Palo C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HU508-AGS_Palo C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HU508-AGS_Palo C=Q(KAF)-P_EDT D= E=FEB F=
@@ -4160,6 +5274,7 @@ LINK      DIVR      C134      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C134      C141      1.0000                                            
+LD        Colorado River                                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C134-C141 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4183,10 +5298,12 @@ LINK      DIVR      C143      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C143      HSU512C1431.0000                                            
+LD        SW supply for Bard WD from All-American Canal                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C143-HSU512C143 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_CR1    SINK      1.0000                                            
+LD        outlet for excess Colorado River water - Policy 4a                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CR1-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4197,6 +5314,7 @@ LINK      DIVR      SR_CR1    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_CR1    C141      1.0000                                            
+LD        First priority water to Palo Verde Ag - Policy 4a                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CR1-C141 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4207,10 +5325,12 @@ LINK      DIVR      SR_CR2    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_CR2    C143      1.0000                                            
+LD        Second priority water to AA canal users -Policy 4a                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CR2-C143 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_CR2    SR_CR1    1.0000                                            
+LD        diversion from 2nd (IID and CVWD) to 1st  priority (PVID) Colorado River - Polic
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CR2-SR_CR1 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4221,10 +5341,12 @@ LINK      DIVR      SR_CR3    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_CR3    C134      1.0000                                            
+LD        Colorado River (unconstrained)                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CR3-C134 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_CR3    SR_CR2    1.0000                        0.0000              
+LD        diversion from 3rd (MWD) to 2nd and 1st priority of Colorado River water - Polic
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CR3-SR_CR2 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4265,6 +5387,7 @@ LINK      DIVR      HXI508    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI508    EXT_Blythe1.0000                                            
+LD        Urban supply to Blythe Exterior                                                 
 QU        A= B=HXI508-EXT_Blythe C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI508-EXT_Blythe C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI508-EXT_Blythe C=Q(KAF)-P_EDT D= E=FEB F=
@@ -4287,6 +5410,7 @@ LINK      DIVR      INT_BlytheDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_BlytheWWP508    0.9000                                            
+LD        Wastewater return flows from Blthe                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_Blythe-WWP508 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4301,6 +5425,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U508-HXI508 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U508      INT_Blythe1.0000                                            
+LD        Urban water deliveries to Blythe                                                
 QU        A= B=U508-INT_Blythe C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U508-INT_Blythe C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U508-INT_Blythe C=Q(KAF)-P_EDT D= E=FEB F=
@@ -4384,6 +5509,7 @@ LINK      DIVR      HU510     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HU510     AGS_IMP   1.0000                                            
+LD        Surface supplies to Imperial Valley Ag                                          
 QU        A= B=HU510-AGS_IMP C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HU510-AGS_IMP C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HU510-AGS_IMP C=Q(KAF)-P_EDT D= E=FEB F=
@@ -4406,6 +5532,7 @@ LINK      DIVR      C148      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C148      SR_SS     1.0000                                            
+LD        Salton Sea connection from New and Alamo Rivers (currently neglected)           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C148-SR_SS C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4416,6 +5543,7 @@ LINK      DIVR      C149      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C149      PWP_AAC   0.9850                                            
+LD        West IID canal                                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C149-PWP_AAC C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4426,10 +5554,12 @@ LINK      DIVR      C151      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C151      C152      0.9350                                            
+LD        Latter end of IID canal                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C151-C152 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C151      HARIM     1.0000    7.4000              0.0000              
+LD        GW-IM Artificial Recharge (currently ignored)                                   
 QI        A=init B=C151-HARIM C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   C152      1                                                 
@@ -4506,6 +5636,7 @@ LINK      DIVR      PWP_AAC   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PWP_AAC   C151      1.0000                                            
+LD        Latter end of the All American Canal                                            
 PQ        MO=JAN A= B=PWP_AAC-C151 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=PWP_AAC-C151 C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=PWP_AAC-C151 C=Q(KAF)-P_EDT D= E=MAR F=
@@ -4559,6 +5690,7 @@ LINK      DIVR      HXI510    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI510    EXT_El_Cen1.0000                                            
+LD        Diversions for El Centro Exterior demand                                        
 QU        A= B=HXI510-EXT_El_Cen C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI510-EXT_El_Cen C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI510-EXT_El_Cen C=Q(KAF)-P_EDT D= E=FEB F=
@@ -4581,6 +5713,7 @@ LINK      DIVR      INT_El_CenDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_El_CenWWP510    0.9000                                            
+LD        Wastewater returns from El Centro                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_El_Cen-WWP510 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4595,6 +5728,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U510-HXI510 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U510      INT_El_Cen1.0000                                            
+LD        diversion for Urban El Centro                                                   
 QU        A= B=U510-INT_El_Cen C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U510-INT_El_Cen C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U510-INT_El_Cen C=Q(KAF)-P_EDT D= E=FEB F=
@@ -4632,12 +5766,15 @@ LINK      DIVR      WWP510    HP510     1.0000    1800.0000           0.0000
 QI        A=init B=WWP510-HP510 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP510    SR_SS     1.0000    50.0000                                 
+LD        Outflow from El centro                                                          
 QI        A=init B=WWP510-SR_SS C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      PMP_Iron  PMP_Eagle 1.0000    10.4784                                 
+LD        Colorado Aqueduct                                                               
 QI        A=init B=PMP_Iron-PMP_Eagle C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      PMP_JH    C136      1.0000    10.4784                                 
+LD        Colorado River Aqueduct                                                         
 QI        A=init B=PMP_JH-C136 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   PMP_Iron  1                                                 
@@ -4647,38 +5784,47 @@ LINK      DIVR      PMP_Iron  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      WWP507    SR_SS     1.0000    50.0000                                 
+LD        Waste-water disposal to Salton Sea via Coachella Valley Stormwater Canal  (CVSC)
 QI        A=init B=WWP507-SR_SS C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D507      D509      1.0000                                            
+LD        Sacramento River Reach, Rio Vista Minimum Flow                                  
 QL        A= B=D507-D509 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D507-D509 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D525      D528      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D525-D528 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D606      D609      1.0000                                            
+LD        San Joaquin River between Gravelly Ford and Coachella Bypass                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D606-D609 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D606      HSU306D6061.0000                                            
+LD        surface delivery CVPM 13                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D606-HSU306D606 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D608      HSU402AD601.0000                        4.9000              
+LD        DMC Diversion to CVPM 13 (C91) - 4.9 upper bound was set by Stacy               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D608-HSU402AD60 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D608      HSU404AD601.0000                                            
+LD         DMC Ag export to CVPM 14 (C91) and CVPM 15 (C90)                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D608-HSU404AD60 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D613      D731      1.0000                                            
+LD        Return flow from CVPM 14 to the DMC in Region 3.                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D613-D731 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D714      HARSC     1.0000                                            
+LD        SCV Groundwater Recharge from Delta Mendota Canal                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D714-HARSC C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4686,36 +5832,44 @@ LINK      DIVR      D714      WTP304    1.0000    140.6000
 QI        A=init B=D714-WTP304 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D745      D747      1.0000                                            
+LD        California Aqueduct                                                             
 BU        513.4,463.7,513.4,496.9,513.4,496.9,513.4,513.4,496.9,513.4,496.9,513.4
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D745-D747 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D747      C85       1.0000                                            
+LD        Deliveries to SWP Ag Region 5 from California Aqueduct                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D747-C85 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D847      D848      1.0000                                            
+LD        Coastal Aqueduct                                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D847-D848 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D865      HARKRN    1.0000    14.8000             0.0000              
+LD        Diversion for recharge in Gw-Kern                                               
 QI        A=init B=D865-HARKRN C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D876      C161      1.0000                                            
+LD        Rialto Pipeline                                                                 
 BU        37.69,34.04,37.69,36.47,37.69,36.47,37.69,37.69,36.47,37.69,36.47,37.69
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D876-C161 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D884      D885      1.0000                                            
+LD        SWP West Branch (unconstrained)                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D884-D885 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D888      C161      1.0000                                            
+LD        Castaic Lake to MWD connection                                                  
 BU        215.3,194.4,215.3,208.3,215.3,208.3,215.3,215.3,208.3,215.3,208.3,215.3
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D888-C161 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D94       SR_WHI    1.0000                                            
+LD        Trinity River export to Whiskeytown Lake via Clear Creek Tunnel                 
 BU        203,183,203,196,203,196,203,203,196,203,196,203
 PQ        MO=JAN A= B=D94-SR_WHI C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=D94-SR_WHI C=Q(KAF)-P_EDT D= E=FEB F=
@@ -4732,30 +5886,37 @@ PQ        MO=DEC A= B=D94-SR_WHI C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=D94-SR_WHI C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D98       HSU207D98 1.0000                        26.4000             
+LD        Mokelumne riparian diversions To CVPM8                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D98-HSU207D98 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D507      HSU206D5071.0000                        75.6000             
+LD        Sacramento River div. to CVPM9                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D507-HSU206D507 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D513      D515      1.0000                                            
+LD        Delta - ? (Georgiana Slough?)                                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D513-D515 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D513      D521      1.0000                                            
+LD        Delta Cross Channel                                                             
 BU        215.26,194.43,215.26,208.32,215.26,208.32,215.26,215.26,208.32,215.26,208.32,215.26
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D513-D521 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D517      D515      1.0000                                            
+LD        Mokelumne River Reach, old location minimum instream flow requirement           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D517-D515 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      PMP_ISOL_FD59       1.0000    14.8000                                 
+LD        Isolated Facility                                                               
 QI        A=init B=PMP_ISOL_F-D59 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      Desal     SINK      1.0000                                            
+LD        Desalination excess flows                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=Desal-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4766,40 +5927,52 @@ LINK      DIVR      Desal     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      Desal     U209      1.0000    2072.0000                               
+LD        Desalination option for EBMUD                                                   
 QI        A=init B=Desal-U209 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      Desal     U301      1.0000    2072.0000                               
+LD        Proposed desalination capabilities for SFPUC                                    
 QI        A=init B=Desal-U301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      Desal     U304      1.0000    2072.0000                               
+LD        Proposed ocean desalination for SCV                                             
 QI        A=init B=Desal-U304 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      Desal     U406      1.0000    2072.0000                               
+LD        Desalination plant for SB-SLO                                                   
 QI        A=init B=Desal-U406 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      Desal     U501      1.0000    2072.0000                               
+LD        Desalination to Ventura                                                         
 QI        A=init B=Desal-U501 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      Desal     U504      1.0000    2072.0000                               
+LD        Desalination to Central MWD                                                     
 QI        A=init B=Desal-U504 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      Desal     U509      1.0000    2072.0000                               
+LD        Desalination to E&W MWD                                                         
 QI        A=init B=Desal-U509 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      Desal     U511      1.0000    2072.0000                               
+LD        Desalination to San Diego                                                       
 QI        A=init B=Desal-U511 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_SAC   HGR08     0.0020                                            
+LD        return flows from greater sacramento exterior                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_SAC-HGR08 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HARSC     GW_SC     1.0000    14.8000             20.0000             
+LD        GW-SC Artificial Recharge                                                       
 QI        A=init B=HARSC-GW_SC C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP08     U204      1.0000    81.4000             17.5000             
+LD        GW-8 to Sacramento                                                              
 QI        A=init B=HGP08-U204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGPKRN    D865      1.0000    103.6000                                
+LD        Return of water to Metropolitan from the GW-Kern-Semitropic-Arvin/Edison groundw
 BU        17.25,15.58,17.25,16.69,17.25,16.69,17.25,17.25,16.69,17.25,16.69,17.25
 QI        A=init B=HGPKRN-D865 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4811,10 +5984,12 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGRSC-GW_SC C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD206    D509      1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD206-D509 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD207    D517      1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD207-D517 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4823,6 +5998,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD508-C142 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      Mexico    SINK      1.0000                                            
+LD        Mexico Discharge to Sink                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=Mexico-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4833,6 +6009,7 @@ LINK      DIVR      Mexico    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D94       SINK      1.0000                                            
+LD        Trinity River model outflow - minimum instream flow requirement                 
 QL        A= B=D94-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D94-SINK C=FLOW_DIV(KAF) D= E=1MON F=
@@ -4850,6 +6027,7 @@ LINK      DIVR      SR_CLE    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_CLE    D94       1.0000                                            
+LD        Trinity River between Trinity Dam and Lewiston Lake                             
 PQ        MO=JAN A= B=SR_CLE-D94 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=SR_CLE-D94 C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=SR_CLE-D94 C=Q(KAF)-P_EDT D= E=MAR F=
@@ -4865,54 +6043,67 @@ PQ        MO=DEC A= B=SR_CLE-D94 C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_CLE-D94 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      PMP_SoBay D891      1.0000                                            
+LD        South Bay Aqueduct Pumping Plant                                                
 BU        18.45,16.71,18.45,17.9,18.45,17.9,18.45,18.45,17.9,18.45,17.9,18.45
 QI        A=init B=PMP_SoBay-D891 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      R303      HSUR303   1.0000                                            
+LD        On-site reuse within refuges. WMPs indicate presence of on-site operational loss
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R303-HSUR303 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      R_MDT     D732      0.2500                                            
+LD        Mendota Wildlife Area return flow                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R_MDT-D732 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C104      C105      1.0000                                            
+LD        Freeport Project Pipeline                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C104-C105 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C11       HSU103BC111.0000                        71.4000             
+LD        surface delivery CVPM 3                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C11-HSU103BC11 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C12       D76b      1.0000                                            
+LD        Stony Creek inflow to Sacramento River                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C12-D76b C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C13       HSU103AC131.0000                        198.1000            
+LD        surface delivery CVPM 3                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C13-HSU103AC13 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C15       C301      1.0000                                            
+LD        Colusa Basin Drain return flow to Sacramento River                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C15-C301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C15       C313      1.0000                                            
+LD        Colusa Basin Drain diversion to Knights Landing Ridge Cut                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C15-C313 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C16       C20       1.0000                                            
+LD        Cache Creek inflow to Yolo Bypass                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C16-C20 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C18       C20       1.0000                                            
+LD        Yolo Bypass Reach 2                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C18-C20 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C19       C20       1.0000                                            
+LD        Putah Creek inflow to Yolo Bypass                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C19-C20 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C23       C25       1.0000                                            
+LD        Feather River low flow reach, new location mimimum instream flow requirement    
 QL        A= B=C23-C25 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=C23-C25 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=C23-C25 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -4929,22 +6120,27 @@ PQ        MO=DEC A= B=C23-C25 C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=C23-C25 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C23       SR_TAB    1.0000                                            
+LD        Feather River diversion to Thermalito Forebay/Afterbay                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C23-SR_TAB C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C29       C83       1.0000                                            
+LD        Yuba River d/s of French Dry Creek                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C29-C83 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C304      C305      1.0000                                            
+LD        DA 12 local inflow to Colusa Basin Drain                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C304-C305 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C313      C313b     1.0000                                            
+LD        Knights Landing Ridge Cut                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C313-C313b C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C67       C314      1.0000                                            
+LD        Sacramnto River right bank diversions between Knights landing and Sacramento  to
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C67-C314 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4952,26 +6148,33 @@ LINK      DIVR      C67       WTP203    1.0000    45.0000
 QI        A=init B=C67-WTP203 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C69       D76b      1.0000                                            
+LD        Sacramento River between Red Bluff and Ord Ferry Reach 6                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C69-D76b C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C7        C20       1.0000                                            
+LD        Flood flows through Sacramento Weir into Yolo Bypass.                           
+QC        A= B=C7-C20 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C7-C20 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C8        C104      1.0000                                            
+LD        Sacramento River DA 70 outflow                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C8-C104 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C80       HSU202C80 1.0000                        278.6000            
+LD        Feather River supply to CVPM 5 (DA 69)                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C80-HSU202C80 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C83       HSU202C83 1.0000                        68.2000             
+LD        Yuba River riparian diversions to CVPM 5 (DA 69)                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C83-HSU202C83 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C87       D77       1.0000                                            
+LD        Sacramento River downstream of Paynes Creek                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C87-D77 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4982,6 +6185,7 @@ LINK      DIVR      A104      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A104      HU104     1.0010                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A104-HU104 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -4998,6 +6202,7 @@ LINK      DIVR      CVPM04S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM04S   HSD104    0.3890                                            
+LD        SW return flow from CVPM 4                                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM04S-HSD104 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5014,6 +6219,7 @@ LINK      DIVR      HSU104D30 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU104D30 A104      0.8800                                            
+LD        Sacramento River diversions between Ord Ferry and Knights Landing to CVPM 4 (DA 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU104D30-A104 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5062,6 +6268,7 @@ LINK      DIVR      A204      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A204      HU204     1.0560                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A204-HU204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5078,6 +6285,7 @@ LINK      DIVR      CVPM07S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM07S   HSD204    0.4090                                            
+LD        SW return flow from CVPM 7                                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM07S-HSD204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5094,6 +6302,7 @@ LINK      DIVR      HSU204C33 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU204C33 A204      0.8800                                            
+LD        Bear River left bank diversions to CVPM 7 - South Sutter WD                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU204C33-A204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5104,6 +6313,7 @@ LINK      DIVR      HSU204C67 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU204C67 A204      0.8800                                            
+LD        Sacramento River Div. to CVPM7                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU204C67-A204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5114,6 +6324,7 @@ LINK      DIVR      HSU204D42 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU204D42 A204      0.8800                                            
+LD        Feather River left bank diversions to CVPM 7 (DA 70)                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU204D42-A204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5162,6 +6373,7 @@ LINK      DIVR      C105      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C105      C107      1.0000                                            
+LD        Freeport Pipeline to south Folsom Canal Extension                               
 BU        9.5,8.6,9.5,9.2,9.5,9.2,9.5,9.5,9.2,9.5,9.5,9.5
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C105-C107 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -5183,6 +6395,7 @@ LINK      DIVR      C173      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C173      C107      1.0000    22.2000                                 
+LD        Folsom South Canal diversion to Mokelumne River Aqueduct                        
 QI        A=init B=C173-C107 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   C25       1                                                 
@@ -5192,6 +6405,7 @@ LINK      DIVR      C25       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C25       C31       1.0000                                            
+LD        Feather River between Thermalito Afterbay inflow and Yuba River, old location mi
 QL        A= B=C25-C31 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C25-C31 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -5200,6 +6414,8 @@ LINK      DIVR      C25       WTP201    1.0000    45.0000
 QI        A=init B=C25-WTP201 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C301      SINK      1.0000                                            
+LD        DSA12 Projected Gain out.                                                       
+QC        A= B=C301-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C301-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5210,6 +6426,7 @@ LINK      DIVR      C301      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C301      D43       1.0000                                            
+LD        Sacramento River outflow from Region 1 to Region 2.  Constrained to match DWRSIM
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C301-D43 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5226,6 +6443,7 @@ LINK      DIVR      C307      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C307      D42       1.0000                                            
+LD        CVPM 5 surface return flow to Feather River                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C307-D42 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5236,6 +6454,7 @@ LINK      DIVR      C308      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C308      D37       1.0000                                            
+LD        Bear River inflow to Feather River                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C308-D37 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5246,6 +6465,7 @@ LINK      DIVR      C31       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C31       D37       1.0000                                            
+LD        Feather River between Yuba and Bear rivers                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C31-D37 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5259,6 +6479,8 @@ LINK      DIVR      C313      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C32       SINK      1.0000                                            
+LD        Projected Gain out DSA69                                                        
+QC        A= B=C32-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C32-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5269,10 +6491,12 @@ LINK      DIVR      C32       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C32       C80       1.0000                                            
+LD        Feather River diversions to CVPM 5 (DA 69)                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C32-C80 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C32       D42       1.0000                                            
+LD        Feather River d/s of Bear Reach 2, new location for minimum instream flow requir
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C32-D42 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5283,11 +6507,13 @@ LINK      DIVR      C33       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C33       C308      1.0000                                            
+LD        Bear River outflow from DA 68                                                   
 QL        A= B=C33-C308 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C33-C308 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C33       HSU204C33 1.0000                        33.0000             
+LD        Bear River left bank diversions to CVPM 7 - South Sutter WD                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C33-HSU204C33 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5298,10 +6524,12 @@ LINK      DIVR      C67       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C67       C7        1.0000                                            
+LD        Sacramento River between Freemont Weir and American River Reach 2               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C67-C7 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C67       HSU204C67 1.0000                        49.1000             
+LD        Sacramento River Div. to CVPM7                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C67-HSU204C67 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5312,6 +6540,7 @@ LINK      DIVR      C7        DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C7        C8        1.0000                                            
+LD        Sacramento River between Freemont Weir and American River Reach 3               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C7-C8 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5331,6 +6560,8 @@ LINK      DIVR      C80       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C83       SINK      1.0000                                            
+LD        DA 67 local ag net diversion                                                    
+QC        A= B=C83-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C83-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5341,6 +6572,7 @@ LINK      DIVR      C83       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C83       C31       1.0000                                            
+LD        Yuba River outflow from DA 67, minimum instream flow requirement                
 QL        A= B=C83-C31 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C83-C31 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -5354,6 +6586,8 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM07G-HGR07 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D31       SINK      1.0000                                            
+LD        GS63 GW-SW Interaction based on CALSIM II.                                      
+QC        A= B=D31-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D31-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5364,6 +6598,8 @@ LINK      DIVR      D31       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D37       SINK      1.0000                                            
+LD        GS65 SW-GW Interaction                                                          
+QC        A= B=D37-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D37-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5374,6 +6610,7 @@ LINK      DIVR      D37       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D37       C32       1.0000                                            
+LD        Feather River d/s of Bear Reach 1, old location minimum instream flow requiremen
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D37-C32 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5384,11 +6621,13 @@ LINK      DIVR      D42       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D42       D43       1.0000                                            
+LD        Feather River inflow to Sacramento River                                        
 QL        A= B=D42-D43 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D42-D43 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D42       HSU204D42 1.0000                        3.0000              
+LD        Feather River left bank diversions to CVPM 7 (DA 70)                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D42-HSU204D42 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5399,6 +6638,7 @@ LINK      DIVR      D43       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D43       C67       1.0000                                            
+LD        Sacramento River between Freemont Weir and American River Reach 1               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D43-C67 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5429,6 +6669,7 @@ LINK      DIVR      D64       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D64       C8        1.0000                                            
+LD        American River inflow to Sacramento River, minimum instream flow requirement    
 QL        A= B=D64-C8 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D64-C8 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -5443,10 +6684,14 @@ LINK      DIVR      D66A      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D66A      N203      1.0000                                            
+LD        Inflow into Sutter Bypass/Butte Sink from Sacramento River                      
+QC        A= B=D66A-N203 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D66A-N203 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D85       SINK      1.0000                                            
+LD        GS66 SW-GW Interaction                                                          
+QC        A= B=D85-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D85-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5457,6 +6702,7 @@ LINK      DIVR      D85       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D85       D64       1.0000                                            
+LD        American River d/s of Nimbus Dam Reach 2                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D85-D64 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5467,11 +6713,13 @@ LINK      DIVR      D9        DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D9        C173      1.0000                                            
+LD        Lake Natoma export to Folsom South Canal                                        
 BU        215.26,194.43,215.26,208.32,215.26,208.32,215.26,215.26,208.32,215.26,208.32,215.26
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D9-C173 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D9        D85       1.0000                                            
+LD        American River d/s Nimbus Dam Reach 1                                           
 QL        A= B=D9-D85 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=D9-D85 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=D9-D85 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -5488,14 +6736,17 @@ PQ        MO=DEC A= B=D9-D85 C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=D9-D85 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM04HGR04     0.0010                                            
+LD        return flows from CVPM4 exterior                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM04-HGR04 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM05HGR05     0.0010                                            
+LD        return flows from urban CVPM5                                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM05-HGR05 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_YUBA  HGR05     0.0010                                            
+LD        Return flows for Yuba City et all exterior                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_YUBA-HGR05 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5506,6 +6757,7 @@ LINK      DIVR      GW_04     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_04     HGP04     1.0000                                            
+LD        Hidden groundwater pumping calibration link                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_04-HGP04 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5516,6 +6768,7 @@ LINK      DIVR      GW_05     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_05     HGP05     1.0000                                            
+LD        GW pumping calibration link                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_05-HGP05 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5526,6 +6779,7 @@ LINK      DIVR      GW_07     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_07     HGP07     1.0000                                            
+LD        Link to hidden node for calibration of GW-7                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_07-HGP07 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5536,6 +6790,7 @@ LINK      DIVR      HGP04     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP04     A104      1.0000    39.1800             109.1700            
+LD        Agricultural groundwater pumping GW-4 to CVPM 4 Demand                          
 QI        A=init B=HGP04-A104 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP04     U104      1.0000    39.1800                                 
@@ -5548,12 +6803,15 @@ LINK      DIVR      HGP05     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP05     R201      1.0000    40.0900             1.9500              
+LD        Maximum historical monthly GW used as water supply source at Gray Lodge WA. Sour
 QI        A=init B=HGP05-R201 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP05     R202      1.0000    40.0900             3.3600              
+LD        Maximum of maximum monthly GW used as water supply source at Sutter NWR assuming
 QI        A=init B=HGP05-R202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP05     U201      1.0000    40.0900             0.0000              
+LD        Diversions to Butte/Plumas/Yuba urban areas                                     
 QI        A=init B=HGP05-U201 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP05     U202      1.0000    40.0900                                 
@@ -5566,9 +6824,11 @@ LINK      DIVR      HGP07     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP07     A204      1.0000    47.9800             120.5000            
+LD        Agricultural groundwater pumping GW-7 to CVPM 7 Demand                          
 QI        A=init B=HGP07-A204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP07     U204      1.0000    84.3600             31.3000             
+LD        GW-7 to Sacramento                                                              
 QI        A=init B=HGP07-U204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   HGR04     1                                                 
@@ -5578,6 +6838,7 @@ LINK      DIVR      HGR04     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR04     GW_04     1.0000                                            
+LD        Link from hidden node for calibration of GW-4                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR04-GW_04 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5588,6 +6849,7 @@ LINK      DIVR      HGR05     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR05     GW_05     1.0000                                            
+LD        Link from hidden node for calibration of GW-5                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR05-GW_05 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5598,10 +6860,12 @@ LINK      DIVR      HGR07     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR07     GW_07     1.0000                                            
+LD        Link from hidden node for calibration of GW-7                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR07-GW_07 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD204    C7        1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD204-C7 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5622,6 +6886,7 @@ LINK      DIVR      HSR202    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSR202    R202      1.0000                                            
+LD        Sutter Extension Water District deliveries to Sutter NWR.                       
 BU        0.25,0.23,0.32,0.17,0.46,0.37,0.1,0.08,0.85,0.59,0.48,0.38
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSR202-R202 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -5633,6 +6898,8 @@ LINK      DIVR      HSUR201   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSUR201   R_GLD     1.0000                                            
+LD        Deliveries to Gray Lodge WA. Full level 2 and level 4 deliveries are assumed wit
+QC        A= B=HSUR201-R_GLD C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSUR201-R_GLD C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5643,18 +6910,24 @@ LINK      DIVR      HSUR202   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSUR202   R_SUT     1.0000                                            
+LD        Deliveries to the Sutter NWR. Full level 2 and level 4 deliveries are assumed wi
+QC        A= B=HSUR202-R_SUT C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSUR202-R_SUT C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      INT_CVPM04HGR04     0.0010                                            
+LD        GW return flow from fixed CVPM urban pumping demand                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM04-HGR04 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      INT_CVPM05HGR05     0.0010                                            
+LD        GW return flow from fixed CVPM urban pumping demand                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM05-HGR05 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      N13       SINK      1.0000                                            
+LD        GS61 GW-SW Interaction based on CALSIM II.                                      
+QC        A= B=N13-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N13-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5669,6 +6942,8 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N13-D66A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      N14       SINK      1.0000                                            
+LD        DSA15 Projected Gain out.                                                       
+QC        A= B=N14-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N14-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5689,6 +6964,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N203-D61B C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      N203      R202      1.0000                                            
+LD        Sutter bypass flows into Sutter Refuge                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N203-R202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5699,6 +6975,7 @@ LINK      DIVR      R201      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      R201      HSUR201   1.0000                                            
+LD        On-site reuse within refuges. WMPs indicate presence of on-site operational loss
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R201-HSUR201 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5709,6 +6986,7 @@ LINK      DIVR      R202      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      R202      HSUR202   1.0000                                            
+LD        On-site reuse within refuges. No volumetric information is provided. Therefore, 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R202-HSUR202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5719,6 +6997,7 @@ LINK      DIVR      R_GLD     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      R_GLD     C307      0.1600                                            
+LD        Gray Lodge Refuge return flow                                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R_GLD-C307 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5729,6 +7008,7 @@ LINK      DIVR      R_SUT     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      R_SUT     D61B      0.1600                                            
+LD        Sutter Refuge return flow                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R_SUT-D61B C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5739,6 +7019,7 @@ LINK      DIVR      SR_FOL    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_FOL    D9        1.0000                                            
+LD        Reservoir release from Folsom Dam to American River                             
 PQ        MO=JAN A= B=SR_FOL-D9 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=SR_FOL-D9 C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=SR_FOL-D9 C=Q(KAF)-P_EDT D= E=MAR F=
@@ -5763,6 +7044,7 @@ LINK      DIVR      SR_TAB    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_TAB    C25       1.0000                                            
+LD        Thermalito Afterbay return flow to Feather River                                
 PQ        MO=JAN A= B=SR_TAB-C25 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=SR_TAB-C25 C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=SR_TAB-C25 C=Q(KAF)-P_EDT D= E=MAR F=
@@ -5778,6 +7060,7 @@ PQ        MO=DEC A= B=SR_TAB-C25 C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_TAB-C25 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_TAB    C80       1.0000                                            
+LD        Diversion from Thermalito afterbay to CVPM 5 (DA 69)                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_TAB-C80 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5800,10 +7083,12 @@ LINK      DIVR      U104      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      U104      EXT_CVPM041.0000                                            
+QC        A= B=U104-EXT_CVPM04 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U104-EXT_CVPM04 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U104      INT_CVPM041.0000                                            
+QC        A= B=U104-INT_CVPM04 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U104-INT_CVPM04 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5826,10 +7111,12 @@ LINK      DIVR      U202      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      U202      EXT_CVPM051.0000                                            
+QC        A= B=U202-EXT_CVPM05 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U202-EXT_CVPM05 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U202      INT_CVPM051.0000                                            
+QC        A= B=U202-INT_CVPM05 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U202-INT_CVPM05 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5856,6 +7143,7 @@ LINK      DIVR      HP204     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HP204     U204      1.0000                                            
+LD        Proposed Sacramento Recycling                                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HP204-U204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5866,6 +7154,7 @@ LINK      DIVR      HXI204    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI204    EXT_SAC   1.0000                                            
+LD        Includes Placerville and Auburn (DAU 158, 161, 172, 173, 186).                  
 QU        A= B=HXI204-EXT_SAC C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI204-EXT_SAC C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI204-EXT_SAC C=Q(KAF)-P_EDT D= E=FEB F=
@@ -5888,6 +7177,7 @@ LINK      DIVR      INT_SAC   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_SAC   WWP204    0.9000                                            
+LD        Interior Res Return Flow                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_SAC-WWP204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -5902,6 +7192,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U204-HXI204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U204      INT_SAC   1.0000                                            
+LD        Residential Urban Penalty Function                                              
 QU        A= B=U204-INT_SAC C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U204-INT_SAC C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U204-INT_SAC C=Q(KAF)-P_EDT D= E=FEB F=
@@ -5936,6 +7227,7 @@ LINK      DIVR      WWP204    HNP204    1.0000    518.0000            0.5600
 QI        A=init B=WWP204-HNP204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP204    HP204     1.0000    1480.0000           0.0000              
+LD        Proposed Sacramento Recycling                                                   
 QI        A=init B=WWP204-HP204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   EXT_YUBA  1                                                 
@@ -5971,6 +7263,7 @@ LINK      DIVR      HXI201    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI201    EXT_YUBA  1.0000                                            
+LD        Diversion to Yuba city et al Urban exterior demands                             
 QU        A= B=HXI201-EXT_YUBA C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI201-EXT_YUBA C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI201-EXT_YUBA C=Q(KAF)-P_EDT D= E=FEB F=
@@ -5993,6 +7286,7 @@ LINK      DIVR      INT_YUBA  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_YUBA  WWP201    0.9000                                            
+LD        SW discharge to Feather River                                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_YUBA-WWP201 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6007,6 +7301,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U201-HXI201 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U201      INT_YUBA  1.0000                                            
+LD        Water delivery into Yuba City et al                                             
 QU        A= B=U201-INT_YUBA C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U201-INT_YUBA C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U201-INT_YUBA C=Q(KAF)-P_EDT D= E=FEB F=
@@ -6044,9 +7339,11 @@ LINK      DIVR      WWP201    HP201     1.0000    1800.0000           0.0000
 QI        A=init B=WWP201-HP201 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP201    D37       1.0000    50.0000                                 
+LD        SW discharge to Feather River                                                   
 QI        A=init B=WWP201-D37 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP204    HGR07     0.0020    50.0000             0.0000              
+LD        Sacramento AR or RF of GW-7 from area north of Am. River                        
 QI        A=init B=WWP204-HGR07 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   A103A     1                                                 
@@ -6056,6 +7353,7 @@ LINK      DIVR      A103A     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A103A     HU103A    1.1830                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A103A-HU103A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6100,6 +7398,7 @@ LINK      DIVR      A203      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A203      HU203     1.0010                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A203-HU203 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6116,6 +7415,7 @@ LINK      DIVR      CVPM06S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM06S   HSD203    0.3360                                            
+LD        SW return flow from CVPM 6                                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM06S-HSD203 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6132,6 +7432,7 @@ LINK      DIVR      HSU203C16 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU203C16 A203      0.8800                                            
+LD        Cache Creek diversions at Capay Dam to CVPM 6 (DA 65) (Winters, Moore, W. Adams 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU203C16-A203 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6142,6 +7443,7 @@ LINK      DIVR      HSU203C21 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU203C21 A203      0.8800                                            
+LD        Putah South Canal delivery to CVPM 6 (DA 65)                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU203C21-A203 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6152,6 +7454,7 @@ LINK      DIVR      HSU203C314DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU203C314A203      0.8800                                            
+LD        Knights Landing Ridge Cut and Sacramento River water delivery to CVPM 6 (DA 12) 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU203C314-A203 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6200,6 +7503,8 @@ LINK      DIVR      C15       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C150      SINK      1.0000                                            
+LD        DA 16 local demand - constrained delivery no value function                     
+QC        A= B=C150-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C150-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6210,10 +7515,13 @@ LINK      DIVR      C150      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C150      C16       1.0000                                            
+LD        Cache Creek DA16 outflow                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C150-C16 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C155      SINK      1.0000                                            
+LD        DA 24 local demand - constrained delivery no value function                     
+QC        A= B=C155-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C155-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6224,6 +7532,7 @@ LINK      DIVR      C155      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C155      C19       1.0000                                            
+LD        Putah Creek DA24 outflow                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C155-C19 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6234,6 +7543,7 @@ LINK      DIVR      C16       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C16       HSU203C16 1.0000                        38.5000             
+LD        Cache Creek diversions at Capay Dam to CVPM 6 (DA 65) (Winters, Moore, W. Adams 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C16-HSU203C16 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6250,6 +7560,7 @@ LINK      DIVR      C19       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C19       C21       1.0000                                            
+LD        Putah Creek diversion to Putah South Canal                                      
 BU        61.5,55.55,61.5,59.52,61.5,59.52,61.5,61.5,59.52,61.5,59.52,61.5
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C19-C21 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -6261,6 +7572,7 @@ LINK      DIVR      C21       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C21       HSU203C21 1.0000                        42.9000             
+LD        Putah South Canal delivery to CVPM 6 (DA 65)                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C21-HSU203C21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6274,10 +7586,12 @@ LINK      DIVR      C305      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C305      C15       1.0000                                            
+LD        Colusa Basin Drain                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C305-C15 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C305      HSU103AC301.0000                        36.7000             
+LD        surface delivery CVPM 3                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C305-HSU103AC30 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6288,6 +7602,7 @@ LINK      DIVR      C306      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C306      C18       1.0000                                            
+LD        Yolo Bypass Reach 1                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C306-C18 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6298,10 +7613,12 @@ LINK      DIVR      C313b     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C313b     C306      1.0000                                            
+LD        Knights Landing Ridge Cut to Yolo Bypass                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C313b-C306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C313b     C314      1.0000                                            
+LD        Knights Landing Ridge Cut diversion to CVPM 6 (DA 12)                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C313b-C314 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6312,6 +7629,7 @@ LINK      DIVR      C314      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C314      HSU203C3141.0000                        34.0000             
+LD        Knights Landing Ridge Cut and Sacramento River water delivery to CVPM 6 (DA 12) 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C314-HSU203C314 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6320,6 +7638,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM03AG-HGR03 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      CVPM03AS  HSD103A   0.3590                                            
+LD        SW return flow from CVPM 3                                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM03AS-HSD103A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6348,6 +7667,8 @@ LINK      DIVR      D61       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D66       SINK      1.0000                                            
+LD        DSA10 Projected Gain out.                                                       
+QC        A= B=D66-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D66-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6358,6 +7679,7 @@ LINK      DIVR      D66       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D66       HSU103AD661.0000                        54.9000             
+LD        surface delivery CVPM 3                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D66-HSU103AD66 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6368,14 +7690,17 @@ LINK      DIVR      D76b      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      ERES_NAPA HGR06     0.0040                                            
+LD        Exterior urban residential return flows                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=ERES_NAPA-HGR06 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM03HGR03     0.0010                                            
+LD        return flows from CVPM3 exterior                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM03-HGR03 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM06HGR06     0.0040                                            
+LD        return flows from urban CVPM6                                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM06-HGR06 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6386,6 +7711,7 @@ LINK      DIVR      GW_03     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_03     HGP03     1.0000                                            
+LD        Hidden GW pumping calibration link                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_03-HGP03 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6396,6 +7722,7 @@ LINK      DIVR      GW_06     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_06     HGP06     1.0000                                            
+LD        GW pumping calibration link                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_06-HGP06 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6406,12 +7733,14 @@ LINK      DIVR      HGP03     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP03     A103A     1.0000    57.1300             175.7900            
+LD        Agricultural groundwater pumping GW-3 to CVPM 3 Demand                          
 QI        A=init B=HGP03-A103A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP03     A103B     1.0000    79.9700             175.7900            
 QI        A=init B=HGP03-A103B C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP03     R101      1.0000    57.1300             0.0000              
+LD        Sum of maximum historical monthly GW used as water supply source at Sacramento, 
 QI        A=init B=HGP03-R101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP03     U103      1.0000    57.1300                                 
@@ -6424,12 +7753,14 @@ LINK      DIVR      HGP06     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP06     A203      1.0000    42.2700             85.7000             
+LD        Agricultural groundwater pumping GW-6 to CVPM 6 Demand                          
 QI        A=init B=HGP06-A203 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP06     U203      1.0000    42.2700                                 
 QI        A=init B=HGP06-U203 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP06     U205      1.0000    74.0000             0.1133              
+LD        GW-6 to Urban (none, put in CVPM 6 Urban)                                       
 QI        A=init B=HGP06-U205 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   HGR03     1                                                 
@@ -6439,6 +7770,7 @@ LINK      DIVR      HGR03     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR03     GW_03     1.0000                                            
+LD        Link from hidden node for calibration of GW-03                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR03-GW_03 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6449,6 +7781,7 @@ LINK      DIVR      HGR06     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR06     GW_06     1.0000                                            
+LD        Link from hidden node for calibration of GW-6                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR06-GW_06 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6459,10 +7792,12 @@ LINK      DIVR      HSD103A   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSD103A   C15       1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD103A-C15 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD103A   R101      1.0000                        0.0000              
+LD        Ag return flow supply for West of Sac River Refuges. Assumed to be zero pending 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD103A-R101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6473,6 +7808,7 @@ LINK      DIVR      HSD103B   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSD203    C18       1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD203-C18 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6497,6 +7833,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU103AC13-A103A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSU103AC13HSR101    0.8500                                            
+LD        Glenn Colusa and Stony Creek Diversions into West of Sac River refuges          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU103AC13-HSR101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6507,6 +7844,7 @@ LINK      DIVR      HSU103AC30DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU103AC30A103A     0.8800                                            
+LD        Colusa Basin Drain diversion to CVPM 3 (DA 12)                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU103AC30-A103A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6517,6 +7855,7 @@ LINK      DIVR      HSU103AD66DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU103AD66A103A     0.8800                                            
+LD        Sacramento River right bank diversions to CVPM 3 (DA 12)                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU103AD66-A103A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6557,6 +7896,8 @@ LINK      DIVR      HSUR101   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSUR101   R_SRW     1.0000                                            
+LD        Deliveries to the Sacramento West Refuges which includes Sacramento, Delevan and
+QC        A= B=HSUR101-R_SRW C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSUR101-R_SRW C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6637,6 +7978,7 @@ PQ        MO=DEC A= B=HU103B-CVPM03BS C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=HU103B-CVPM03BS C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      INT_CVPM03HGR03     0.0010                                            
+LD        GW return flow from fixed CVPM urban pumping demand                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM03-HGR03 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6647,6 +7989,7 @@ LINK      DIVR      R101      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      R101      HSUR101   1.0000                                            
+LD        On-site reuse within refuges. WMPs indicated no on-site operational loss recover
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R101-HSUR101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6657,6 +8000,7 @@ LINK      DIVR      R_SRW     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      R_SRW     C15       0.1600                                            
+LD        Sacramento West Refuges return flow to Colusa Basin Drain                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R_SRW-C15 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6667,6 +8011,7 @@ LINK      DIVR      SR_CLK_INVDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_CLK_INVC150      1.0000                                            
+LD        Reservoir release from Indian Valley/Clear Lake to Cache Creek                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CLK_INV-C150 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6689,10 +8034,12 @@ LINK      DIVR      U103      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      U103      EXT_CVPM031.0000                                            
+QC        A= B=U103-EXT_CVPM03 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U103-EXT_CVPM03 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U103      INT_CVPM031.0000                                            
+QC        A= B=U103-INT_CVPM03 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U103-INT_CVPM03 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6729,6 +8076,7 @@ LINK      DIVR      HXI203    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI203    EXT_CVPM061.0000                                            
+QC        A= B=HXI203-EXT_CVPM06 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HXI203-EXT_CVPM06 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6753,6 +8101,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U203-HXI203 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U203      INT_CVPM061.0000                                            
+QC        A= B=U203-INT_CVPM06 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U203-INT_CVPM06 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6810,6 +8159,7 @@ LINK      DIVR      HXI205    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI205    ERES_NAPA 1.0000                                            
+LD        Exterior Residential Urban Penalty Function (local sw+gw removed)               
 QU        A= B=HXI205-ERES_NAPA C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI205-ERES_NAPA C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI205-ERES_NAPA C=Q(KAF)-P_EDT D= E=FEB F=
@@ -6826,6 +8176,7 @@ PQ        MO=DEC A= B=HXI205-ERES_NAPA C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=HXI205-ERES_NAPA C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HXI205    IND_NAPA  1.0000                                            
+LD        Industrial Urban Penalty Function (local sw+gw removed)                         
 QU        A= B=HXI205-IND_NAPA C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI205-IND_NAPA C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI205-IND_NAPA C=Q(KAF)-P_EDT D= E=FEB F=
@@ -6848,6 +8199,7 @@ LINK      DIVR      IND_NAPA  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IND_NAPA  WWP205    0.4000                                            
+LD        Ind Return flow TOTAL                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IND_NAPA-WWP205 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6858,6 +8210,7 @@ LINK      DIVR      IRES_NAPA DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IRES_NAPA WWP205    0.9000                                            
+LD        Interior urban Res Return Flow TOTAL                                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IRES_NAPA-WWP205 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6872,6 +8225,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U205-HXI205 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U205      IRES_NAPA 1.0000                                            
+LD        Interior Residential Urban Penalty Function (local sw+gw removed)               
 QU        A= B=U205-IRES_NAPA C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U205-IRES_NAPA C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U205-IRES_NAPA C=Q(KAF)-P_EDT D= E=FEB F=
@@ -6897,6 +8251,7 @@ LINK      DIVR      WTP205    U205      1.0000    30.0000
 QI        A=init B=WTP205-U205 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP205    SINK      1.0000                                            
+LD        Napa Solano                                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=WWP205-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6916,6 +8271,7 @@ LINK      DIVR      WWP203    HGR06     1.0000    50.0000
 QI        A=init B=WWP203-HGR06 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP205    HGR06     0.0040    50.0000                                 
+LD        Urban AR or RF to GW                                                            
 QI        A=init B=WWP205-HGR06 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      CVPM05G   HGR05     0.3820                                            
@@ -6923,6 +8279,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM05G-HGR05 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D17       SR_FOL    1.0000                                            
+LD        Inflow to Folsom Reservoir from North and Middle Forks of American River        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D17-SR_FOL C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6930,30 +8287,39 @@ LINK      DIVR      D17       WTP204    0.9400    45.0000             0.0000
 QI        A=init B=D17-WTP204 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D30       D31       1.0000                                            
+LD        Sacramento River between Ord ferry and Knights Landing Reach 2                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D30-D31 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D30       HSU104D30 1.0000                        236.0000            
+LD        surface delivery CVPM 4                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D30-HSU104D30 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D30       N203      1.0000                                            
+LD        Sutter Bypass - Colusa & Moulton Weirs.                                         
+QC        A= B=D30-N203 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D30-N203 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D31       D61       1.0000                                            
+LD        Sacramento River between Ord ferry and Knights Landing Reach 3                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D31-D61 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D31       HSU202D31 1.0000                        5.7000              
+LD        Sacramento River to DSA 69 (Ord Ferry to Knights Landing) CVPM 5                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D31-HSU202D31 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D43       C306      1.0000                                            
+LD        Sacramnto River flood flow to Yolo Bypass via Freemont Weir                     
+QC        A= B=D43-C306 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D43-C306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D43a      HSU202D43A1.0000                                            
+LD        Based on CALSIM II schematic, there are ag diversions from Butte and Little Dry 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D43a-HSU202D43A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6962,15 +8328,19 @@ BU        10.76,9.72,10.76,10.42,10.76,10.42,10.76,10.76,10.42,10.76,10.42,10.76
 QI        A=init B=D55-HSU_D55 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D61       C301      1.0000                                            
+LD        Sacramento River DA15 outflow, minimum instream flow (Sacramento Navigation Cont
 QL        A= B=D61-C301 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D61-C301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D61       D61B      1.0000                                            
+LD        Sutter Bypass - Tisdale Weir.                                                   
+QC        A= B=D61-D61B C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D61-D61B C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D66       N14       1.0000                                            
+LD        Sacramento River between Ord ferry and Knights Landing Reach 1                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D66-N14 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -6979,18 +8349,22 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D66A-D66 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D74       C5        1.0000                                            
+LD        Sacramento River between DA58 local inflow and CVPM 1 return flows              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D74-C5 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D75       C1        1.0000                                            
+LD        Sacramento River between Red Bluff and Ord Ferry Reach 3, minimum instream flow 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D75-C1 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D76b      N13       1.0000                                            
+LD        Sacramento River DA10 outflow                                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D76b-N13 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D77       D75       1.0000                                            
+LD        Sacramento River between Red Bluff and Ord Ferry Reach 2, minimum instream flow 
 QL        A= B=D77-D75 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D77-D75 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -7002,10 +8376,13 @@ LINK      DIVR      C104      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C104      D44       1.0000                                            
+LD        Sacramento River from Freeport to Elk Grove                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C104-D44 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C20       SINK      1.0000                                            
+LD        Only for climate change studies, for historical case all flows are zero.        
+QC        A= B=C20-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C20-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7016,6 +8393,8 @@ LINK      DIVR      C20       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C20       D55       1.0000                                            
+LD        Yolo Bypass outflow to Delta                                                    
+QC        A= B=C20-D55 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C20-D55 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7026,6 +8405,7 @@ LINK      DIVR      C38       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C38       D98       1.0000                                            
+LD        Mokelumne River Reach                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C38-D98 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7036,6 +8416,7 @@ LINK      DIVR      D44       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D44       D503      1.0000                                            
+LD        Sacramento River Reach                                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D44-D503 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7046,11 +8427,13 @@ LINK      DIVR      D503      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D503      D511      1.0000                                            
+LD        Sacramento River Reach, minimum instream flow requirement                       
 QL        A= B=D503-D511 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D503-D511 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D503      PMP_ISOL_F1.0000                        0.0000              
+LD        Sacramento River div. to Isol. Facility                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D503-PMP_ISOL_F C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7067,10 +8450,12 @@ LINK      DIVR      D511      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D511      D513      1.0000                                            
+LD        Sacramento River div. To Delta Cross Channel                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D511-D513 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D511      D55       1.0000              100.0000                      
+LD        Sacramento River Reach                                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D511-D55 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7081,6 +8466,8 @@ LINK      DIVR      D513      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D517      SINK      1.0000                                            
+LD        DA 59 local depletion                                                           
+QC        A= B=D517-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D517-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7097,6 +8484,7 @@ LINK      DIVR      D55       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D55       D507      1.0000                                            
+LD        Sacramento River Reach                                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D55-D507 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7107,6 +8495,7 @@ LINK      DIVR      D98       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D98       D517      1.0000                                            
+LD        Mokelumne River Reach, new location minimum instream flow requirement           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D98-D517 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7117,9 +8506,11 @@ LINK      DIVR      PMP_ISOL_FDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP05     A202      1.0000    40.0900             240.1400            
+LD        Agricultural groundwater pumping GW-5 to CVPM 5 Demand                          
 QI        A=init B=HGP05-A202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD101    C5        1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD101-C5 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7128,26 +8519,32 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD103B-C313 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD104    D61       1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD104-D61 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD202    C307      1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD202-C307 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD202    R201      1.0000                                            
+LD        Ag return flow supply for Gray Lodge Refuge. Assumed to be zero pending further 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD202-R201 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD202    R202      1.0000                        0.0000              
+LD        Ag return flow supply for Sutter Refuge. Assumed to be zero pending further inve
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD202-R202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSU202C80 HSR201    0.8800                                            
+LD        Thermalito After-bay delivery into Gray Lodge Refuge                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU202C80-HSR201 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSU202C80 HSR202    0.8800                                            
+LD        Thermalito After-bay delivery into Sutter Refuge                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU202C80-HSR202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7156,6 +8553,8 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N14-D30 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C5        SINK      1.0000                                            
+LD        DSA58 Projected Gain out based on CALSIM II.                                    
+QC        A= B=C5-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C5-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7166,6 +8565,7 @@ LINK      DIVR      C5        DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C5        C87       1.0000                                            
+LD        Sacramento River                                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C5-C87 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7176,6 +8576,7 @@ LINK      DIVR      C86       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C86       D75       1.0000                                            
+LD        Thomes Creek and Elder Creek inflow to Sacramento River                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C86-D75 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7204,6 +8605,7 @@ LINK      DIVR      A101      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A101      HU101     1.0000                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A101-HU101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7220,6 +8622,7 @@ LINK      DIVR      CVPM01S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM01S   HSD101    0.2950                                            
+LD        SW return flow from CVPM 1                                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM01S-HSD101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7236,6 +8639,7 @@ LINK      DIVR      HSU101D5  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU101D5  A101      0.9500                                            
+LD        Diversion from Sacramento River to CVPM 1 via Bella Vista Conduit               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU101D5-A101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7246,6 +8650,7 @@ LINK      DIVR      HSU101D74 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU101D74 A101      0.5200                                            
+LD        Sacramento river diversions between Keswick and Red Bluff Diversion Dam         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU101D74-A101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7256,6 +8661,7 @@ LINK      DIVR      HSU101SR3 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU101SR3 A101      0.9600                                            
+LD        Diversion to CVPM 1 via Whiskeytown Conduit                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU101SR3-A101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7266,6 +8672,7 @@ LINK      DIVR      HU101     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HU101     CVPM01G   1.0000                                            
+LD        inflows                                                                         
 QU        A= B=HU101-CVPM01G C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HU101-CVPM01G C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HU101-CVPM01G C=Q(KAF)-P_EDT D= E=FEB F=
@@ -7304,6 +8711,7 @@ LINK      DIVR      A102      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A102      HU102     1.0000                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A102-HU102 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7320,6 +8728,7 @@ LINK      DIVR      CVPM02S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM02S   HSD102    0.2550                                            
+LD        SW return flow from CVPM 2                                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM02S-HSD102 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7336,6 +8745,7 @@ LINK      DIVR      HSU102C1  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU102C1  A102      0.8800                                            
+LD        Sacramnto River diversions between Red Bluff and Ord Ferry to CVPM 2            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU102C1-A102 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7346,6 +8756,7 @@ LINK      DIVR      HSU102C11 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU102C11 A102      0.9500                                            
+LD        Tehema-Colusa Canal delivery to CVPM 2 (DA 10)                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU102C11-A102 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7356,6 +8767,7 @@ LINK      DIVR      HSU102C9  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU102C9  A102      0.8800                                            
+LD        Diversion from Stony Creek to CVPM 2 via North and South canals                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU102C9-A102 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7366,6 +8778,7 @@ LINK      DIVR      HSU102D77 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU102D77 A102      0.8800                                            
+LD        Sacramento River diversion to CVPM 2 via Corning Canal                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU102D77-A102 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7414,10 +8827,12 @@ LINK      DIVR      C1        DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C1        C4        1.0000                                            
+LD        Sacramento River between Red Bluff and Ord Ferry Reach 4, minimum instream flow 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C1-C4 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C1        HSU102C1  1.0000                        1.9800              
+LD        surface delivery CVPM 2                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C1-HSU102C1 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7428,6 +8843,7 @@ LINK      DIVR      C11       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C11       HSU102C11 1.0000                        1.0300              
+LD        surface delivery CVPM 2                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C11-HSU102C11 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7438,6 +8854,7 @@ LINK      DIVR      C12       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C12       C13       1.0000                                            
+LD        Stony Creek diversion to Glenn-Colusa Canal                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C12-C13 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7454,6 +8871,7 @@ LINK      DIVR      C2        DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C2        D74       1.0000                                            
+LD        Sacramento River between Cottonwood Creek and DA58 local inflow                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C2-D74 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7464,6 +8882,7 @@ LINK      DIVR      C4        DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C4        C69       1.0000                                            
+LD        Sacramento River between Red Bluff and Ord Ferry Reach 5, minimum instream flow 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C4-C69 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7474,6 +8893,7 @@ LINK      DIVR      C69       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C69       C13       1.0000                                            
+LD        Sacramento River diversion to Glenn Colusa Canal                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C69-C13 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7484,11 +8904,13 @@ LINK      DIVR      C9        DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C9        C12       1.0000                                            
+LD        Stony Creek between North and South canal diversions and Tehema-Colusa canal cro
 QL        A= B=C9-C12 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C9-C12 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C9        HSU102C9  1.0000                        29.3000             
+LD        surface delivery CVPM 2                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C9-HSU102C9 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7507,6 +8929,7 @@ LINK      DIVR      D5        DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D5        D73       1.0000                                            
+LD        Sacramento River between Keswick Reservoir and Clear Creek inflow, minimum instr
 QL        A= B=D5-D73 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=D5-D73 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=D5-D73 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -7523,6 +8946,7 @@ PQ        MO=DEC A= B=D5-D73 C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=D5-D73 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D5        HSU101D5  1.0000                        7.3000              
+LD        surface delivery CVPM 1                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D5-HSU101D5 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7530,6 +8954,8 @@ LINK      DIVR      D5        WTP101    1.0000    45.0000
 QI        A=init B=D5-WTP101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D73       SINK      1.0000                                            
+LD        GS60 GW-SW Interaction based on CALSIM II.                                      
+QC        A= B=D73-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D73-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7540,6 +8966,7 @@ LINK      DIVR      D73       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D73       C2        1.0000                                            
+LD        Sacramento River between Clear Creek and Cottonwood Creek                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D73-C2 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7550,6 +8977,7 @@ LINK      DIVR      D74       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D74       HSU101D74 1.0000                        25.3000             
+LD        surface delivery CVPM 1                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D74-HSU101D74 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7560,19 +8988,23 @@ LINK      DIVR      D77       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D77       C11       1.0000                                            
+LD        Sacramento River diversions to Tehama-Colusa Canal                              
 BU        155.61,140.55,155.61,150.59,155.61,150.59,155.61,155.61,150.59,155.61,150.59,155.61
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D77-C11 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D77       HSU102D77 1.0000                        29.7000             
+LD        surface delivery CVPM 2                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D77-HSU102D77 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM02HGR02     0.0010                                            
+LD        Exterior urban demand return flow                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM02-HGR02 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_ReddinHGR01     0.1000                                            
+LD        Return flows from redding exterior                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_Reddin-HGR01 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7583,6 +9015,7 @@ LINK      DIVR      GW_01     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_01     HGP01     1.0000                                            
+LD        Link to hidden node for calibration of GW-1                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_01-HGP01 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7593,6 +9026,7 @@ LINK      DIVR      GW_02     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_02     HGP02     1.0000                                            
+LD        Hidden GW pumping calibration link                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_02-HGP02 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7603,9 +9037,11 @@ LINK      DIVR      HGP01     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP01     A101      1.0000    39.4100             7.2100              
+LD        Agricultural groundwater pumping GW-1 to CVPM 1 Demand                          
 QI        A=init B=HGP01-A101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP01     U101      1.0000    39.4100                                 
+LD        Groundwater pumping to the city of Redding                                      
 QI        A=init B=HGP01-U101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   HGP02     1                                                 
@@ -7615,6 +9051,7 @@ LINK      DIVR      HGP02     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP02     A102      1.0000    43.5200             93.2300             
+LD        Agricultural groundwater pumping GW-2 to CVPM 2 Demand                          
 QI        A=init B=HGP02-A102 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP02     U102      1.0000    43.5200                                 
@@ -7627,6 +9064,7 @@ LINK      DIVR      HGR01     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR01     GW_01     1.0000                                            
+LD        Link from hidden node for calibration of GW-1                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR01-GW_01 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7637,14 +9075,17 @@ LINK      DIVR      HGR02     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR02     GW_02     1.0000                                            
+LD        Link from hidden node for calibration of GW-02                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR02-GW_02 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD102    C4        1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD102-C4 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      INT_CVPM02HGR02     0.0010                                            
+LD        Interior GW return flow from fixed CVPM urban pumping demand                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM02-HGR02 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7655,6 +9096,7 @@ LINK      DIVR      SR_BLB    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_BLB    C9        1.0000                                            
+LD        Reservoir release from Black Butte Dam to Stony Creek                           
 QL        A= B=SR_BLB-C9 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_BLB-C9 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -7666,6 +9108,7 @@ LINK      DIVR      SR_WHI    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_WHI    D5        1.0000                                            
+LD        Whiskeytown Lake export to Sacramento River via Spring Creek Power Conduit      
 BU        233.72,211.1,233.72,226.18,233.72,226.18,233.72,233.72,226.18,233.72,226.18,233.72
 PQ        MO=JAN A= B=SR_WHI-D5 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=SR_WHI-D5 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -7682,10 +9125,12 @@ PQ        MO=DEC A= B=SR_WHI-D5 C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_WHI-D5 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_WHI    D73       1.0000    0.0148                                  
+LD        Clear Creek inflow to Sacramento River, minimum instream flow requirement       
 QL        A= B=SR_WHI-D73 C=FLOW_LBT(KAF) D= E=1MON F=
 QI        A=init B=SR_WHI-D73 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_WHI    HSU101SR3 1.0000                        4.6000              
+LD        surface delivery CVPM 1                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_WHI-HSU101SR3 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7708,10 +9153,12 @@ LINK      DIVR      U102      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      U102      EXT_CVPM021.0000                                            
+QC        A= B=U102-EXT_CVPM02 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U102-EXT_CVPM02 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U102      INT_CVPM021.0000                                            
+QC        A= B=U102-INT_CVPM02 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U102-INT_CVPM02 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7748,6 +9195,7 @@ LINK      DIVR      HXI101    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI101    EXT_Reddin1.0000                                            
+LD        diversion for Redding exterior                                                  
 QU        A= B=HXI101-EXT_Reddin C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI101-EXT_Reddin C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI101-EXT_Reddin C=Q(KAF)-P_EDT D= E=FEB F=
@@ -7770,6 +9218,7 @@ LINK      DIVR      INT_ReddinDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_ReddinWWP101    0.9000                                            
+LD        Wastewater Return flows from the city of Redding                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_Reddin-WWP101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7780,10 +9229,12 @@ LINK      DIVR      U101      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      U101      HXI101    1.0000                                            
+LD        diversion for Redding exterior                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U101-HXI101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U101      INT_Reddin1.0000                                            
+LD        Water delivery to the community of Redding                                      
 QU        A= B=U101-INT_Reddin C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U101-INT_Reddin C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U101-INT_Reddin C=Q(KAF)-P_EDT D= E=FEB F=
@@ -7821,9 +9272,11 @@ LINK      DIVR      WWP101    HP101     1.0000    1800.0000           0.0000
 QI        A=init B=WWP101-HP101 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP101    C2        1.0000    50.0000             0.0000              
+LD        Surface water return flow from the city of Redding to the Sacramento River at Co
 QI        A=init B=WWP101-C2 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP101    HGR01     1.0000    50.0000                                 
+LD        Groundwater Return Flows from the City of Redding                               
 QI        A=init B=WWP101-HGR01 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   A202      1                                                 
@@ -7833,6 +9286,7 @@ LINK      DIVR      A202      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A202      HU202     1.1000                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A202-HU202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7849,6 +9303,7 @@ LINK      DIVR      CVPM05S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM05S   HSD202    0.3820                                            
+LD        SW return flow from CVPM 5                                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM05S-HSD202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7865,6 +9320,7 @@ LINK      DIVR      HSU202C35 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU202C35 A202      0.8800                                            
+LD        Bear River diversion to CVPM 5 (DA 69) - Tarr Ditch included here rather than un
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU202C35-A202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7875,6 +9331,7 @@ LINK      DIVR      HSU202C77 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU202C77 A202      0.8800                                            
+LD        Feather River diversion u/s of Oroville to CVPM 5 (DA 69) - Miocene & Wilenor ca
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU202C77-A202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7885,6 +9342,7 @@ LINK      DIVR      HSU202C80 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU202C80 A202      0.8800                                            
+LD        Feather River supply to CVPM 5 (DA 69)                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU202C80-A202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7895,6 +9353,7 @@ LINK      DIVR      HSU202C83 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU202C83 A202      0.8800                                            
+LD        Yuba River riparian diversions to CVPM 5 (DA 69)                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU202C83-A202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7905,6 +9364,7 @@ LINK      DIVR      HSU202D31 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU202D31 A202      0.9600                                            
+LD        Sacramento River to DSA 69 (Ord Ferry to Knights Landing)                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU202D31-A202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7925,6 +9385,7 @@ LINK      DIVR      HSU202SR_6DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU202SR_6A202      0.9600                                            
+LD        Diversion from Oroville Lake to CVPM 5 (DA 69) via Palermo canal                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU202SR_6-A202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7979,6 +9440,7 @@ LINK      DIVR      C27       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C27       SR_ENG    1.0000                                            
+LD        Yuba River inflow to Englebright Lake                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C27-SR_ENG C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7989,6 +9451,7 @@ LINK      DIVR      C28       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C28       C29       1.0000                                            
+LD        Yuba River between Deer Creek and French Dry Creek                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C28-C29 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -7999,6 +9462,8 @@ LINK      DIVR      C29       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C35       SINK      1.0000                                            
+LD        Boardman Canal Diversions                                                       
+QC        A= B=C35-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C35-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8009,6 +9474,7 @@ LINK      DIVR      C35       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C35       HSU202C35 1.0000                        8.7000              
+LD        Bear River diversion to CVPM 5 (DA 69) - Tarr Ditch included here rather than un
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C35-HSU202C35 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8024,10 +9490,12 @@ LINK      DIVR      C77       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C77       HSU202C77 1.0000                        5.6000              
+LD        Feather River diversion u/s of Oroville to CVPM 5 (DA 69) - Forbestown (Oroville
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C77-HSU202C77 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C77       SR_ORO    1.0000                                            
+LD        Feather River inflow to Lake Oroville                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C77-SR_ORO C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8042,6 +9510,8 @@ LINK      DIVR      CN2       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CN2       N201      1.0000                                            
+LD        Calibration flow added for historical CALVIN run S07I43                         
+QC        A= B=CN2-N201 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CN2-N201 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8052,6 +9522,8 @@ LINK      DIVR      D17       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      N201      SINK      1.0000                                            
+LD        Combie and Bear River Canal Diversions                                          
+QC        A= B=N201-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N201-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8067,6 +9539,8 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N201-N202 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      N202      SINK      1.0000                                            
+LD        Local Demand                                                                    
+QC        A= B=N202-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N202-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8077,6 +9551,7 @@ LINK      DIVR      N202      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      N202      SR_CFW    1.0000                                            
+LD        Bear River inflow to Camp Far West reservoir                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N202-SR_CFW C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8087,6 +9562,7 @@ LINK      DIVR      SR_BUL    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_BUL    C27       1.0000                                            
+LD        Reservoir release from New Bullards Bar toYuba River                            
 PQ        MO=JAN A= B=SR_BUL-C27 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=SR_BUL-C27 C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=SR_BUL-C27 C=Q(KAF)-P_EDT D= E=MAR F=
@@ -8114,6 +9590,7 @@ LINK      DIVR      SR_ENG    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_ENG    C28       1.0000                                            
+LD        Reservoir release from Englebright Dam to Yuba River                            
 QL        A= B=SR_ENG-C28 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=SR_ENG-C28 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=SR_ENG-C28 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -8136,6 +9613,7 @@ LINK      DIVR      SR_ORO    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_ORO    C23       1.0000                                            
+LD        Reservoir release from Oroville Dam to Feather River                            
 PQ        MO=JAN A= B=SR_ORO-C23 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=SR_ORO-C23 C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=SR_ORO-C23 C=Q(KAF)-P_EDT D= E=MAR F=
@@ -8151,6 +9629,7 @@ PQ        MO=DEC A= B=SR_ORO-C23 C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_ORO-C23 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_ORO    HSU202SR_61.0000                        3.2000              
+LD        Diversion from Oroville Lake to CVPM 5 (DA 69) via Palermo canal                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_ORO-HSU202SR_6 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8171,10 +9650,12 @@ LINK      DIVR      SR_BER    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_BER    C155      1.0000                                            
+LD        Reservoir release from Monticello Dam to Putah Creek                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_BER-C155 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_CFW    C33       1.0000                                            
+LD        Resevoir release from Camp Far West Dam to Bear River                           
 QL        A= B=SR_CFW-C33 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CFW-C33 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -8183,6 +9664,7 @@ LINK      DIVR      SR_ORO    WTP201    1.0000    45.0000
 QI        A=init B=SR_ORO-WTP201 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_SHA    D5        1.0000                                            
+LD        Sacramento River between Shasta Dam and Keswick Reservoir                       
 PQ        MO=JAN A= B=SR_SHA-D5 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=SR_SHA-D5 C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=SR_SHA-D5 C=Q(KAF)-P_EDT D= E=MAR F=
@@ -8198,17 +9680,23 @@ PQ        MO=DEC A= B=SR_SHA-D5 C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_SHA-D5 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP204    D44       1.0000    50.0000                                 
+LD        SW Discharge to Sacramento River                                                
 QI        A=init B=WWP204-D44 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D528      D509      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D528-D509 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D541      Req_Delta 1.0000                                            
+LD        Required Delta Outflow                                                          
+QC        A= B=D541-Req_Delta C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D541-Req_Delta C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D509      SINK      1.0000                                            
+LD        Only for climate change studies, for historical case all flows are zero.        
+QC        A= B=D509-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D509-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8219,6 +9707,7 @@ LINK      DIVR      D509      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D509      D541      1.0000                                            
+LD        Delta Outflow                                                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D509-D541 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8229,9 +9718,11 @@ LINK      DIVR      D541      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D541      Surp_Delta1.0000                                            
+LD        Surplus Delta Outflow                                                           
 QI        A=init B=D541-Surp_Delta C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      Surp_DeltaSINK      1.0000                                            
+LD        SURPLUS DELTA OUTFLOW                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=Surp_Delta-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8248,13 +9739,16 @@ LINK      DIVR      C201      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C201      C323      1.0000                                            
+LD        Mokelumne Aqueduct                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C201-C323 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C201      C71       1.0000    -74.0000            0.0000              
+LD        Proposed EMBUD transfer to Contra Costa Canal                                   
 QI        A=init B=C201-C71 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C315      SINK      1.0000                                            
+LD        Santa Clara local supply spills                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C315-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8265,6 +9759,7 @@ LINK      DIVR      C315      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C315      HARSC     1.0000                                            
+LD        Local Groundwater Recharge                                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C315-HARSC C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8278,6 +9773,7 @@ LINK      DIVR      C323      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C323      SR_EBMUD  1.0000                                            
+LD        Mokelumne Aqueduct                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C323-SR_EBMUD C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8288,6 +9784,7 @@ LINK      DIVR      C71       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C71       C201      1.0000    74.0000             0.0000              
+LD        Proposed Contra Costa Canal transfer to EBMUD                                   
 QI        A=init B=C71-C201 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C71       WTP208    1.0000                                            
@@ -8295,10 +9792,12 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C71-WTP208 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C78       C79       1.0000                                            
+LD        Hetch-Hetchy Aqueduct                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C78-C79 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C79       SR_SFAGG  1.0000                                            
+LD        Hetch Hetchy Aqueduct                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C79-SR_SFAGG C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8312,6 +9811,7 @@ LINK      DIVR      D528      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D528      PMP_Mallar1.0000                                            
+LD        Mallard Slough diversion to Pumping Plant                                       
 PQ        MO=JAN A= B=D528-PMP_Mallar C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=D528-PMP_Mallar C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=D528-PMP_Mallar C=Q(KAF)-P_EDT D= E=MAR F=
@@ -8333,10 +9833,12 @@ LINK      DIVR      D891      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D891      D892      1.0000                                            
+LD        South Bay Aqueduct                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D891-D892 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D891      PMP_DValle1.0000                                            
+LD        South Bay Aqueduct Diversion to Lake Del Valle                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D891-PMP_DValle C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8347,6 +9849,7 @@ LINK      DIVR      D892      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D892      D896      1.0000                                            
+LD        South Bay Aqueduct                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D892-D896 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8357,10 +9860,12 @@ LINK      DIVR      D896      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D896      D897      1.0000                                            
+LD        South Bay Aqueduct (end)                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D896-D897 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D896      HARSC     1.0000                                            
+LD        SCV urban groundwater Recharge from So Bay Aqueduct                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D896-HARSC C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8368,6 +9873,8 @@ LINK      DIVR      D896      WTP304    1.0000    140.6000
 QI        A=init B=D896-WTP304 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D897      SINK      1.0000                                            
+LD        South Bay Aqueduct losses                                                       
+QC        A= B=D897-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D897-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8400,6 +9907,7 @@ LINK      DIVR      PMP_DValleDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_DValleSR_DLV    1.0000                                            
+LD        South Bay Aqueduct, Del Vale Pump Plant release to Lake Del Valle               
 BU        7.4,6.7,7.4,7.2,7.4,7.2,7.4,7.4,7.2,7.4,7.2,7.4
 QI        A=init B=PMP_DValle-SR_DLV C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8410,6 +9918,7 @@ LINK      DIVR      PMP_MallarDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_MallarC71       1.0000    45.0000                                 
+LD        Mallard Slough Pumping Plant Release                                            
 BU        3.14,2.83,3.14,3.04,3.14,3.04,3.14,3.14,3.04,3.14,3.04,3.14
 QI        A=init B=PMP_Mallar-C71 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8420,6 +9929,7 @@ LINK      DIVR      PMP_WalnutDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_WalnutC201      1.0000                                            
+LD        Mokelumne River Aqueduct Pumping Plant                                          
 BU        30.71,27.75,30.71,29.72,30.71,29.72,30.71,30.71,29.72,30.71,29.72,30.71
 PQ        MO=JAN A= B=PMP_Walnut-C201 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=PMP_Walnut-C201 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -8436,6 +9946,7 @@ PQ        MO=DEC A= B=PMP_Walnut-C201 C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=PMP_Walnut-C201 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      Req_Delta SINK      1.0000                                            
+LD        Required Delta outflow                                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=Req_Delta-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8452,6 +9963,7 @@ LINK      DIVR      SR_DLV    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_DLV    D892      1.0000                                            
+LD        South bay Aqueduct, Lake Del Valle Release                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_DLV-D892 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8471,6 +9983,7 @@ LINK      DIVR      SR_SCAGG  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_SCAGG  C315      1.0000                                            
+LD        Santa Clara Agg Res Release                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_SCAGG-C315 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8487,6 +10000,7 @@ LINK      DIVR      SR_SFAGG  WTP304    1.0000    140.6000            13.5000
 QI        A=init B=SR_SFAGG-WTP304 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      ERES_CC   SINK      1.0000                                            
+LD        Exterior Urban Residential return flows to Sink                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=ERES_CC-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8513,6 +10027,7 @@ LINK      DIVR      HP208     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HP208     U208      1.0000                                            
+LD        Proposed wastewater recycling for CCWD                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HP208-U208 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8523,6 +10038,7 @@ LINK      DIVR      HXI208    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI208    ERES_CC   1.0000                                            
+LD        Exterior Residential Urban Penalty Function                                     
 QU        A= B=HXI208-ERES_CC C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI208-ERES_CC C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI208-ERES_CC C=Q(KAF)-P_EDT D= E=FEB F=
@@ -8539,6 +10055,7 @@ PQ        MO=DEC A= B=HXI208-ERES_CC C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=HXI208-ERES_CC C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HXI208    IND_CCWD  1.0000                                            
+LD        Industrial Urban Penalty Function                                               
 QU        A= B=HXI208-IND_CCWD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI208-IND_CCWD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI208-IND_CCWD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -8561,6 +10078,7 @@ LINK      DIVR      IND_CCWD  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IND_CCWD  WWP208    0.4000                                            
+LD        Ind Return flow TOTAL                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IND_CCWD-WWP208 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8571,6 +10089,7 @@ LINK      DIVR      IRES_CC   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IRES_CC   WWP208    0.9000                                            
+LD        Interior Urban Res Return flow TOTAL                                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IRES_CC-WWP208 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8585,6 +10104,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U208-HXI208 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U208      IRES_CC   1.0000                                            
+LD        Interior Residential Urban Penalty Function                                     
 QU        A= B=U208-IRES_CC C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U208-IRES_CC C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U208-IRES_CC C=Q(KAF)-P_EDT D= E=FEB F=
@@ -8610,6 +10130,7 @@ LINK      DIVR      WTP208    U208      1.0000    375.9200
 QI        A=init B=WTP208-U208 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP208    SINK      1.0000                                            
+LD        Contra Costa                                                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=WWP208-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8623,6 +10144,7 @@ LINK      DIVR      WWP208    HNP208    1.0000    518.0000            1.7000
 QI        A=init B=WWP208-HNP208 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP208    HP208     1.0000    1480.0000           0.0000              
+LD        Proposed wastewater recycling for CCWD                                          
 QI        A=init B=WWP208-HP208 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   C78       1                                                 
@@ -8662,6 +10184,7 @@ LINK      DIVR      HP209     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HP209     U209      1.0000                                            
+LD        Proposed wastewater recycling for EBMUD                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HP209-U209 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8672,6 +10195,7 @@ LINK      DIVR      HXI209    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI209    ERES_EBMUD1.0000                                            
+LD        Diversion for urban water delivery to exterior EBMUD                            
 QU        A= B=HXI209-ERES_EBMUD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI209-ERES_EBMUD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI209-ERES_EBMUD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -8688,6 +10212,7 @@ PQ        MO=DEC A= B=HXI209-ERES_EBMUD C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=HXI209-ERES_EBMUD C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HXI209    IND_EBMUD 1.0000                                            
+LD        EBMUD Ind Urban Penalty Function                                                
 QU        A= B=HXI209-IND_EBMUD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI209-IND_EBMUD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI209-IND_EBMUD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -8710,6 +10235,7 @@ LINK      DIVR      IND_EBMUD DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IND_EBMUD WWP209    0.4000                                            
+LD        EBMUD Ind Return Flow TOTAL                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IND_EBMUD-WWP209 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8720,6 +10246,7 @@ LINK      DIVR      IRES_EBMUDDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IRES_EBMUDWWP209    0.9000                                            
+LD        EBMUD Res Return flow TOTAL                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IRES_EBMUD-WWP209 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8730,6 +10257,7 @@ LINK      DIVR      U209      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      U209      C78       1.0000    51.8000                                 
+LD        EBMUD deliveries to SFPUC                                                       
 BU        0.88,0.79,0.88,0.85,0.88,0.85,0.88,0.88,0.85,0.88,0.85,0.88
 QI        A=init B=U209-C78 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8738,6 +10266,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U209-HXI209 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U209      IRES_EBMUD1.0000                                            
+LD        EBMUD ReservoirUrban Penalty Function                                           
 QU        A= B=U209-IRES_EBMUD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U209-IRES_EBMUD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U209-IRES_EBMUD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -8763,6 +10292,7 @@ LINK      DIVR      WTP209    U209      1.0000    30.0000
 QI        A=init B=WTP209-U209 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP209    SINK      1.0000                                            
+LD        East Bay MUD                                                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=WWP209-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8776,6 +10306,7 @@ LINK      DIVR      WWP209    HNP209    1.0000    518.0000            2.1200
 QI        A=init B=WWP209-HNP209 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP209    HP209     1.0000    1480.0000           0.0000              
+LD        Proposed wastewater recycling for EMBUD                                         
 QI        A=init B=WWP209-HP209 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   C79       1                                                 
@@ -8807,6 +10338,7 @@ LINK      DIVR      HP304     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HP304     U304      1.0000                                            
+LD        Proposed expanded wastewater treatment for SCV                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HP304-U304 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8817,6 +10349,7 @@ LINK      DIVR      HXI304    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI304    ERes_SCV  1.0000                                            
+LD        Exterior Residential Urban Penalty Function for SCV demand area (DAU 44, 45,62, 
 QU        A= B=HXI304-ERes_SCV C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI304-ERes_SCV C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI304-ERes_SCV C=Q(KAF)-P_EDT D= E=FEB F=
@@ -8833,6 +10366,7 @@ PQ        MO=DEC A= B=HXI304-ERes_SCV C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=HXI304-ERes_SCV C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HXI304    Ind_SCV   1.0000                                            
+LD        Industrial Urban Penalty Function for SCV (DAU 44, 45, 62 and 30% of 47); Includ
 QU        A= B=HXI304-Ind_SCV C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI304-Ind_SCV C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI304-Ind_SCV C=Q(KAF)-P_EDT D= E=FEB F=
@@ -8855,6 +10389,7 @@ LINK      DIVR      Ind_SCV   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      Ind_SCV   WWP304    0.4000                                            
+LD        Ind Return Flow Total                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=Ind_SCV-WWP304 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8865,6 +10400,7 @@ LINK      DIVR      IRES_SCV  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IRES_SCV  WWP304    0.9000                                            
+LD        Interior urban Res Return Flow Total                                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IRES_SCV-WWP304 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8875,6 +10411,7 @@ LINK      DIVR      U304      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      U304      C79       1.0000    -148.0000           0.0000              
+LD        Hypothetical Transfer from Santa Clara to SFPUC                                 
 QI        A=init B=U304-C79 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U304      HXI304    1.0000                                            
@@ -8882,6 +10419,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U304-HXI304 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U304      IRES_SCV  1.0000                                            
+LD        Interior Residential Urban Penalty Function for SCV demand area (DAU 44, 45,62, 
 QU        A= B=U304-IRES_SCV C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U304-IRES_SCV C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U304-IRES_SCV C=Q(KAF)-P_EDT D= E=FEB F=
@@ -8907,6 +10445,7 @@ LINK      DIVR      WTP304    U304      1.0000    375.9200
 QI        A=init B=WTP304-U304 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP304    SINK      1.0000                                            
+LD        Santa Clara waste                                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=WWP304-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -8920,6 +10459,7 @@ LINK      DIVR      WWP304    HNP304    1.0000    518.0000            1.3300
 QI        A=init B=WWP304-HNP304 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP304    HP304     1.0000    1480.0000           0.0000              
+LD        Proposed expanded wastewater treatment facility for SCV                         
 QI        A=init B=WWP304-HP304 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      ERES_SF   SINK      1.0000                                            
@@ -8959,6 +10499,7 @@ LINK      DIVR      HXI301    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI301    ERES_SF   1.0000                                            
+LD        Exterior Residential (+com+gov"t) Urban Penalty Function for SFPUC demand area (
 QU        A= B=HXI301-ERES_SF C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI301-ERES_SF C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI301-ERES_SF C=Q(KAF)-P_EDT D= E=FEB F=
@@ -8975,6 +10516,7 @@ PQ        MO=DEC A= B=HXI301-ERES_SF C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=HXI301-ERES_SF C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HXI301    IND_SFPUC 1.0000                                            
+LD        Industrial Urban Penalty Function for SFPUC demand area (DAU 43) includes City a
 QU        A= B=HXI301-IND_SFPUC C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI301-IND_SFPUC C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI301-IND_SFPUC C=Q(KAF)-P_EDT D= E=FEB F=
@@ -8997,6 +10539,7 @@ LINK      DIVR      IND_SFPUC DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IND_SFPUC WWP301    0.4000                                            
+LD        Ind Return Flow Total                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IND_SFPUC-WWP301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9007,6 +10550,7 @@ LINK      DIVR      IRES_SF   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IRES_SF   WWP301    0.9000                                            
+LD        Interior Urban Res Return Flow Total                                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IRES_SF-WWP301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9021,6 +10565,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U301-HXI301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U301      IRES_SF   1.0000                                            
+LD        Interior Residential (+com+gov"t) Urban Penalty Function for SFPUC demand area (
 QU        A= B=U301-IRES_SF C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U301-IRES_SF C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U301-IRES_SF C=Q(KAF)-P_EDT D= E=FEB F=
@@ -9046,6 +10591,7 @@ LINK      DIVR      WTP301    U301      1.0000    30.0000
 QI        A=init B=WTP301-U301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP301    SINK      1.0000                                            
+LD        San Francisco waste                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=WWP301-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9062,25 +10608,30 @@ LINK      DIVR      WWP301    HP301     1.0000    1800.0000           0.0000
 QI        A=init B=WWP301-HP301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP304    HARSC     1.0000    50.0000             6.0000              
+LD        artificial groundwater recharge using waste water                               
 QI        A=init B=WWP304-HARSC C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP304    HGRSC     1.0000    50.0000             0.0000              
 QI        A=init B=WWP304-HGRSC C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C310      C70       1.0000                                            
+LD        Los Vaqueros delivery to Contra Costa Canal                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C310-C70 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C310      PMP_LosVaq1.0000                                            
+LD        Diversion to Los Vaqueros Pumping Plant                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C310-PMP_LosVaq C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C41       C42       1.0000                                            
+LD        Calaveras R Reach                                                               
 QL        A= B=C41-C42 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C41-C42 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C43       HSU207C43 1.0000                        11.0000             
+LD        Central San Joaquin ID from Stanislaus River diversion to CVPM 8                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C43-HSU207C43 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9088,59 +10639,73 @@ LINK      DIVR      C43       WTP210    1.0000    45.0000
 QI        A=init B=C43-WTP210 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C72       HSU306C72 1.0000                        89.5000             
+LD        surface delivery CVPM 13                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C72-HSU306C72 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D609      D608      1.0000                                            
+LD        San Joaquin River flood flow to Mendota Pool                                    
 QL        A= B=D609-D608 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D609-D608 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D612      D676      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D612-D676 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D616      C42       1.0000    -0.0296                                 
+LD        San Joaquin outflow from Reg 3 at Vernalis - Minimum in-stream flow requirement 
 QL        A= B=D616-C42 C=FLOW_LBT(KAF) D= E=1MON F=
 QI        A=init B=D616-C42 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D624      C48       1.0000                                            
+LD        Fresno River Reach                                                              
 QL        A= B=D624-C48 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D624-C48 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D624      HAR13     1.0000    6.5000                                  
+LD        Artificial Recharge diversion from Fresno R riparian                            
 QI        A=init B=D624-HAR13 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D624      HSU306D6241.0000                        62.9000             
+LD        surface delivery CVPM 13                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D624-HSU306D624 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D634      C47       1.0000                                            
+LD        Chowchilla River Reach                                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D634-C47 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D634      HAR13     1.0000    6.5000                                  
+LD        Artificial recharge from Chowchilla R riparian to GW-13                         
 QI        A=init B=D634-HAR13 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D634      HSU306D6341.0000                        47.2000             
+LD        surface delivery CVPM 13                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D634-HSU306D634 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D642      D643      1.0000                                            
+LD        Merced River Reach                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D642-D643 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D662      D663      1.0000                                            
+LD        Tuolumne River Reach - Minimum instream flow requirement Sanjasm CP75           
 QL        A= B=D662-D663 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D662-D663 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D662      HSU302D6621.0000                        66.0000             
+LD        surface delivery CVPM 11                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D662-HSU302D662 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D662      HSU305D6621.0000                        117.8000            
+LD        surface delivery CVPM 12                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D662-HSU305D662 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9151,60 +10716,74 @@ LINK      DIVR      D662      WTP305    1.0000    45.0000             107.1000
 QI        A=init B=D662-WTP305 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D664      D683      1.0000                                            
+LD        Tuolumne River Reach.  Minimum instream flow requirement.                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D664-D683 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D675      D676      1.0000                                            
+LD        Stanislaus River Reach                                                          
 QL        A= B=D675-D676 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D675-D676 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D689      D612      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D689-D612 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D689      HSU302D6891.0000                                            
+LD        surface delivery CVPM 11                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D689-HSU302D689 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D691      D694      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D691-D694 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D694      D695      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D694-D695 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D694      HSU306D6941.0000                        0.5500              
+LD        surface delivery CVPM 13                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D694-HSU306D694 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D699      C10       1.0000                                            
+LD        San Joaquin River riparian diversions                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D699-C10 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D699      D683      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D699-D683 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D701      D800      1.0000    14.8000                                 
+LD        California Aqueduct - Delta Mendota Canal Intertie                              
 BU        24.59,22.21,24.59,23.8,24.59,23.8,24.59,24.59,23.8,24.59,23.8,24.8
 QI        A=init B=D701-D800 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D731      D732      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D731-D732 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D731      HSU306D7311.0000                        10.3000             
+LD        surface delivery CVPM 13                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D731-HSU306D731 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D801      D803      1.0000                                            
+LD        California Aqueduct                                                             
 BU        615.04,555.52,615.04,595.2,615.04,595.2,615.04,615.04,595.2,615.04,595.2,615.04
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D801-D803 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D814      PMP_Gianel1.0000                                            
+LD        California Aqueduct div to San Luis Res                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D814-PMP_Gianel C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9215,6 +10794,7 @@ LINK      DIVR      A206      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A206      HU206     1.0120                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A206-HU206 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9231,6 +10811,7 @@ LINK      DIVR      CVPM09S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM09S   HSD206    0.3210                                            
+LD        SW return flow from CVPM 9                                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM09S-HSD206 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9247,6 +10828,7 @@ LINK      DIVR      HSU206D507DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU206D507A206      0.9300                                            
+LD        Sacramento River div. to CVPM9                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU206D507-A206 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9257,6 +10839,7 @@ LINK      DIVR      HSU206D515DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU206D515A206      0.9300                                            
+LD        Delta diversion to CVPM 9                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU206D515-A206 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9267,6 +10850,7 @@ LINK      DIVR      HSU206D521DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU206D521A206      0.9300                                            
+LD        San Joaquin River div. to CVPM9                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU206D521-A206 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9277,6 +10861,7 @@ LINK      DIVR      HSU206D523DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU206D523A206      1.0000                                            
+LD        San Joaquin River div. to CVPM9                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU206D523-A206 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9325,14 +10910,17 @@ LINK      DIVR      C309      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C309      D550      1.0000                        0.0000              
+LD        Isolated Facility Distribution                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C309-D550 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C309      D59       1.0000                                            
+LD        Old River                                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C309-D59 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C309      PMP_Old_R 1.0000                                            
+LD        Diversion to Old River Pumping Plant                                            
 PQ        MO=JAN A= B=C309-PMP_Old_R C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=C309-PMP_Old_R C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=C309-PMP_Old_R C=Q(KAF)-P_EDT D= E=MAR F=
@@ -9360,6 +10948,7 @@ LINK      DIVR      C42       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C42       D521      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C42-D521 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9374,10 +10963,12 @@ LINK      DIVR      D515      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D515      D522      1.0000                                            
+LD        Delta - ?                                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D515-D522 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D515      HSU206D5151.0000                        51.2000             
+LD        Delta diversion to CVPM 9                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D515-HSU206D515 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9388,10 +10979,12 @@ LINK      DIVR      D521      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D521      D522      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D521-D522 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D521      HSU206D5211.0000                        36.6000             
+LD        San Joaquin River div. to CVPM9                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D521-HSU206D521 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9402,6 +10995,7 @@ LINK      DIVR      D522      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D522      D523      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D522-D523 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9412,10 +11006,12 @@ LINK      DIVR      D523      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D523      D525      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D523-D525 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D523      HSU206D5231.0000                        80.4000             
+LD        San Joaquin River div. to CVPM9                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D523-HSU206D523 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9426,6 +11022,7 @@ LINK      DIVR      D525      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D525      D550      1.0000                                            
+LD        Old River                                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D525-D550 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9436,10 +11033,12 @@ LINK      DIVR      D550      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D550      C309      1.0000                                            
+LD        Old River                                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D550-C309 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D550      PMP_CC1   1.0000                                            
+LD        Rock Slough Diversion to Contra Costa 1 Pumping Plant                           
 PQ        MO=JAN A= B=D550-PMP_CC1 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=D550-PMP_CC1 C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=D550-PMP_CC1 C=Q(KAF)-P_EDT D= E=MAR F=
@@ -9461,18 +11060,22 @@ LINK      DIVR      D59       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D59       C309      1.0000                        0.0000              
+LD        Isolated Facility Distribution                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D59-C309 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D59       PMP_Banks 1.0000                                            
+LD        California Aqueduct, diversion to Banks Pumping Plant                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D59-PMP_Banks C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D59       PMP_Tracy 1.0000                                            
+LD        Delta Mendota Canal, diversion to Tracy Pumping Plant                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D59-PMP_Tracy C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM09HGR09     0.0010                                            
+LD        Return flows from CVPM9 exterior                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM09-HGR09 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9483,6 +11086,7 @@ LINK      DIVR      GW_09     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_09     HGP09     1.0000                                            
+LD        GW-9 Pumping calibration link                                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_09-HGP09 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9493,6 +11097,7 @@ LINK      DIVR      HGP09     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP09     A206      1.0000    39.0600             50.0000             
+LD        Agricultural groundwater pumping GW-9 to CVPM 9 Demand                          
 QI        A=init B=HGP09-A206 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP09     U206      1.0000    39.0600                                 
@@ -9505,10 +11110,12 @@ LINK      DIVR      HGR09     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR09     GW_09     1.0000                                            
+LD        Link from hidden node for calibration of GW-9                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR09-GW_09 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      INT_CVPM09HGR09     0.0010                                            
+LD        GW return flow from fixed CVPM urban pumping demand                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM09-HGR09 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9531,6 +11138,7 @@ LINK      DIVR      PMP_Old_R DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_Old_R C310      1.0000    37.9620                                 
+LD        Old River Pumping Plant release                                                 
 BU        15.38,13.89,15.38,14.88,15.38,14.88,15.38,15.38,14.88,15.38,14.88,15.38
 QI        A=init B=PMP_Old_R-C310 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9559,10 +11167,12 @@ LINK      DIVR      U206      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      U206      EXT_CVPM091.0000                                            
+QC        A= B=U206-EXT_CVPM09 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U206-EXT_CVPM09 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U206      INT_CVPM091.0000                                            
+QC        A= B=U206-INT_CVPM09 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U206-INT_CVPM09 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9573,10 +11183,12 @@ LINK      DIVR      C72       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C72       D622      0.9100                        0.0000              
+LD        Madera Canal wasteway to Fresno River                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C72-D622 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C72       D632      0.9100                        0.0000              
+LD        Madera Canal wasteway to Chowchilla River                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C72-D632 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9587,6 +11199,7 @@ LINK      DIVR      D622      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D622      D624      1.0000                                            
+LD        Fresno River Reach                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D622-D624 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9603,6 +11216,7 @@ LINK      DIVR      D632      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D632      D634      1.0000                                            
+LD        Chowchilla River Reach                                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D632-D634 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9625,6 +11239,7 @@ LINK      DIVR      SR_BUC    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_BUC    D632      1.0000                                            
+LD        Reservoir release from Buchanan Dam to Chowchilla River                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_BUC-D632 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9635,6 +11250,7 @@ LINK      DIVR      SR_HID    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_HID    D622      1.0000                                            
+LD        Reservoir release from Hidden Dam to Fresno River                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_HID-D622 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9645,6 +11261,7 @@ LINK      DIVR      SR_MCR    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_MCR    D642      1.0000                                            
+LD        Reservoir release from New Exchequer Dam to Merced River.  Hydropower added.    
 PQ        MO=JAN A= B=SR_MCR-D642 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=SR_MCR-D642 C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=SR_MCR-D642 C=Q(KAF)-P_EDT D= E=MAR F=
@@ -9666,6 +11283,7 @@ LINK      DIVR      SR_MIL    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_MIL    C72       1.0000                                            
+LD        Diversion from Millerton Lake to Madera Canal                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_MIL-C72 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9676,6 +11294,7 @@ LINK      DIVR      A207      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A207      HU207     1.0090                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A207-HU207 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9692,6 +11311,7 @@ LINK      DIVR      CVPM08S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM08S   HSD207    0.3050                                            
+LD        SW return flow from CVPM 8                                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM08S-HSD207 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9708,6 +11328,7 @@ LINK      DIVR      HSU207C173DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU207C173A207      0.8800                                            
+LD        Folsom South Canal diversion to CVPM8                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU207C173-A207 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9718,6 +11339,7 @@ LINK      DIVR      HSU207C37 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU207C37 A207      0.8800                                            
+LD        Cosumnes River riparian diversions to CVPM 8                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU207C37-A207 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9728,6 +11350,7 @@ LINK      DIVR      HSU207C43 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU207C43 A207      0.9200                                            
+LD        Central San Joaquin ID from Stanislaus River diversion to CVPM 8                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU207C43-A207 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9738,6 +11361,7 @@ LINK      DIVR      HSU207D98 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU207D98 A207      0.8800                                            
+LD        Mokelumne riparian diversions To CVPM8                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU207D98-A207 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9786,6 +11410,7 @@ LINK      DIVR      C37       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C37       HSU207C37 1.0000                        2.4000              
+LD        Cosumnes River riparian diversions to CVPM 8                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C37-HSU207C37 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9802,6 +11427,7 @@ LINK      DIVR      C40       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C40       C41       1.0000                                            
+LD        Calaveras R Reach                                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C40-C41 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9819,6 +11445,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM08G-HGR08 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM08HGR08     0.0020                                            
+LD        Return flows from CVPM8, Galt, exterior                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM08-HGR08 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9829,6 +11456,7 @@ LINK      DIVR      GW_08     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_08     HGP08     1.0000                                            
+LD        Link to hidden node for calibration of GW-8                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_08-HGP08 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9839,12 +11467,15 @@ LINK      DIVR      HGP08     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP08     A207      1.0000    74.7100             185.6200            
+LD        Agricultural groundwater pumping GW-8 to CVPM 8 Demand                          
 QI        A=init B=HGP08-A207 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP08     U207      1.0000    74.7100                                 
+LD        M&I pumping demand to CVPM 8 urban representing Galt                            
 QI        A=init B=HGP08-U207 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP08     U210      1.0000    103.6000            10.0000             
+LD        GW-8 to Stockton Urban                                                          
 QI        A=init B=HGP08-U210 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   HGR08     1                                                 
@@ -9854,6 +11485,7 @@ LINK      DIVR      HGR08     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR08     GW_08     1.0000                                            
+LD        Link from hidden node for calibration of GW-8                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR08-GW_08 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9896,6 +11528,7 @@ LINK      DIVR      HXI207    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI207    EXT_CVPM081.0000                                            
+LD        Diversion to CVPM8, Galt exterior                                               
 QU        A= B=HXI207-EXT_CVPM08 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI207-EXT_CVPM08 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI207-EXT_CVPM08 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -9918,6 +11551,7 @@ LINK      DIVR      INT_CVPM08DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_CVPM08WWP207    0.9000                                            
+LD        Wastewater return flows from CVPM 8 Galt                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM08-WWP207 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -9932,6 +11566,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U207-HXI207 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U207      INT_CVPM081.0000                                            
+LD        Water delivery to CVPM8 representing Galt                                       
 QU        A= B=U207-INT_CVPM08 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U207-INT_CVPM08 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U207-INT_CVPM08 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -10005,6 +11640,7 @@ LINK      DIVR      HXI210    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI210    EXT_STOCK 1.0000                                            
+LD        inflow exterior urban                                                           
 QU        A= B=HXI210-EXT_STOCK C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI210-EXT_STOCK C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI210-EXT_STOCK C=Q(KAF)-P_EDT D= E=FEB F=
@@ -10027,6 +11663,7 @@ LINK      DIVR      INT_STOCK DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_STOCK WWP210    0.9500                                            
+LD        interior urban Res Return Flow TOTAL                                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_STOCK-WWP210 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10041,6 +11678,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U210-HXI210 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U210      INT_STOCK 1.0000                                            
+LD        Residential Urban Penalty Function                                              
 QU        A= B=U210-INT_STOCK C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U210-INT_STOCK C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U210-INT_STOCK C=Q(KAF)-P_EDT D= E=FEB F=
@@ -10078,36 +11716,46 @@ LINK      DIVR      WWP210    HP210     1.0000    1800.0000           0.0000
 QI        A=init B=WWP210-HP210 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP207    HGR08     1.0000    50.0000                                 
+LD        GW return flow from CVPM 8 (Galt) urban pumping demand                          
 QI        A=init B=WWP207-HGR08 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP210    HGR08     0.0020    50.0000             0.0000              
+LD        Stockton return flow to GW-8                                                    
 QI        A=init B=WWP210-HGR08 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD303    D612      1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD303-D612 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD306    R302      1.0000                        0.0000              
+LD        Ag return flow supply for West of San Joaquin River refuges. Assumed to be zero 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD306-R302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSUR302   R_SJW     1.0000                                            
+LD        Deliveries to the San Joaquin West Refuges which includes West Bear Creek, Fries
+QC        A= B=HSUR302-R_SJW C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSUR302-R_SJW C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      PMP_Banks D800      1.0000                                            
+LD        Exports from the Sacramento-San Joaquin Bay Delta to Central Valley and Southern
 QU        A= B=PMP_Banks-D800 C=FLOW_UBT(KAF) D= E=1MON F=
 QI        A=init B=PMP_Banks-D800 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      PMP_CC1   C70       1.0000                                            
+LD        Contra Costa Canal Pumping Plant 1                                              
 BU        18.45,16.67,18.45,17.86,18.45,17.86,18.45,18.45,17.86,18.45,17.86,18.45
 QI        A=init B=PMP_CC1-C70 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      PMP_Tracy D701      1.0000                                            
+LD        Delta Exports from Tracy PMP                                                    
 BU        282.92,255.54,282.92,273.79,282.79,273.79,282.92,282.92,273.79,282.92,273.79,282.92
 QI        A=init B=PMP_Tracy-D701 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      PWP_GianelD816      1.0000                                            
+LD        Gianelli Power Plant release to CA Aqueduct and Delta Mendota Canal             
 BU        1042.8,941.9,1042.8,1009.2,1042.8,1009.2,1042.8,1042.8,1009.2,1042.8,1009.2,1042.8
 PQ        MO=JAN A= B=PWP_Gianel-D816 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=PWP_Gianel-D816 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -10124,10 +11772,12 @@ PQ        MO=DEC A= B=PWP_Gianel-D816 C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=PWP_Gianel-D816 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      R302      HSUR302   1.0000                                            
+LD        On-site reuse within refuges. WMPs indicate presence of on-site operational loss
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R302-HSUR302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      R_SJW     D612      0.2500                                            
+LD        West of San Joaquin Refuges return flow                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R_SJW-D612 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10144,6 +11794,7 @@ LINK      DIVR      C44       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C44       C88       1.0000                                            
+LD        Hetch Hetchy Aqueduct.  Mocassin hydropower added on this link.                 
 BU        28.54,25.76,28.54,27.62,28.54,27.62,28.54,28.54,27.62,28.54,27.62,28.54
 PQ        MO=JAN A= B=C44-C88 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=C44-C88 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -10178,10 +11829,12 @@ LINK      DIVR      D670      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D670      C43       1.0000                                            
+LD        Stanislaus diversion to SEWD and SJID in CVPM 8                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D670-C43 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D670      SR_TUL    1.0000                                            
+LD        Stanislaus River inflow to Turlock Reservoir                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D670-SR_TUL C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10192,10 +11845,12 @@ LINK      DIVR      SR_DNP    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_DNP    C88       1.0000                        0.0000              
+LD        New Don Pedro - HH Aqueduct connection.  New pipeline for greater conveyance/fle
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_DNP-C88 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_DNP    D662      1.0000                                            
+LD        Reservoir release from New Don Pedro Dam to Tuolumne River, inflow to la Grange 
 QL        A= B=SR_DNP-D662 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=SR_DNP-D662 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=SR_DNP-D662 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -10218,6 +11873,7 @@ LINK      DIVR      SR_HTH    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_HTH    C44       1.0000                                            
+LD        Diversion from Hetch Hetchy Reservoir to Canyon Tunnel.  Kirkwood hydropower add
 PQ        MO=JAN A= B=SR_HTH-C44 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=SR_HTH-C44 C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=SR_HTH-C44 C=Q(KAF)-P_EDT D= E=MAR F=
@@ -10233,6 +11889,7 @@ PQ        MO=DEC A= B=SR_HTH-C44 C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=SR_HTH-C44 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_HTH    SR_DNP    1.0000                                            
+LD        Hetch Hetchy Release to New Don Pedro Reservoir                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_HTH-SR_DNP C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10243,11 +11900,13 @@ LINK      DIVR      SR_LL_ENR DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_LL_ENR C44       1.0000                                            
+LD        Lower Cherry Creek Aqueduct                                                     
 BU        9.53,8.61,9.53,9.23,9.53,9.23,9.53,9.53,9.23,9.53,9.23,9.53
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_LL_ENR-C44 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_LL_ENR SR_DNP    1.0000                                            
+LD        Cherry Creek inflow to Tuolumne River.  Holm hydropower added on this link.     
 PQ        MO=JAN A= B=SR_LL_ENR-SR_DNP C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=SR_LL_ENR-SR_DNP C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=SR_LL_ENR-SR_DNP C=Q(KAF)-P_EDT D= E=MAR F=
@@ -10275,6 +11934,7 @@ LINK      DIVR      SR_NML    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_NML    D670      1.0000                                            
+LD        Reservoir release from New Melones Dam to Stanislaus River.  Hydropower added.  
 PQ        MO=JAN A= B=SR_NML-D670 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=SR_NML-D670 C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=SR_NML-D670 C=Q(KAF)-P_EDT D= E=MAR F=
@@ -10302,23 +11962,28 @@ LINK      DIVR      SR_TUL    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_LVQ    C310      1.0000                                            
+LD        Los Vaqueros Reservoir Release                                                  
 BU        12.3,11.11,12.3,11.9,12.3,11.9,12.3,12.3,11.9,12.3,11.9,12.3
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_LVQ-C310 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_NHG    C40       1.0000                                            
+LD        Resevoir release from New Hogan Dam to Calaveras River                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_NHG-C40 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_PAR    C39       1.0000                                            
+LD        Diversion from Pardee Reservoir to Mokelumne River Aqueduct (EBMUD)             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_PAR-C39 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_PAR    SR_CMN    1.0000                                            
+LD        Reservoir release from Pardee Dam and inflow to Camanche Reservoir              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_PAR-SR_CMN C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_TUL    D16       1.0000                                            
+LD        Stanislaus River between Turlock Reservoir and Goodwin Dam                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_TUL-D16 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10329,6 +11994,7 @@ LINK      DIVR      A302      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A302      HU302     1.0520                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A302-HU302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10345,6 +12011,7 @@ LINK      DIVR      CVPM11S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM11S   HSD302    0.3080                                            
+LD        SW return flow from CVPM 11                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM11S-HSD302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10361,6 +12028,7 @@ LINK      DIVR      HSU302D16 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU302D16 A302      0.8200                                            
+LD        Oakdale and South San Joaquin canal diversion from Stanislaus River to CVPM11   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU302D16-A302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10371,6 +12039,7 @@ LINK      DIVR      HSU302D662DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU302D662A302      0.8200                                            
+LD        Modesto canal diversions from Tuolumne River to CVPM11                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU302D662-A302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10381,6 +12050,7 @@ LINK      DIVR      HSU302D664DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU302D664A302      0.8200                                            
+LD        Tuolumne River riparian diversions to CVPM11                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU302D664-A302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10391,6 +12061,7 @@ LINK      DIVR      HSU302D672DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU302D672A302      0.8200                                            
+LD        Stanislaus River riparian diversions to CVPM11                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU302D672-A302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10401,6 +12072,7 @@ LINK      DIVR      HSU302D689DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU302D689A302      0.8200                                            
+LD        San Joaquin River riparian diversions to CVPM 11                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU302D689-A302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10449,6 +12121,7 @@ LINK      DIVR      A305      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A305      HU305     1.0370                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A305-HU305 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10465,6 +12138,7 @@ LINK      DIVR      CVPM12S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM12S   HSD305    0.2810                                            
+LD        SW return flow from CVPM 12                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM12S-HSD305 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10481,6 +12155,7 @@ LINK      DIVR      HSU305D645DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU305D645A305      0.8200                                            
+LD        Merced ID supply from Merced River via Northside canal                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU305D645-A305 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10491,6 +12166,7 @@ LINK      DIVR      HSU305D649DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU305D649A305      0.8200                                            
+LD        Merced River right bank riparian diversions                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU305D649-A305 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10501,6 +12177,7 @@ LINK      DIVR      HSU305D662DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU305D662A305      0.8200                                            
+LD        Turlock canal diversions from Tuolumne River to CVPM12                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU305D662-A305 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10511,6 +12188,7 @@ LINK      DIVR      HSU305D664DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU305D664A305      0.8200                                            
+LD        Tuolumne River left bank riparian diversions                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU305D664-A305 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10521,6 +12199,7 @@ LINK      DIVR      HSU305D699DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU305D699A305      0.8200                                            
+LD        San Joaquin River riparian diversions to CVPM 12                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU305D699-A305 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10569,6 +12248,7 @@ LINK      DIVR      A306      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A306      HU306     1.0010                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A306-HU306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10585,6 +12265,7 @@ LINK      DIVR      CVPM13S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM13S   HSD306    0.2860                                            
+LD        SW return flow from CVPM 13                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM13S-HSD306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10601,6 +12282,7 @@ LINK      DIVR      HSU306C72 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU306C72 A306      0.8800                                            
+LD        Madera Canal Delivery                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU306C72-A306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10611,6 +12293,7 @@ LINK      DIVR      HSU306D606DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU306D606A306      0.9400                                            
+LD        San Joaquin River right bank riparian diversions between Friant dam and Gravelly
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU306D606-A306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10621,6 +12304,7 @@ LINK      DIVR      HSU306D624DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU306D624A306      0.8200                                            
+LD        Fresno River diversions to CVPM13                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU306D624-A306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10631,6 +12315,7 @@ LINK      DIVR      HSU306D634DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU306D634A306      0.8200                                            
+LD        Chowchilla River diversions to CVPM13                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU306D634-A306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10641,6 +12326,7 @@ LINK      DIVR      HSU306D645DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU306D645A306      0.8200                                            
+LD        Merced ID North Side & Main Canals diversions from Merced River                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU306D645-A306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10651,6 +12337,7 @@ LINK      DIVR      HSU306D649DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU306D649A306      0.8200                                            
+LD        Merced River riparian diversions to CVPM13                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU306D649-A306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10661,6 +12348,7 @@ LINK      DIVR      HSU306D694DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU306D694A306      0.8200                                            
+LD        San Joaquin River riparian diversions between Mendota Pool and Merced to CVPM13 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU306D694-A306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10671,6 +12359,7 @@ LINK      DIVR      HSU306D731DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU306D731A306      0.8800                                            
+LD        Mendota Pool to CVPM 13 (DA 49D)                                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU306D731-A306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10719,6 +12408,7 @@ LINK      DIVR      C47       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C47       D692      1.0000                                            
+LD        Eastside Bypass                                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C47-D692 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10729,6 +12419,7 @@ LINK      DIVR      C48       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C48       C47       1.0000                                            
+LD        Chowchilla Bypass                                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C48-C47 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10751,11 +12442,13 @@ LINK      DIVR      D16       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D16       D653a     1.0000                                            
+LD        Stanislaus River Reach                                                          
 BU        492.03,444.42,492.03,476.16,492.03,476.16,492.03,492.03,476.16,492.03,476.16,492.03
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D16-D653a C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D16       HSU302D16 1.0000                        111.3000            
+LD        surface delivery CVPM 11                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D16-HSU302D16 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10769,6 +12462,7 @@ LINK      DIVR      D609      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D609      C48       1.0000                                            
+LD        San Joaquin River diversion to Chowchilla Bypass                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D609-C48 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10785,10 +12479,13 @@ LINK      DIVR      D619      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D619      D691      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D619-D691 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D643      SINK      1.0000                                            
+LD        Depetion: upper Merced River                                                    
+QC        A= B=D643-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D643-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10799,6 +12496,7 @@ LINK      DIVR      D643      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D643      D645      1.0000                                            
+LD        Merced River Reach                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D643-D645 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10809,15 +12507,18 @@ LINK      DIVR      D645      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D645      D646      1.0000                                            
+LD        Merced River Reach - Instream Flow Requirement downstream of Sanjasm CP50       
 QL        A= B=D645-D646 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D645-D646 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D645      HSU305D6451.0000                        5.9000              
+LD        surface delivery CVPM 12                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D645-HSU305D645 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D645      HSU306D6451.0000                        122.5000            
+LD        surface delivery CVPM 13                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D645-HSU306D645 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10831,10 +12532,13 @@ LINK      DIVR      D646      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D646      D647      1.0000                                            
+LD        Merced River Reach                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D646-D647 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D647      SINK      1.0000                                            
+LD        Depletion: lower Merced River                                                   
+QC        A= B=D647-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D647-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10845,6 +12549,7 @@ LINK      DIVR      D647      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D647      D649      1.0000                                            
+LD        Merced River Reach                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D647-D649 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10855,15 +12560,18 @@ LINK      DIVR      D649      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D649      D695      1.0000                                            
+LD        Merced River Reach, minimum instream flow requirement near mouth - Sanjasm CP55 
 QL        A= B=D649-D695 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D649-D695 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D649      HSU305D6491.0000                        13.4000             
+LD        surface delivery CVPM 12                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D649-HSU305D649 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D649      HSU306D6491.0000                        4.7300              
+LD        surface delivery CVPM 13                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D649-HSU306D649 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10874,10 +12582,13 @@ LINK      DIVR      D653a     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D653a     D653b     1.0000                                            
+LD        Stanislaus River Reach - Minimum instream flow below Goodwin Sanjasm CP110      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D653a-D653b C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D653b     SINK      1.0000                                            
+LD        Depletion: Stanislaus River d/s Goodwin Reservoir                               
+QC        A= B=D653b-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D653b-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10888,6 +12599,7 @@ LINK      DIVR      D653b     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D653b     D672      1.0000                                            
+LD        Stanislaus River Reach                                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D653b-D672 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10898,10 +12610,13 @@ LINK      DIVR      D663      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D663      D664      1.0000                                            
+LD        Tuolumne River Reach                                                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D663-D664 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D664      SINK      1.0000                                            
+LD        Depletion: Tuolumne River d/s La Grange Dam                                     
+QC        A= B=D664-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D664-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10912,10 +12627,12 @@ LINK      DIVR      D664      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D664      HSU302D6641.0000                                            
+LD        surface delivery CVPM 11                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D664-HSU302D664 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D664      HSU305D6641.0000                        2.2000              
+LD        surface delivery CVPM 12                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D664-HSU305D664 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10926,11 +12643,13 @@ LINK      DIVR      D672      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D672      D675      1.0000                                            
+LD        Stanislaus River Reach.  Former minimum instream flow requirement placed here ha
 QL        A= B=D672-D675 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D672-D675 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D672      HSU302D6721.0000                                            
+LD        surface delivery CVPM 11                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D672-HSU302D672 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10953,6 +12672,7 @@ LINK      DIVR      D692      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D692      D619      1.0000                                            
+LD        Eastside Bypass                                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D692-D619 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10963,6 +12683,7 @@ LINK      DIVR      D695      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D695      D697      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D695-D697 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10973,10 +12694,13 @@ LINK      DIVR      D697      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D697      D699      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D697-D699 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D699      SINK      1.0000                                            
+LD        Only for climate change studies, for historical case all flows are zero.        
+QC        A= B=D699-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D699-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10987,6 +12711,7 @@ LINK      DIVR      D699      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D699      HSU305D6991.0000                        4.9500              
+LD        surface delivery CVPM 12                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D699-HSU305D699 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -10997,18 +12722,22 @@ LINK      DIVR      D732      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D732      D619      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D732-D619 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM11HGR11     0.1000                                            
+LD        deep percolation of exterior uses                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM11-HGR11 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM12HGR12     0.1000                                            
+LD        Return flows from external CVMP12                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM12-HGR12 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM13HGR13     0.1000                                            
+LD        Return flows from urban cvpm13 exterior                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM13-HGR13 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11019,6 +12748,7 @@ LINK      DIVR      GW_11     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_11     HGP11     1.0000                                            
+LD        Link to hidden node for pumping calibration of GW-11                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_11-HGP11 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11029,6 +12759,7 @@ LINK      DIVR      GW_12     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_12     HGP12     1.0000                                            
+LD        Link to hidden node for calibration of GW-12                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_12-HGP12 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11039,6 +12770,7 @@ LINK      DIVR      GW_13     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_13     HGP13     1.0000                                            
+LD        Link to hidden node for calibration of GW-13                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_13-HGP13 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11049,6 +12781,7 @@ LINK      DIVR      HAR13     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HAR13     GW_13     0.9500                                            
+LD        Artificial Recharge from Chowchilla R riparian                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HAR13-GW_13 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11059,9 +12792,11 @@ LINK      DIVR      HGP11     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP11     A302      1.0000    61.0000             64.9500             
+LD        Agricultural groundwater pumping GW-11 to CVPM 11 Demand                        
 QI        A=init B=HGP11-A302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP11     U302      1.0000    61.0000                                 
+LD        M&I pumping demand for DAU 205, 206 & 207                                       
 QI        A=init B=HGP11-U302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   HGP12     1                                                 
@@ -11071,9 +12806,11 @@ LINK      DIVR      HGP12     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP12     A305      1.0000    59.4000             86.8500             
+LD        Agricultural groundwater pumping GW-12 to CVPM 12 Demand                        
 QI        A=init B=HGP12-A305 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP12     U305      1.0000    59.4000                                 
+LD        M&I pumping for DAU 208 & 209 = CVPM 12 Urban                                   
 QI        A=init B=HGP12-U305 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   HGP13     1                                                 
@@ -11083,12 +12820,15 @@ LINK      DIVR      HGP13     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP13     A306      1.0000    61.9100             225.7700            
+LD        Agricultural groundwater pumping GW-13 to CVPM 13 Demand                        
 QI        A=init B=HGP13-A306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP13     R301      1.0000    61.9100             2.0100              
+LD        Sum of maximum historical monthly GW used as water supply source at t San Joaqui
 QI        A=init B=HGP13-R301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP13     U306      1.0000    61.9100                                 
+LD        GW pumping for CVPM 13 Urban (Merced and Madera)                                
 QI        A=init B=HGP13-U306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   HGR11     1                                                 
@@ -11098,6 +12838,7 @@ LINK      DIVR      HGR11     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR11     GW_11     1.0000                                            
+LD        Link from hidden node for calibration of GW-11                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR11-GW_11 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11108,6 +12849,7 @@ LINK      DIVR      HGR12     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR12     GW_12     1.0000                                            
+LD        Link from hidden node for calibration of GW-12                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR12-GW_12 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11118,22 +12860,27 @@ LINK      DIVR      HGR13     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR13     GW_13     1.0000                                            
+LD        Link from hidden node for calibration of GW-13                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR13-GW_13 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD302    D675      1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD302-D675 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD305    D697      1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD305-D697 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD306    D695      1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD306-D695 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD306    R301      1.0000                        0.0000              
+LD        Ag return flow supply for East of San Joaquin River Refuges. Assumed to be zero 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD306-R301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11148,10 +12895,12 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSR301-R301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSU306D645HSR301    0.8200                                            
+LD        Upper Merced River delivery into East of San Joaquin River Refuges              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU306D645-HSR301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSU306D649HSR301    0.8200                                            
+LD        Lower Merced Rivery delivery into East of San Joaquin River Refuges             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU306D649-HSR301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11162,6 +12911,8 @@ LINK      DIVR      HSUR301   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSUR301   R_SJE     1.0000                                            
+LD        Deliveries to the San Joaquin East Refuges which includes East Bear Creek of San
+QC        A= B=HSUR301-R_SJE C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSUR301-R_SJE C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11178,6 +12929,7 @@ LINK      DIVR      R301      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      R301      HSUR301   1.0000                                            
+LD        On-site reuse within refuges. WMPs indicate presence of on-site operational loss
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R301-HSUR301 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11188,6 +12940,7 @@ LINK      DIVR      R_SJE     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      R_SJE     D695      0.2500                                            
+LD        Eas of SJR Refuges return flow                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R_SJE-D695 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11224,6 +12977,7 @@ LINK      DIVR      HXI302    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI302    EXT_CVPM111.0000                                            
+LD        Diversion for CVPM11 external uses                                              
 QU        A= B=HXI302-EXT_CVPM11 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI302-EXT_CVPM11 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI302-EXT_CVPM11 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -11246,6 +13000,7 @@ LINK      DIVR      INT_CVPM11DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_CVPM11WWP302    0.8300                                            
+LD        GW return flow from fixed CVPM urban pumping demand                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM11-WWP302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11260,6 +13015,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U302-HXI302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U302      INT_CVPM111.0000                                            
+LD        M&I pumping demand for DAU 205, 206 & 207                                       
 QU        A= B=U302-INT_CVPM11 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U302-INT_CVPM11 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U302-INT_CVPM11 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -11329,6 +13085,7 @@ LINK      DIVR      HXI305    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI305    EXT_CVPM121.0000                                            
+LD        Exterior urban demand to CVPM12                                                 
 QU        A= B=HXI305-EXT_CVPM12 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI305-EXT_CVPM12 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI305-EXT_CVPM12 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -11351,6 +13108,7 @@ LINK      DIVR      INT_CVPM12DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_CVPM12WWP305    0.8650                                            
+LD        GW return flow from fixed CVPM urban pumping demand                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM12-WWP305 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11365,6 +13123,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U305-HXI305 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U305      INT_CVPM121.0000                                            
+LD        M&I pumping demand for DAU 208 & 209, interior                                  
 QU        A= B=U305-INT_CVPM12 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U305-INT_CVPM12 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U305-INT_CVPM12 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -11434,6 +13193,7 @@ LINK      DIVR      HXI306    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI306    EXT_CVPM131.0000                                            
+LD        Diversion for urban CVPM13 exterior                                             
 QU        A= B=HXI306-EXT_CVPM13 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI306-EXT_CVPM13 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI306-EXT_CVPM13 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -11456,6 +13216,7 @@ LINK      DIVR      INT_CVPM13DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_CVPM13WWP306    0.8600                                            
+LD        GW return flow from fixed CVPM urban pumping demand. interior                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM13-WWP306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11470,6 +13231,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U306-HXI306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U306      INT_CVPM131.0000                                            
+LD        M&I pumping demand for DAU 210 thru 215                                         
 QU        A= B=U306-INT_CVPM13 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U306-INT_CVPM13 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U306-INT_CVPM13 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -11498,12 +13260,15 @@ LINK      DIVR      WWP306    HP306     1.0000    1800.0000           0.0000
 QI        A=init B=WWP306-HP306 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP302    HGR11     1.0000    50.0000                                 
+LD        In the 2100 model CVPM 11 urban return flows goes to D676 because it is a wastew
 QI        A=init B=WWP302-HGR11 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP305    HGR12     1.0000    50.0000                                 
+LD        Return flow from CVPM 11 Urban deliveries                                       
 QI        A=init B=WWP305-HGR12 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP306    HGR13     1.0000    50.0000                                 
+LD        Return flow from appied urban water                                             
 QI        A=init B=WWP306-HGR13 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   A303      1                                                 
@@ -11513,6 +13278,7 @@ LINK      DIVR      A303      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A303      HU303     1.0090                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A303-HU303 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11529,6 +13295,7 @@ LINK      DIVR      CVPM10S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM10S   HSD303    0.3040                                            
+LD        SW return flow from CVPM 10                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM10S-HSD303 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11545,6 +13312,7 @@ LINK      DIVR      HSU303C10 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU303C10 A303      0.8500                                            
+LD        San Joaquin River riparian diversions                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU303C10-A303 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11555,6 +13323,7 @@ LINK      DIVR      HSU303C30 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU303C30 A303      0.9300                                            
+LD        Delta Mendota Canal deliveries to CVPM 10                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU303C30-A303 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11565,6 +13334,7 @@ LINK      DIVR      HSU303C85 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU303C85 A303      0.9300                                            
+LD        San Luis Canal deliveries to CVPM10                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU303C85-A303 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11575,6 +13345,7 @@ LINK      DIVR      HSU303D731DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU303D731A303      0.8500                                            
+LD        Mendota Pool deliveries to CVPM 10                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU303D731-A303 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11585,6 +13356,7 @@ LINK      DIVR      HSU303D803DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU303D803A303      0.8800                                            
+LD        California Aqueduct deliveries to Oak Flat WD, CVPM 10                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU303D803-A303 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11633,6 +13405,7 @@ LINK      DIVR      C10       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C10       HSU303C10 1.0000                        40.8000             
+LD        surface delivery CVPM 10                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C10-HSU303C10 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11643,6 +13416,7 @@ LINK      DIVR      C30       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C30       HSU303C30 1.0000                        142.5000            
+LD        surface delivery CVPM 10                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C30-HSU303C30 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11653,6 +13427,7 @@ LINK      DIVR      C85       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C85       HSU303C85 1.0000                        27.5000             
+LD        surface delivery CVPM 10                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C85-HSU303C85 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11663,6 +13438,7 @@ LINK      DIVR      C92       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C92       D745      1.0000                                            
+LD        California Aqueduct                                                             
 BU        574.9,519.3,574.9,556.4,574.9,556.4,574.9,574.9,556.4,574.9,556.4,574.9
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C92-D745 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -11678,6 +13454,7 @@ LINK      DIVR      D608      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D608      D731      1.0000                                            
+LD        Mendota Pool                                                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D608-D731 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11688,6 +13465,7 @@ LINK      DIVR      D616      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D616      C10       1.0000                                            
+LD        San Joaquin River riparian diversions                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D616-C10 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11698,6 +13476,7 @@ LINK      DIVR      D676      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D676      D616      1.0000                                            
+LD        San Joaquin River Reach, minimum instream flow requirement.  The MIFR is not bei
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D676-D616 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11708,6 +13487,7 @@ LINK      DIVR      D683      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D683      D689      1.0000                                            
+LD        San Joaquin River Reach                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D683-D689 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11718,6 +13498,7 @@ LINK      DIVR      D689      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D689      C10       1.0000                                            
+LD        San Joaquin River riparian diversions                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D689-C10 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11734,9 +13515,11 @@ LINK      DIVR      D700      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D700      C30       1.0000    31.9680                                 
+LD        Agricultural diversions off the DMC                                             
 QI        A=init B=D700-C30 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D700      D703      1.0000                                            
+LD        Delta Mendota Canal                                                             
 BU        282.92,255.54,282.92,273.79,282.92,273.79,282.92,282.92,273.79,282.92,273.79,282.92
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D700-D703 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -11748,11 +13531,14 @@ LINK      DIVR      D701      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D701      D700      1.0000                                            
+LD        Delta Mendota Canal.                                                            
 BU        258.25,233.25,258.25,249.92,258.25,249.92,258.25,258.25,249.92,258.25,249.92,258.25
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D701-D700 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D703      SINK      1.0000                                            
+LD        Upper Delta Mendota Canal losses                                                
+QC        A= B=D703-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D703-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11763,6 +13549,7 @@ LINK      DIVR      D703      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D703      D710      1.0000                                            
+LD        Delta Mendota Canal                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D703-D710 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11773,10 +13560,12 @@ LINK      DIVR      D710      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D710      D712      1.0000                                            
+LD        Delta Mendota Canal                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D710-D712 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D710      PMP_ONeill1.0000                                            
+LD        Delta Mendota Canal diversion to ONeil Pumping Plant and California Aqueduct    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D710-PMP_ONeill C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11787,6 +13576,7 @@ LINK      DIVR      D712      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D712      D722      1.0000                                            
+LD        Delta Mendota Canal                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D712-D722 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11797,10 +13587,12 @@ LINK      DIVR      D722      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D722      C30       1.0000                                            
+LD        Agricultural diversions off the DMC                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D722-C30 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D722      D723      1.0000                                            
+LD        Delta Mendota Canal                                                             
 BU        202.96,183.32,202.96,196.42,202.96,196.42,202.96,202.96,196.42,202.96,196.42,202.96
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D722-D723 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -11812,6 +13604,7 @@ LINK      DIVR      D723      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D723      D608      1.0000                                            
+LD        Delta Mendota canal delivery to Mendota Pool                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D723-D608 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11822,6 +13615,7 @@ LINK      DIVR      D731      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D731      HSU303D7311.0000                        118.1000            
+LD        surface delivery CVPM 10                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D731-HSU303D731 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11832,14 +13626,18 @@ LINK      DIVR      D742      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D742      C85       1.0000                                            
+LD        California Aqueduct div to CVPM 10                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D742-C85 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D742      D743      1.0000                                            
+LD        California Aqueduct                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D742-D743 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D743      SINK      1.0000                                            
+LD        California Aqueduct Reach 3 losses                                              
+QC        A= B=D743-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D743-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11860,10 +13658,12 @@ LINK      DIVR      D743a     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D743a     C85       1.0000                                            
+LD        Deliveries to SWP Ag Region 4 from California Aqueduct                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D743a-C85 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D743a     PMP_DAmigo1.0000                                            
+LD        California Aqueduct Diversion to Dos Amigos Pumping Plant                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D743a-PMP_DAmigo C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11874,13 +13674,17 @@ LINK      DIVR      D744      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D744      C85       1.0000                                            
+LD        Deliveries to SWP Ag Region 6 from California Aqueduct                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D744-C85 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D744      C92       1.0000    -0.2960                                 
+LD        CAL AQ export to Reg 4 (downstream of CP744+CP828)                              
 QI        A=init B=D744-C92 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D744a     SINK      1.0000                                            
+LD        California Aqueduct Reach 4 Losses                                              
+QC        A= B=D744a-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D744a-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11895,6 +13699,8 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D744a-D744 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D745      SINK      1.0000                                            
+LD        California Aqueduct Reach 5 losses                                              
+QC        A= B=D745-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D745-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11911,14 +13717,18 @@ LINK      DIVR      D803      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D803      D804      1.0000                                            
+LD        California Aqueduct                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D803-D804 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D803      HSU303D8031.0000                        1.2000              
+LD        surface delivery CVPM 10                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D803-HSU303D803 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D804      SINK      1.0000                                            
+LD        California Aqueduct Reach 1 & 2 losses                                          
+QC        A= B=D804-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D804-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11929,6 +13739,7 @@ LINK      DIVR      D804      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D804      D814      1.0000                                            
+LD        California Aqueduct                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D804-D814 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11939,6 +13750,7 @@ LINK      DIVR      D814      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D814      D816      1.0000                                            
+LD        California Aqueduct                                                             
 BU        615.04,555.52,615.04,595.2,615.04,595.2,615.04,615.04,595.2,615.04,595.2,615.04
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D814-D816 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -11950,15 +13762,18 @@ LINK      DIVR      D816      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D816      D742      1.0000                                            
+LD        California Aqueduct                                                             
 BU        805.7,727.73,805.7,779.71,805.7,779.71,805.7,805.7,779.71,805.7,779.71,805.7
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D816-D742 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D816      PWP_ONeill1.0000                                            
+LD        California Aqueduct div to Delta Mendota Canal via ONeill Power Plant           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D816-PWP_ONeill C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM10HGU10     0.5280                                            
+LD        Return flows to groundwater                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM10-HGU10 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11969,6 +13784,7 @@ LINK      DIVR      GW_10     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_10     HGP10     1.0000                                            
+LD        Hidden groundwater pumping calibration link                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_10-HGP10 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -11979,9 +13795,11 @@ LINK      DIVR      HGP10     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP10     A303      1.0000    62.9400             185.1500            
+LD        Agricultural groundwater pumping GW-10 to CVPM 10 Demand                        
 QI        A=init B=HGP10-A303 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP10     R302      1.0000    62.9400             0.3700              
+LD        Sum of maximum historical monthly GW used as water supply source at San Joaquin 
 QI        A=init B=HGP10-R302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP10     U303      1.0000    62.9400                                 
@@ -11994,6 +13812,7 @@ LINK      DIVR      HGU10     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGU10     GW_10     1.0000                                            
+LD        Link from hidden node for calibration of GW-10                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGU10-GW_10 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12018,18 +13837,22 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSR303-R303 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSU303C30 HSR302    0.9300                                            
+LD        Upper and lower DMC delivery                                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU303C30-HSR302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSU303D731HSR302    0.8500                                            
+LD        Mendota Pool delivery                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU303D731-HSR302 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSU303D731HSR303    0.8500                                            
+LD        Mendota Pool delivery into Mendota Refuge                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU303D731-HSR303 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      INT_CVPM10HGU10     0.5280                                            
+LD        GW return flow from fixed CVPM urban pumping demand                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM10-HGU10 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12040,6 +13863,7 @@ LINK      DIVR      PMP_DAmigoDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_DAmigoD744a     1.0000                                            
+LD        California Aqueduct Pumping Plant                                               
 BU        725.75,655.51,725.75,702.34,725.75,702.34,725.75,725.75,702.34,725.75,702.34,725.75
 QI        A=init B=PMP_DAmigo-D744a C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12050,6 +13874,7 @@ LINK      DIVR      PMP_ONeillDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_ONeillD814      1.0000                                            
+LD        ONeill Pumping Plant release to California Aqueduct                             
 BU        258.32,233.32,258.32,249.98,258.32,249.98,258.32,258.32,249.98,258.32,249.98,258.32
 QI        A=init B=PMP_ONeill-D814 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12060,6 +13885,7 @@ LINK      DIVR      PWP_ONeillDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PWP_ONeillD712      1.0000                                            
+LD        ONeill Power Plant release to Delta Mendota Canal                               
 BU        239.87,216.65,239.87,232.13,239.87,232.13,239.87,239.87,232.13,239.87,232.13,239.87
 PQ        MO=JAN A= B=PWP_ONeill-D712 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=PWP_ONeill-D712 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -12112,10 +13938,12 @@ LINK      DIVR      U303      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      U303      EXT_CVPM101.0000                                            
+QC        A= B=U303-EXT_CVPM10 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U303-EXT_CVPM10 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U303      INT_CVPM101.0000                                            
+QC        A= B=U303-INT_CVPM10 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U303-INT_CVPM10 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12126,6 +13954,7 @@ LINK      DIVR      PMP_GianelDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_GianelSR_SNL    1.0000                                            
+LD        Gianelli Pumping Plant diversion to San Luis Reservoir                          
 BU        676.54,611.07,676.54,654.72,676.54,654.72,676.54,676.54,654.72,676.54,654.72,676.54
 QI        A=init B=PMP_Gianel-SR_SNL C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12142,6 +13971,7 @@ LINK      DIVR      SR_SNL    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_SNL    PWP_Gianel1.0000                                            
+LD        San Luis Res Release to California Aqueduct                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_SNL-PWP_Gianel C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12168,6 +13998,7 @@ LINK      DIVR      D801      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D801      PMP_SoBay 1.0000    33.1668                                 
+LD        South Bay Aqueduct diversion to South Bay Pumping Plant                         
 QI        A=init B=D801-PMP_SoBay C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   PMP_LosVaq1                                                 
@@ -12177,6 +14008,7 @@ LINK      DIVR      PMP_LosVaqDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_LosVaqSR_LVQ    1.0000    37.9620                                 
+LD        Los Vaqueros Pumping Plant diversion to Reservoir                               
 BU        12.3,11.11,12.3,11.9,12.3,11.9,12.3,12.3,11.9,12.3,11.9,12.3
 QI        A=init B=PMP_LosVaq-SR_LVQ C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12193,18 +14025,22 @@ LINK      DIVR      SR_LVQ    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_LVQ    D801      1.0000                        0.0000              
+LD        Los Vacqueros Connection to Clifton Court                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_LVQ-D801 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP210    C42       1.0000    50.0000                                 
+LD        SW Discharge to San Joaquin R                                                   
 QI        A=init B=WWP210-C42 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C138      N6        1.0000                                            
+LD        San Diego Canal                                                                 
 BU        104.346,94.248,104.346,100.98,104.346,100.98,104.346,104.346,100.98,104.346,100.98,104.346
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C138-N6 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C138      PMP_Wads  1.0000                                            
+LD        Eastside pipeline (if filled from CRA) and San Diego Canal                      
 BU        165.726,149.688,165.726,160.38,165.726,160.38,165.726,165.726,160.38,165.726,160.38,165.726
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C138-PMP_Wads C=FLOW_DIV(KAF) D= E=1MON F=
@@ -12214,6 +14050,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C154-HSU509C154 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D881      C154      1.0000                                            
+LD        Mills Filtration Plant to EWMWD (unconstrained)                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D881-C154 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12225,6 +14062,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGREW-GW_EW C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HXEWMWD   ERES_EWMWD1.0000                                            
+LD        inflows to E&W exterior                                                         
 QU        A= B=HXEWMWD-ERES_EWMWD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXEWMWD-ERES_EWMWD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXEWMWD-ERES_EWMWD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -12295,6 +14133,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGRMWD-GW_MWD C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HXCMWD    ERes_CMWD 1.0000                                            
+LD        Agricultural Supply                                                             
 QU        A= B=HXCMWD-ERes_CMWD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXCMWD-ERes_CMWD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXCMWD-ERes_CMWD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -12327,6 +14166,7 @@ LINK      DIVR      HP504     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HP504     U504      1.0000                                            
+LD        Expanded wastewater recycling facility                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HP504-U504 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12347,6 +14187,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HXI504-HXCMWD C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HXI504    Ind_CMWD  1.0000                                            
+LD        Ind Urban Penalty Function                                                      
 QU        A= B=HXI504-Ind_CMWD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI504-Ind_CMWD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI504-Ind_CMWD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -12369,6 +14210,7 @@ LINK      DIVR      Ind_CMWD  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      Ind_CMWD  WWP504    0.4000                                            
+LD        Ind Return Flow TOTAL                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=Ind_CMWD-WWP504 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12379,6 +14221,7 @@ LINK      DIVR      IRes_CMWD DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IRes_CMWD WWP504    0.9000                                            
+LD        Res Return Flow TOTAL                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IRes_CMWD-WWP504 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12393,6 +14236,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U504-HXI504 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U504      IRes_CMWD 1.0000                                            
+LD        Res Urban Penalty Function                                                      
 QU        A= B=U504-IRes_CMWD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U504-IRes_CMWD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U504-IRes_CMWD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -12418,6 +14262,7 @@ LINK      DIVR      WTP504    U504      1.0000    375.9200
 QI        A=init B=WTP504-U504 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP504    SINK      1.0000                                            
+LD        SW Discharge to Ocean                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=WWP504-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12431,14 +14276,17 @@ LINK      DIVR      WWP504    HNP504    1.0000    1258.0000           28.7200
 QI        A=init B=WWP504-HNP504 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP504    HP504     1.0000    1480.0000           0.0000              
+LD        Expanded wastewater recycling facility for CMWD                                 
 QI        A=init B=WWP504-HP504 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      N4        N5        1.0000                                            
+LD        Inland Feeder                                                                   
 BU        61.38,55.44,61.38,59.4,61.38,59.4,61.38,61.38,59.4,61.38,59.4,61.38
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N4-N5 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      PMP_Wads  C138      1.0000    13.9860                                 
+LD        Eastside pipeline                                                               
 BU        61.38,55.4,61.38,59.4,61.38,59.4,61.38,61.38,59.4,61.38,59.4,61.38
 QI        A=init B=PMP_Wads-C138 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12485,6 +14333,7 @@ LINK      DIVR      HU511     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HU511     AGG_SD    1.0000                                            
+LD        Groundwater to San Diego Ag                                                     
 QU        A= B=HU511-AGG_SD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HU511-AGG_SD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HU511-AGG_SD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -12501,6 +14350,7 @@ PQ        MO=DEC A= B=HU511-AGG_SD C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=HU511-AGG_SD C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HU511     AGS_SD    1.0000                                            
+LD        Agricultural Demand to San Diego                                                
 QU        A= B=HU511-AGS_SD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HU511-AGS_SD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HU511-AGS_SD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -12527,11 +14377,13 @@ LINK      DIVR      C153      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C153      C154      1.0000                                            
+LD        San Diego Pipelines 1,2,4 & 6                                                   
 BU        68.746,62.093,68.746,66.528,68.746,66.528,68.746,68.746,66.528,68.746,66.528,68.746
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C153-C154 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C153      C156      1.0000                        67.6368             
+LD        San Diego Pipelines No. 5&3 (untreated water)                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C153-C156 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12619,6 +14471,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGRSD-GW_SD C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HXSD      ERes_SDWD 1.0000                                            
+LD        Urban supply                                                                    
 QU        A= B=HXSD-ERes_SDWD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXSD-ERes_SDWD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXSD-ERes_SDWD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -12641,6 +14494,7 @@ LINK      DIVR      N5        DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      N5        SR_DMV    1.0000                                            
+LD        Eastside Pipeline                                                               
 BU        61.38,55.44,61.38,59.4,61.38,59.4,61.38,61.38,59.4,61.38,59.4,61.38
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N5-SR_DMV C=FLOW_DIV(KAF) D= E=1MON F=
@@ -12652,6 +14506,7 @@ LINK      DIVR      N6        DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      N6        SR_SKN    1.0000                                            
+LD        San Diego Canal                                                                 
 BU        104.346,94.248,104.346,100.98,104.346,100.98,104.346,104.346,100.98,104.346,100.98,104.346
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N6-SR_SKN C=FLOW_DIV(KAF) D= E=1MON F=
@@ -12676,10 +14531,12 @@ LINK      DIVR      PMP_Wads  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_Wads  N5        1.0000    31.3020                                 
+LD        Eastside pipeline                                                               
 BU        61.38,55.44,61.38,59.4,61.38,59.4,61.38,61.38,59.4,61.38,59.4,61.38
 QI        A=init B=PMP_Wads-N5 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      PMP_Wads  SR_DMV    1.0000    31.3020                                 
+LD        Wadsworth PMP into SR-DV, San Diego Canal                                       
 BU        104.35,94.25,104.35,100.98,104.35,100.98,104.35,104.35,100.98,104.35,100.98,104.35
 QI        A=init B=PMP_Wads-SR_DMV C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12690,6 +14547,7 @@ LINK      DIVR      PWP_Wads  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PWP_Wads  N6        1.0000                                            
+LD        Diamond Valley Lake Outflows                                                    
 BU        30.9,27.9,30.9,29.9,30.9,29.9,30.9,30.9,29.9,30.9,29.9,30.9
 PQ        MO=JAN A= B=PWP_Wads-N6 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=PWP_Wads-N6 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -12712,11 +14570,13 @@ LINK      DIVR      SR_DMV    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_DMV    PMP_Wads  1.0000                                            
+LD        Eastside Pipeline                                                               
 BU        61.38,55.44,61.38,59.4,61.38,59.4,61.38,61.38,59.4,61.38,59.4,61.38
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_DMV-PMP_Wads C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_DMV    PWP_Wads  1.0000                                            
+LD        Diamond Valley Forebay                                                          
 BU        116.622,105.336,116.622,112.82,116.622,112.82,116.622,116.622,112.82,116.622,112.82,116.622
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_DMV-PWP_Wads C=FLOW_DIV(KAF) D= E=1MON F=
@@ -12728,11 +14588,13 @@ LINK      DIVR      SR_SKN    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_SKN    C153      1.0000                                            
+LD        San Diego Pipelines 1,2,4 & 6 (treated water, except 6)                         
 BU        68.75,62.09,68.75,66.53,68.75,66.53,68.75,68.75,66.53,68.75,66.53,68.75
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_SKN-C153 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_SKN    N8        1.0000                                            
+LD        San Diego Pipelines 5 & 6 (untreated water)                                     
 BU        40.82,36.87,40.82,39.5,40.82,39.5,40.82,40.82,39.5,40.82,39.5,40.82
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_SKN-N8 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -12754,6 +14616,7 @@ LINK      DIVR      HP509     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HP509     U509      1.0000                                            
+LD        Expanded wastewater recycling facility                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HP509-U509 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12770,10 +14633,12 @@ LINK      DIVR      HXI509    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI509    HXEWMWD   1.0000                                            
+LD        link to eres: e&w mwd                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HXI509-HXEWMWD C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HXI509    Ind_EMWD  1.0000                                            
+LD        Ind Urban Penalty Function                                                      
 QU        A= B=HXI509-Ind_EMWD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI509-Ind_EMWD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI509-Ind_EMWD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -12796,6 +14661,7 @@ LINK      DIVR      Ind_EMWD  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      Ind_EMWD  WWP509    0.4000                                            
+LD        Ind Return Flow TOTAL                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=Ind_EMWD-WWP509 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12806,6 +14672,7 @@ LINK      DIVR      IRes_EMWD DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IRes_EMWD WWP509    0.9000                                            
+LD        Res Return Flow TOTAL                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IRes_EMWD-WWP509 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12820,6 +14687,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U509-HXI509 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U509      IRes_EMWD 1.0000                                            
+LD        Res Urban Penalty Function                                                      
 QU        A= B=U509-IRes_EMWD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U509-IRes_EMWD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U509-IRes_EMWD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -12845,6 +14713,7 @@ LINK      DIVR      WTP509    U509      1.0000    375.9200
 QI        A=init B=WTP509-U509 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP509    SINK      1.0000                                            
+LD        SW discharge to Ocean                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=WWP509-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12859,6 +14728,7 @@ BU        3.67,3.31,3.67,3.55,3.67,3.55,3.67,3.67,3.55,3.67,3.55,3.67
 QI        A=init B=WWP509-HNP509 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP509    HP509     1.0000    1480.0000           0.0000              
+LD        Expanded wastewater recycling facility for EMWD                                 
 QI        A=init B=WWP509-HP509 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   HNP511    1                                                 
@@ -12878,6 +14748,7 @@ LINK      DIVR      HP511     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HP511     U511      1.0000                                            
+LD        Expanded wastewater recycling facility                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HP511-U511 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12888,10 +14759,12 @@ LINK      DIVR      HXI511    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI511    HXSD      1.0000                                            
+LD        link to eres: san diego                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HXI511-HXSD C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HXI511    Ind_SDMWD 1.0000                                            
+LD        Ind Urban Penatly Function                                                      
 QU        A= B=HXI511-Ind_SDMWD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI511-Ind_SDMWD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI511-Ind_SDMWD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -12920,6 +14793,7 @@ LINK      DIVR      Ind_SDMWD DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      Ind_SDMWD WWP511    0.4000                                            
+LD        Ind Return Flow TOTAL                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=Ind_SDMWD-WWP511 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12930,6 +14804,7 @@ LINK      DIVR      IRes_SDWD DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IRes_SDWD WWP511    0.9000                                            
+LD        Res Return Flow TOTAL                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IRes_SDWD-WWP511 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12944,6 +14819,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U511-HXI511 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U511      IRes_SDWD 1.0000                                            
+LD        Res Urban Penalty Function                                                      
 QU        A= B=U511-IRes_SDWD C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U511-IRes_SDWD C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U511-IRes_SDWD C=Q(KAF)-P_EDT D= E=FEB F=
@@ -12969,6 +14845,7 @@ LINK      DIVR      WTP511    U511      1.0000    460.0000
 QI        A=init B=WTP511-U511 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP511    SINK      1.0000                                            
+LD        SW Discharge to Ocean                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=WWP511-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -12983,6 +14860,7 @@ BU        1.546,1.3964,1.546,1.496,1.546,1.496,1.546,1.546,1.496,1.546,1.496,1.5
 QI        A=init B=WWP511-HNP511 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP511    HP511     1.0000    1480.0000           0.0000              
+LD        Expanded wastewater recycling facility for San Diego                            
 QI        A=init B=WWP511-HP511 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   A509      1                                                 
@@ -13018,6 +14896,7 @@ LINK      DIVR      HU509     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HU509     AGG_EW    1.0000                                            
+LD        GW supply to E&W MWD and San Bernardino Valley Ag. (E&W and SBV are combined 12/
 QU        A= B=HU509-AGG_EW C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HU509-AGG_EW C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HU509-AGG_EW C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13044,16 +14923,20 @@ LINK      DIVR      C129      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C129      D876      1.0000                                            
+LD        Santa Ana Pipeline                                                              
 BU        28.787,26.001,28.787,27.859,28.787,27.859,28.787,28.787,27.859,28.787,27.859,28.787
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C129-D876 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C129      N2        1.0000                                            
+LD        Inland feeder                                                                   
 BU        61.38,55.44,61.38,59.4,61.38,59.4,61.38,61.38,59.4,61.38,59.4,61.38
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C129-N2 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C131      SINK      1.0000                                            
+LD        East Branch SWP Losses                                                          
+QC        A= B=C131-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C131-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13064,11 +14947,13 @@ LINK      DIVR      C131      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C131      D881      1.0000                                            
+LD        Santa Ana Pipeline                                                              
 BU        28.9,26.1,28.9,28,28.9,28,28.9,28.9,28,28.9,28,28.9
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C131-D881 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C131      N1        1.0000                                            
+LD        East Branch SWP Diversin to SBV                                                 
 BU        22.895,20.679,22.895,22.156,22.895,22.156,22.895,22.895,22.156,22.895,22.156,22.895
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C131-N1 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -13080,6 +14965,7 @@ LINK      DIVR      C138      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C138      SR_MHW    1.0000                                            
+LD        Valverde Tunnel                                                                 
 BU        98.7,89.2,98.7,95.5,98.7,95.5,98.7,98.7,95.5,98.7,95.5,98.7
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C138-SR_MHW C=FLOW_DIV(KAF) D= E=1MON F=
@@ -13091,6 +14977,7 @@ LINK      DIVR      D876      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D876      C131      1.0000                                            
+LD        SWP East Branch (unconstrained)                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D876-C131 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13101,11 +14988,13 @@ LINK      DIVR      D881      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D881      N3        1.0000                                            
+LD        Lake Perris Bypass pipeline                                                     
 BU        30.69,27.72,30.69,29.7,30.69,29.7,30.69,30.69,29.7,30.69,29.7,30.69
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D881-N3 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D881      SR_PRR    1.0000                                            
+LD        south of Santa Ana Valley Pipeline (unconstrained)                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D881-SR_PRR C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13186,11 +15075,13 @@ LINK      DIVR      N2        DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      N2        N1        1.0000                                            
+LD        SWBMWD footlhill feeder intertie                                                
 BU        14.731,13.306,14.731,14.256,14.731,14.256,14.731,14.731,14.256,14.731,14.256,14.731
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N2-N1 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      N2        N4        1.0000                                            
+LD        Inland feeder                                                                   
 BU        61.38,55.44,61.38,59.4,61.38,59.4,61.38,61.38,59.4,61.38,59.4,61.38
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N2-N4 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -13202,6 +15093,7 @@ LINK      DIVR      N3        DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      N3        C138      1.0000                                            
+LD        Lakeview Pipeline                                                               
 BU        30.69,27.72,30.69,29.7,30.69,29.7,30.69,30.69,29.7,30.69,29.7,30.69
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N3-C138 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -13213,6 +15105,7 @@ LINK      DIVR      N4        DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      N4        C138      1.0000                                            
+LD        Inland Feeder                                                                   
 BU        61.38,55.4,61.38,59.4,61.38,59.4,61.38,61.38,59.4,61.38,59.4,61.38
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N4-C138 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -13224,6 +15117,7 @@ LINK      DIVR      PWP_DevilsDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PWP_DevilsC129      1.0000                                            
+LD        SWP East Branch                                                                 
 BU        172.54,155.84,172.54,166.97,172.54,166.97,172.54,172.54,166.97,172.54,166.97,172.54
 PQ        MO=JAN A= B=PWP_Devils-C129 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=PWP_Devils-C129 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13252,6 +15146,7 @@ LINK      DIVR      SR_PRR    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_PRR    N3        1.0000    355.2000                                
+LD        Lakeview Pipeline                                                               
 BU        30.69,27.72,30.69,29.7,30.69,29.7,30.69,30.69,29.7,30.69,29.7,30.69
 QI        A=init B=SR_PRR-N3 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13284,6 +15179,7 @@ LINK      DIVR      HP506     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HP506     U506      1.0000                                            
+LD        Expanded wastewater recycling facility                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HP506-U506 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13294,6 +15190,7 @@ LINK      DIVR      HXI506    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI506    ERes_SBV  1.0000                                            
+LD        Urban supply                                                                    
 QU        A= B=HXI506-ERes_SBV C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI506-ERes_SBV C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI506-ERes_SBV C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13310,6 +15207,7 @@ PQ        MO=DEC A= B=HXI506-ERes_SBV C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=HXI506-ERes_SBV C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HXI506    Ind_SBV   1.0000                                            
+LD        Ind Urban Penalty Function                                                      
 QU        A= B=HXI506-Ind_SBV C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI506-Ind_SBV C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI506-Ind_SBV C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13332,6 +15230,7 @@ LINK      DIVR      Ind_SBV   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      Ind_SBV   WWP506    0.4000                                            
+LD        Ind Return Flow Total                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=Ind_SBV-WWP506 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13342,6 +15241,7 @@ LINK      DIVR      IRes_SBV  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IRes_SBV  WWP506    0.9000                                            
+LD        Res Return Flow Total                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IRes_SBV-WWP506 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13359,6 +15259,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U506-HXI506 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U506      IRes_SBV  1.0000                                            
+LD        Res Urban Penalty Function                                                      
 QU        A= B=U506-IRes_SBV C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U506-IRes_SBV C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U506-IRes_SBV C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13384,6 +15285,7 @@ LINK      DIVR      WTP506    U506      1.0000    375.9200
 QI        A=init B=WTP506-U506 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP506    SINK      1.0000                                            
+LD        SW Discharge to ocean via local streams                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=WWP506-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13398,6 +15300,7 @@ BU        3.03,2.74,3.03,2.93,3.03,2.93,3.03,3.03,2.93,3.03,2.93,3.03
 QI        A=init B=WWP506-HNP506 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP506    HP506     1.0000    1480.0000           0.0000              
+LD        Expanded wastewater recycling facility for SBV                                  
 QI        A=init B=WWP506-HP506 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   A501      1                                                 
@@ -13443,6 +15346,7 @@ LINK      DIVR      HU501     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HU501     AGG_VENT  1.0000                                            
+LD        Groundwater deliveries to Venutra Ag                                            
 QU        A= B=HU501-AGG_VENT C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HU501-AGG_VENT C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HU501-AGG_VENT C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13459,6 +15363,7 @@ PQ        MO=DEC A= B=HU501-AGG_VENT C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=HU501-AGG_VENT C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HU501     AGS_VENT  1.0000                                            
+LD        Ventura Agricultural demand                                                     
 QU        A= B=HU501-AGS_VENT C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HU501-AGS_VENT C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HU501-AGS_VENT C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13492,6 +15397,8 @@ LINK      DIVR      C106      WTP501    1.0000    140.6000
 QI        A=init B=C106-WTP501 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D885      SINK      1.0000                                            
+LD        West Branch SWP Losses                                                          
+QC        A= B=D885-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D885-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13502,10 +15409,13 @@ LINK      DIVR      D885      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D885      PWP_Warne 1.0000                                            
+LD        SWP West Branch (unconstrained)                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D885-PWP_Warne C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D886      SINK      1.0000                                            
+LD        West Branch SWP Losses                                                          
+QC        A= B=D886-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D886-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13516,10 +15426,13 @@ LINK      DIVR      D886      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D886      PWP_Castai1.0000                                            
+LD        SWP West Branch (unconstrained)                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D886-PWP_Castai C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D887      SINK      1.0000                                            
+LD        West Branch SWP Losses                                                          
+QC        A= B=D887-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D887-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13530,6 +15443,7 @@ LINK      DIVR      D887      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D887      SR_CAS    1.0000                                            
+LD        SWP West Branch after Castaic PP (unconstrained)                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D887-SR_CAS C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13540,6 +15454,7 @@ LINK      DIVR      D888      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D888      D889      1.0000                                            
+LD        SWP West Branch (unconstrained)                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D888-D889 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13595,6 +15510,7 @@ LINK      DIVR      PWP_CastaiDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PWP_CastaiD887      1.0000                                            
+LD        SWP West Branch                                                                 
 BU        1107.1,999.9,1107.1,1104.84,1107.1,1104.84,1107.1,1107.1,1104.84,1107.1,1104.84,1107.1
 PQ        MO=JAN A= B=PWP_Castai-D887 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=PWP_Castai-D887 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13617,6 +15533,7 @@ LINK      DIVR      PWP_Warne DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PWP_Warne SR_PYM    1.0000                                            
+LD        Warne powerplant to Pyramid Lk                                                  
 BU        96.2,86.9,96.2,93.1,96.2,93.1,96.2,96.2,93.1,96.2,93.1,96.2
 PQ        MO=JAN A= B=PWP_Warne-SR_PYM C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=PWP_Warne-SR_PYM C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13639,10 +15556,12 @@ LINK      DIVR      SR_CAS    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_CAS    C106      1.0000                        2.4156              
+LD        Castaic Lk to Ventura Co FCWCD                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CAS-C106 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_CAS    D888      1.0000                                            
+LD        SWP West Branch (no capacity constraint for Policy 4A)                          
 BU        230.4,208.1,230.4,222.9,230.4,222.9,230.4,230.4,222.9,230.4,230.4,230.4
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CAS-D888 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -13654,10 +15573,12 @@ LINK      DIVR      SR_PYM    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_PYM    C106      1.0000                        0.2625              
+LD        Pyramid Lk to Ventura County FC&WCD (constrained in Policy 1A and 4A)           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_PYM-C106 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_PYM    D886      1.0000                                            
+LD        SWP West Branch (unconstrained)                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_PYM-D886 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13698,6 +15619,7 @@ LINK      DIVR      HXI503    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI503    EXT_CLWA  1.0000                                            
+LD        Urban supply to Castaic Lake exterior                                           
 QU        A= B=HXI503-EXT_CLWA C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI503-EXT_CLWA C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI503-EXT_CLWA C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13720,6 +15642,7 @@ LINK      DIVR      INT_CLWA  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_CLWA  WWP503    0.9000                                            
+LD        Return Flow TOTAL                                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CLWA-WWP503 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13734,6 +15657,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U503-HXI503 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U503      INT_CLWA  1.0000                                            
+LD        Total Urban Penalty Function                                                    
 QU        A= B=U503-INT_CLWA C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U503-INT_CLWA C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U503-INT_CLWA C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13798,6 +15722,7 @@ LINK      DIVR      HP501     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HP501     U501      1.0000                                            
+LD        Expanded WW recycling for Ventura                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HP501-U501 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13808,6 +15733,7 @@ LINK      DIVR      HXI501    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI501    ERes_VENT 1.0000                                            
+LD        urban supply                                                                    
 QU        A= B=HXI501-ERes_VENT C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI501-ERes_VENT C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI501-ERes_VENT C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13824,6 +15750,7 @@ PQ        MO=DEC A= B=HXI501-ERes_VENT C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=HXI501-ERes_VENT C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HXI501    IND_VENT  1.0000                                            
+LD        Ind Urban Penalty Function                                                      
 QU        A= B=HXI501-IND_VENT C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI501-IND_VENT C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI501-IND_VENT C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13846,6 +15773,7 @@ LINK      DIVR      IND_VENT  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IND_VENT  WWP501    0.4000                                            
+LD        Wastewater return flows from Industrial Ventura                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IND_VENT-WWP501 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13856,6 +15784,7 @@ LINK      DIVR      IRES_VENT DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      IRES_VENT WWP501    0.9000                                            
+LD        Wastewater return flows from residental Ventura                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=IRES_VENT-WWP501 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13870,6 +15799,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U501-HXI501 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U501      IRES_VENT 1.0000                                            
+LD        Res Urban Penalty Function                                                      
 QU        A= B=U501-IRES_VENT C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U501-IRES_VENT C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U501-IRES_VENT C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13908,6 +15838,7 @@ LINK      DIVR      WWP501    HNP501    1.0000    518.0000            0.0200
 QI        A=init B=WWP501-HNP501 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP501    HP501     1.0000    1480.0000           0.0000              
+LD        Expanded recycling for Ventura.                                                 
 QI        A=init B=WWP501-HP501 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   A502      1                                                 
@@ -13943,6 +15874,7 @@ LINK      DIVR      HU502     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HU502     AGG_AV    1.0000                                            
+LD        agricultural pumping                                                            
 QU        A= B=HU502-AGG_AV C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HU502-AGG_AV C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HU502-AGG_AV C=Q(KAF)-P_EDT D= E=FEB F=
@@ -13969,10 +15901,12 @@ LINK      DIVR      C124      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C124      D871      1.0000                                            
+LD        Capacity after Pearablossom pumping plant                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C124-D871 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C124      HARMJ     1.0000    14.8000                                 
+LD        GW-MJ Artificial Recharge                                                       
 BU        24.48,22.25,25.88,22.33,25.88,22.33,25.88,25.88,22.33,25.88,22.33,25.88
 QI        A=init B=C124-HARMJ C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -13989,9 +15923,11 @@ LINK      DIVR      D865      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D865      PMP_OSO   1.0000    462.6036                                
+LD        SWP West Branch Pumping P                                                       
 QI        A=init B=D865-PMP_OSO C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D865      PWP_Alamo 1.0000                                            
+LD        SWP East Branch Power P                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D865-PWP_Alamo C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14002,19 +15938,24 @@ LINK      DIVR      D868      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D868      D870      1.0000                                            
+LD        SWP East Branch                                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D868-D870 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D868      HARAV     1.0000    7.4000                                  
+LD        GW-AV Artificial Recharge                                                       
 BU        0.58,0.52,0.58,0.56,0.58,0.56,0.58,0.58,0.56,0.58,0.56,0.58
 QI        A=init B=D868-HARAV C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D868      N7        1.0000                                            
+LD        East Branch SWP Diversion to AV                                                 
 BU        53.34,48.2,53.34,51.61,53.34,51.61,53.34,53.34,51.61,53.34,51.61,53.34
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D868-N7 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D870      SINK      1.0000                                            
+LD        East Branch SWP Losses                                                          
+QC        A= B=D870-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D870-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14025,6 +15966,7 @@ LINK      DIVR      D870      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D870      PMP_Pearb 1.0000                                            
+LD        SWP East Branch Pumping P                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D870-PMP_Pearb C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14040,7 +15982,8 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 LINK      DIVR      D884      DBUGSNK   1                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
-LINK      DIVR      D884      N7        1.0000    3.40282306                              
+LINK      DIVR      D884      N7        1.0000                                  
+LD        West Branch SWP Diversion to AV                                                 
 BU        2.2,1.9,2.2,2.1,2.2,2.1,2.2,2.2,2.1,2.2,2.1,2.2
 QI        A=init B=D884-N7 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14116,6 +16059,7 @@ LINK      DIVR      PMP_OSO   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_OSO   D884      1.0000                                            
+LD        SWP West Branch Pumping                                                         
 BU        192.4,173.8,192.4,186.2,192.4,186.2,192.4,192.4,186.2,192.4,186.2,192.4
 QI        A=init B=PMP_OSO-D884 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14126,6 +16070,7 @@ LINK      DIVR      PMP_Pearb DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_Pearb C124      1.0000                                            
+LD        SWP East Branch                                                                 
 BU        176.9,159.8,176.9,171.2,176.9,171.2,176.9,176.9,171.2,176.9,171.2,176.9
 QI        A=init B=PMP_Pearb-C124 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14136,6 +16081,7 @@ LINK      DIVR      PWP_Alamo DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PWP_Alamo D868      1.0000                                            
+LD        SWP East Branch Power Plant                                                     
 BU        106.801,96.4656,106.801,103.336,106.801,103.356,106.801,106.801,103.356,106.801,103.356,106.801
 PQ        MO=JAN A= B=PWP_Alamo-D868 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=PWP_Alamo-D868 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -14174,6 +16120,7 @@ LINK      DIVR      HP502     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HP502     U502      1.0000                                            
+LD        Expanded wastewater recycling facility                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HP502-U502 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14184,6 +16131,7 @@ LINK      DIVR      HXI502    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI502    EXT_AV    1.0000                                            
+LD        Urban supply to Antelope Valley Exterior                                        
 QU        A= B=HXI502-EXT_AV C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI502-EXT_AV C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI502-EXT_AV C=Q(KAF)-P_EDT D= E=FEB F=
@@ -14206,6 +16154,7 @@ LINK      DIVR      INT_AV    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_AV    WWP502    0.9000                                            
+LD        Urban Return Flow                                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_AV-WWP502 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14220,6 +16169,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U502-HXI502 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U502      INT_AV    1.0000                                            
+LD        Total Urban Penatly Function                                                    
 QU        A= B=U502-INT_AV C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U502-INT_AV C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U502-INT_AV C=Q(KAF)-P_EDT D= E=FEB F=
@@ -14245,6 +16195,7 @@ LINK      DIVR      WTP502    U502      1.0000    375.9200
 QI        A=init B=WTP502-U502 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP502    SINK      1.0000                                            
+LD        SW Discharge to ??                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=WWP502-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14259,20 +16210,24 @@ BU        5.52,4.99,5.52,5.34,5.52,5.34,5.52,5.52,5.34,5.52,5.34,5.52
 QI        A=init B=WWP502-HNP502 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP502    HP502     1.0000    1480.0000           0.0000              
+LD        Expanded wastewater recycling facility for Antelope Valley                      
 QI        A=init B=WWP502-HP502 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP502    HGRAV     1.0000    50.0000             0.0000              
 QI        A=init B=WWP502-HGRAV C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C120      SR_LA     1.0000                                            
+LD        LA Aqueduct                                                                     
 BU        47.57,42.966,47.57,46.035,47.57,46.035,47.57,47.57,46.035,47.57,46.035,47.57
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C120-SR_LA C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C122      C161      1.0000    7.4000                                  
+LD        LAA Delivery to Central MWD                                                     
 QI        A=init B=C122-C161 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D871      D872      1.0000                                            
+LD        SWP East Branch (unconstrained)                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D871-D872 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14280,10 +16235,12 @@ LINK      DIVR      D871      WTP505    1.0000    45.0000
 QI        A=init B=D871-WTP505 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HARMJ     GW_MJ     0.9500                                            
+LD        Artificial recharge                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HARMJ-GW_MJ C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C122      SINK      1.0000                                            
+LD        LAA losses                                                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C122-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14300,6 +16257,7 @@ LINK      DIVR      PWP_Owens2DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PWP_Owens2C122      1.0000                                            
+LD        Assume this is the same as LA Aqueduct                                          
 BU        48,43.3,48,46.4,48,46.4,48,48,46.4,48,46.4,48
 PQ        MO=JAN A= B=PWP_Owens2-C122 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=PWP_Owens2-C122 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -14322,10 +16280,13 @@ LINK      DIVR      SR_LA     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_LA     PWP_Owens21.0000                                            
+LD        Los Angeles Aqueduct                                                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_LA-PWP_Owens2 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D872      SINK      1.0000                                            
+LD        East Branch SWP Losses                                                          
+QC        A= B=D872-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D872-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14336,6 +16297,7 @@ LINK      DIVR      D872      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D872      PWP_Mojave1.0000                                            
+LD        SWP East Branch Mojave Power P                                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D872-PWP_Mojave C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14379,6 +16341,7 @@ LINK      DIVR      PWP_MojaveDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PWP_MojaveSR_SLW    1.0000                                            
+LD        SWP East Branch: Mojave River connection to Silverwood                          
 PQ        MO=JAN A= B=PWP_Mojave-SR_SLW C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=PWP_Mojave-SR_SLW C=Q(KAF)-P_EDT D= E=FEB F=
 PQ        MO=MAR A= B=PWP_Mojave-SR_SLW C=Q(KAF)-P_EDT D= E=MAR F=
@@ -14422,6 +16385,7 @@ LINK      DIVR      HP505     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HP505     U505      1.0000                                            
+LD        Expanded wastewater recycling facility                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HP505-U505 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14432,6 +16396,7 @@ LINK      DIVR      HXI505    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI505    EXT_MR    1.0000                                            
+LD        urban demand                                                                    
 QU        A= B=HXI505-EXT_MR C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI505-EXT_MR C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI505-EXT_MR C=Q(KAF)-P_EDT D= E=FEB F=
@@ -14454,6 +16419,7 @@ LINK      DIVR      INT_MR    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_MR    WWP505    0.9000                                            
+LD        Total Urban Return Flow                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_MR-WWP505 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14468,6 +16434,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U505-HXI505 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U505      INT_MR    1.0000                                            
+LD        Total Urban Penalty Function                                                    
 QU        A= B=U505-INT_MR C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U505-INT_MR C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U505-INT_MR C=Q(KAF)-P_EDT D= E=FEB F=
@@ -14493,6 +16460,7 @@ LINK      DIVR      WTP505    U505      1.0000    375.9200
 QI        A=init B=WTP505-U505 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP505    SINK      1.0000                                            
+LD        SW Discharge to evap                                                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=WWP505-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14507,6 +16475,7 @@ BU        2.12,1.92,2.12,2.05,2.12,2.05,2.12,2.12,2.05,2.12,2.05,2.12
 QI        A=init B=WWP505-HNP505 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP505    HP505     1.0000    1480.0000           0.0000              
+LD        Expanded wastewater recycling facility for Mojave                               
 QI        A=init B=WWP505-HP505 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP505    HGRMJ     1.0000    50.0000                                 
@@ -14539,6 +16508,7 @@ LINK      DIVR      HU500     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HU500     AgS_Owens 1.0000                                            
+QC        A= B=HU500-AgS_Owens C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HU500-AgS_Owens C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14549,6 +16519,7 @@ LINK      DIVR      C116      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C116      C120      1.0000                                            
+LD        Upper Owens River                                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C116-C120 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14559,9 +16530,11 @@ LINK      DIVR      C120      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C120      HAROW     1.0000    7.4000              15.0000             
+LD        GW-OW Artificial Recharge                                                       
 QI        A=init B=C120-HAROW C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C120      SR_OL     1.0000                                            
+LD        Lower Owens River restoration                                                   
 BL        2.46,2.22,2.46,2.38,3.97,2.38,2.46,2.46,2.38,2.46,2.38,2.46
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C120-SR_OL C=FLOW_DIV(KAF) D= E=1MON F=
@@ -14596,6 +16569,7 @@ LINK      DIVR      HGPOW     A500      1.0000    29.6000
 QI        A=init B=HGPOW-A500 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGPOW     C120      1.0000    29.6000             10.0000             
+LD        GW-OW Pumping                                                                   
 QI        A=init B=HGPOW-C120 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   PWP_Owens11                                                 
@@ -14605,6 +16579,7 @@ LINK      DIVR      PWP_Owens1DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PWP_Owens1C116      1.0000                                            
+LD        LA Aqueduct                                                                     
 BU        49.6,44.8,49.6,48,49.6,48,49.6,49.6,48,49.6,48,49.6
 PQ        MO=JAN A= B=PWP_Owens1-C116 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=PWP_Owens1-C116 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -14627,10 +16602,12 @@ LINK      DIVR      SR_CRW    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_CRW    C116      1.0000                                            
+LD        Upper Owens River bypass for Owens Valley 1 Power Plant                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CRW-C116 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_CRW    PWP_Owens11.0000                                            
+LD        Middle Owens River                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CRW-PWP_Owens1 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14641,11 +16618,13 @@ LINK      DIVR      SR_GNT    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_GNT    SR_CRW    1.0000                                            
+LD        Mono Craters Tunnel                                                             
 BU        24.6,22.2,24.6,23.8,24.6,23.8,24.6,24.6,23.8,24.6,23.8,24.6
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_GNT-SR_CRW C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_GNT    SR_ML     1.0000                                            
+LD        Mono Lake Delivery                                                              
 QL        A= B=SR_GNT-SR_ML C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_GNT-SR_ML C=FLOW_DIV(KAF) D= E=1MON F=
@@ -14657,6 +16636,7 @@ LINK      DIVR      SR_ML     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_OL     SINK      1.0000                                            
+LD        Owens Lake Dust Mitigation Requirements                                         
 BL        1.99,1.24,1.26,1.6,2.8,4.2,6.05,7.69,8.7,2.04,1.47,0.95
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_OL-SINK C=FLOW_DIV(KAF) D= E=1MON F=
@@ -14668,54 +16648,67 @@ LINK      DIVR      SR_OL     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_OL     C120      1.0000                                            
+LD        Lower Owens river restoration water returned to LAA                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_OL-C120 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_CMN    C38       1.0000                                            
+LD        Mokel. River Reach                                                              
 QL        A= B=SR_CMN-C38 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_CMN-C38 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_MHW    C161      1.0000                                            
+LD        Upper & Lower Feeders                                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_MHW-C161 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_MIL    C49       1.0000                                            
+LD        Friant-Kern Canal export from Millerton to Reg 4                                
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_MIL-C49 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_MIL    D605      1.0000                                            
+LD        San Joaquin River between Friant dam and Gravelly Ford Reach 1                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_MIL-D605 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_SLW    PWP_Devils1.0000                                            
+LD        SWP East Branch (unconstrained)                                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_SLW-PWP_Devils C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_SNL    D714      1.0000                                            
+LD        Pacheco Tunnel                                                                  
 BU        29.52,26.66,29.52,28.57,29.52,28.57,29.52,29.52,28.57,29.52,28.57,29.52
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_SNL-D714 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C49       C51       0.9100                        0.0000              
+LD        Friant-Kern Canal discharge to Kings River                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C49-C51 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C53       C54       1.0000                                            
+LD        Kings River Reach 4 inflow to Crescent Weir                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C53-C54 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C53       HAR16     1.0000    6.5000                                  
+LD        Kings R to Fresno ID for spreading                                              
 QI        A=init B=C53-HAR16 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C53       HAR17     1.0000    6.5000                                  
+LD        Kings R to Consolidated ID subregion 17 and Kings R to Alta ID for spreading    
 QI        A=init B=C53-HAR17 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C53       HSU401C53 1.0000                        130.2000            
+LD        Surface delivery CVPM 16                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C53-HSU401C53 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C53       HSU403C53 1.0000                        217.4000            
+LD        Surface delivery CVPM 17                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C53-HSU403C53 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14723,28 +16716,34 @@ LINK      DIVR      C53       WTP401    1.0000    45.0000             14.0000
 QI        A=init B=C53-WTP401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C688      C62       1.0000                                            
+LD        Friant-Kern Canal Reach 4                                                       
 BU        246,222,246,238,246,238,246,246,238,246,238,246
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C688-C62 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C75       N9        1.0000                                            
+LD        Surface delivery CVPM 15                                                        
 BU        76.02,68.66,76.02,73.57,76.02,73.57,76.02,76.02,73.57,76.02,73.57,76.02
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C75-N9 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D845      D850      1.0000                                            
+LD        California Aqueduct                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D845-D850 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM15HGR15     0.5100                                            
+LD        Return flows from CVPM15                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM15-HGR15 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      GW_20     HGP20     1.0000                                            
+LD        Link to hidden node for calibration of GW-20                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_20-HGP20 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HAR20     GW_20     0.9500                                            
+LD        Artificial recharge from Friant-Kern Canal, Kern R and Cross Valley Canal       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HAR20-GW_20 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14752,22 +16751,28 @@ LINK      DIVR      HGP15     U404      1.0000    74.3700
 QI        A=init B=HGP15-U404 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGR20     GW_20     1.0000                                            
+LD        Return flow to GW                                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR20-GW_20 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSU402AD60A402A     0.8200                                            
+LD        Mendota Pool diversions to CVPM 14 (DA 60A) (Westlands WD)                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU402AD60-A402A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSU404AN9 A404A     0.9300                                            
+LD        California Aqueduct delivery to CVPM 15 (DA 60B) (Dudley Ridge WD, Empire West S
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU404AN9-A404A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSUR303   R_MDT     1.0000                                            
+LD        Deliveries to Mendota WA. Full level 2 and level 4 deliveries are assumed with a
+QC        A= B=HSUR303-R_MDT C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSUR303-R_MDT C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      INT_CVPM15HGR15     0.5100                                            
+LD        GW return flow from fixed CVPM urban pumping demand                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM15-HGR15 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14778,6 +16783,7 @@ LINK      DIVR      A408A     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A408A     HU408A    1.0000                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A408A-HU408A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14798,14 +16804,17 @@ LINK      DIVR      A409A     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A409A     C74       1.0000                        30.2000             
+LD        C66_C74 - FK Canal must be able to reach CA Aqued via CVC. Cap= 500 cfs (30.2 KA
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A409A-C74 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      A409A     C98       1.0000                        54.3000             
+LD        C-66_C98, This is the Kern River Canal (cap. 900 cfs); it allows A-E bi-directio
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A409A-C98 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      A409A     HU409A    1.0120                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A409A-HU409A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14860,6 +16869,7 @@ LINK      DIVR      A407      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A407      HU407     1.0030                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A407-HU407 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14876,6 +16886,7 @@ LINK      DIVR      CVPM20S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM20S   HSD407    0.2560                                            
+LD        SW return flow from CVPM 20                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM20S-HSD407 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14892,6 +16903,7 @@ LINK      DIVR      HSU407C63 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU407C63 A407      0.9300                                            
+LD        Cross Valley Canal delivery to CVPM 20                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU407C63-A407 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14902,6 +16914,7 @@ LINK      DIVR      HSU407C64 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU407C64 A407      0.9300                                            
+LD        Friant-Kern Canal delivery to CVPM 20 (DA 60G)                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU407C64-A407 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14912,6 +16925,7 @@ LINK      DIVR      HSU407C65 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU407C65 A407      0.8400                                            
+LD        Kern River diversions to CVPM 20 (DA 60G)                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU407C65-A407 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -14990,6 +17004,8 @@ LINK      DIVR      CVPM21CS  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C62       SINK      1.0000                                            
+LD        Friant-Kern Canal Losses                                                        
+QC        A= B=C62-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C62-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15000,18 +17016,23 @@ LINK      DIVR      C62       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C62       C64       1.0000                                            
+LD        Friant-Kern Canal Reach 5                                                       
 BU        215,194,215,208,215,208,215,215,208,215,208,215
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C62-C64 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C62       HAR19     1.0000    6.5000                                  
+LD        Friant-Kern Canal to subregion 19 for spreading                                 
 QI        A=init B=C62-HAR19 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C62       N10       1.0000                        3.5000              
+LD        Surface delivery Friant-Kern Canal to CVPM 19                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C62-N10 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C64       SINK      1.0000                                            
+LD        Friant-Kern Canal Losses                                                        
+QC        A= B=C64-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C64-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15022,14 +17043,17 @@ LINK      DIVR      C64       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C64       C689      1.0000                                            
+LD        Friant-Kern Canal Reach 6                                                       
 BU        154,139,154,149,154,149,154,154,149,154,149,154
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C64-C689 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C64       HAR20     1.0000    6.5000                                  
+LD        Friant-Kern Canal to subregion 20 for spreading                                 
 QI        A=init B=C64-HAR20 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C64       HSU407C64 1.0000                        69.4000             
+LD        Surface delivery Friant-Kern Canal to CVPM 20                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C64-HSU407C64 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15040,24 +17064,30 @@ LINK      DIVR      C65       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C65       C97       1.0000                                            
+LD        Kern River final reach                                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C65-C97 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C65       HAR20     1.0000    6.5000                                  
+LD        Kern R to subregion 20 for spreading                                            
 QI        A=init B=C65-HAR20 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C65       HAR21     1.0000    6.5000                                  
+LD        Kern River to subregion 21 for spreading                                        
 QI        A=init B=C65-HAR21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C65       HSU407C65 1.0000                        79.2000             
+LD        Surface delivery CVPM 20                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C65-HSU407C65 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C65       HSU408BC651.0000                        84.7000             
+LD        Surface delivery CVPM 19 (formerly C97_C100 =65.6)                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C65-HSU408BC65 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C65       HSU409AC651.0000                        135.5000            
+LD        Surface delivery CVPM 21                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C65-HSU409AC65 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15065,6 +17095,8 @@ LINK      DIVR      C65       WTP407    1.0000    45.0000             0.0000
 QI        A=init B=C65-WTP407 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C689      SINK      1.0000                                            
+LD        Friant-Kern Canal Losses                                                        
+QC        A= B=C689-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C689-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15075,13 +17107,16 @@ LINK      DIVR      C689      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C689      C65       0.9100                                            
+LD        Friant-Kern Canal discharge to Kern River                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C689-C65 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C689      HAR21     1.0000    6.5000                                  
+LD        California Aqueduct and Kern R to subregion 21 for spreading                    
 QI        A=init B=C689-HAR21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C689      HSU409AC681.0000                        28.8000             
+LD        Surface delivery Friant-Kern Canal to CVPM 21                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C689-HSU409AC68 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15092,13 +17127,17 @@ LINK      DIVR      C73       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C73       D859      1.0000                                            
+LD        Kern River Intertie                                                             
+QC        A= B=C73-D859 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C73-D859 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C73       HAR19     1.0000    6.5000                                  
+LD        Kern R to subregion 19 for spreading                                            
 QI        A=init B=C73-HAR19 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C73       SR_BVLB   1.0000                                            
+LD        Flood flow from Kern River to Buena Vista Lake                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C73-SR_BVLB C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15109,28 +17148,35 @@ LINK      DIVR      C74       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C74       C97       1.0000                                            
+LD        Cross-Valley Canal Reach 2, discharge to Kern River                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C74-C97 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C74       D752      1.0000                        30.2000             
+LD        CVC goes both ways; add C74_D752. Cap, 812 cfs (49 KAF/mo) eastward, 500 cfs (30
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C74-D752 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C74       HAR20     1.0000    6.5000                                  
+LD        Cross-Valley Canal to subregion 20 for spreading                                
 QI        A=init B=C74-HAR20 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C74       HAR21     1.0000    6.5000              0.0000              
+LD        Cross Valley Canal to subregion 21 for spreading                                
 QI        A=init B=C74-HAR21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C74       HSU407C63 1.0000                                            
+LD        Cross Valley Canal delivery to CVPM 20                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C74-HSU407C63 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C74       HSU408AC741.0000                        0.0000              
+LD        Cross Valley Canal delivery to CVPM 19                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C74-HSU408AC74 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C74       HSU409AC741.0000                        30.6000             
+LD        Surface delivery CVPM 20 (all of DWRSIM DIVR CP752=80.5)                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C74-HSU409AC74 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15141,11 +17187,14 @@ LINK      DIVR      C95       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C95       D752      1.0000                                            
+LD        California Aqueduct                                                             
 BU        329.05,297.2,329.05,318.43,329.05,318.43,329.05,329.05,318.43,329.05,318.43,329.05
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C95-D752 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C97       SINK      1.0000                                            
+LD        Depletion from Kern River                                                       
+QC        A= B=C97-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C97-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15156,6 +17205,7 @@ LINK      DIVR      C97       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C97       C73       1.0000                                            
+LD        Kern River spills to Buena Vista Lake and transfer to Intertie                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C97-C73 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15169,14 +17219,17 @@ LINK      DIVR      C98       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C98       D855      1.0000                        30.2000             
+LD        C98_D855&D8577; Kern WB Canal can go both ways. 500 cfs (30.2 KAF/mo)  Westward,
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C98-D855 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C98       D860      1.0000                        12.1000             
+LD        AE intertie, C-98_D860; westward 200 cfs (12.1 KAF/mo). Eastward = 200 cfs. (Bot
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C98-D860 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C98       HAR21     1.0000    7.4000                                  
+LD        Link representing artificial recharge in GW basin 21: Kern Water Bank and Arvin 
 QI        A=init B=C98-HAR21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      CVPM19AG  HGR19     0.2460                                            
@@ -15184,6 +17237,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM19AG-HGR19 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      CVPM19AS  HSD408A   0.2460                                            
+LD        SW return flow from CVPM 19                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM19AS-HSD408A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15204,6 +17258,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM21AG-HGR21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      CVPM21AS  HSD21     0.2780                                            
+LD        SW return flow from CVPM 21                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM21AS-HSD21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15230,11 +17285,13 @@ LINK      DIVR      D752      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D752      C74       1.0000                                            
+LD        Cross Valley Canal Reach 1 - OK, upper bounds correspond to circa 812 cfs cap -J
 BU        49.2,44.44,49.2,47.62,49.2,47.62,49.2,49.2,47.62,49.2,47.62,49.2
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D752-C74 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D752      D855      1.0000                                            
+LD        California Aqueduct                                                             
 BU        329.05,297.2,329.05,318.43,329.05,318.43,329.05,329.05,318.43,329.05,318.43,329.05
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D752-D855 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -15246,6 +17303,7 @@ LINK      DIVR      D847      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D847      N11       1.0000                                            
+LD        Surface delivery to CVPM 19 from Coastal Aqueduct                               
 BU        20.67,18.67,20.67,20,20.67,20,20.67,20.67,20,20.67,20,20.67
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D847-N11 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -15257,14 +17315,17 @@ LINK      DIVR      D850      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D850      D851      1.0000                                            
+LD        California Aqueduct                                                             
 BU        329.05,297.2,329.05,318.43,329.05,318.43,329.05,329.05,318.43,329.05,318.43,329.05
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D850-D851 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D850      HAR19     1.0000    6.5000                                  
+LD        California Aqueduct to subregion 19 for spreading                               
 QI        A=init B=D850-HAR19 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D850      N12       1.0000                                            
+LD        Surface delivery CVPM 19                                                        
 BU        243.37,219.82,243.37,235.52,243.37,235.52,243.37,243.37,235.52,243.37,235.52,243.37
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D850-N12 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -15276,11 +17337,14 @@ LINK      DIVR      D851      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D851      D853      1.0000                                            
+LD        California Aqueduct                                                             
 BU        329.05,297.2,329.05,318.43,329.05,318.43,329.05,329.05,318.43,329.05,318.43,329.05
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D851-D853 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D853      SINK      1.0000                                            
+LD        California Aqueduct losses R8C-13C                                              
+QC        A= B=D853-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D853-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15291,6 +17355,7 @@ LINK      DIVR      D853      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D853      C95       1.0000                                            
+LD        California Aqueduct                                                             
 BU        329.05,297.2,329.05,318.43,329.05,318.43,329.05,329.05,318.43,329.05,318.43,329.05
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D853-C95 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -15302,10 +17367,12 @@ LINK      DIVR      D855      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D855      C98       1.0000                        60.3000             
+LD        Surface delivery California Aqueduct to CVPM 21                                 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D855-C98 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D855      D859      1.0000                                            
+LD        California Aqueduct                                                             
 BU        329.05,297.2,329.05,318.43,329.05,318.43,329.05,329.05,318.43,329.05,318.43,329.05
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D855-D859 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -15317,6 +17384,7 @@ LINK      DIVR      D859      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D859      PMP_Buena 1.0000                                            
+LD        California Aqueduct Diversion to Buena Vista Pumping Plant                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D859-PMP_Buena C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15327,10 +17395,12 @@ LINK      DIVR      D860      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D860      C98       1.0000                        12.0000             
+LD        Surface delivery CVPM 21       ;         JH 29-8-05 Who knows what they called t
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D860-C98 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D860      D861      1.0000                                            
+LD        California Aqueduct                                                             
 BU        301.37,272.2,301.37,291.65,301.37,291.65,301.37,301.37,291.65,301.37,291.65,301.37
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D860-D861 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -15340,6 +17410,8 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D860-HSU409CD86 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D861      SINK      1.0000                                            
+LD        California Aqueduct losses R15A-18A                                             
+QC        A= B=D861-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D861-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15350,6 +17422,7 @@ LINK      DIVR      D861      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D861      PMP_Wheelr1.0000                                            
+LD        California Aqueduct diversion to Wheeler Ridge Pumping Plant                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D861-PMP_Wheelr C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15360,6 +17433,7 @@ LINK      DIVR      D862A     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D862A     D863      1.0000                                            
+LD        California Aqueduct                                                             
 BU        270.62,244.43,270.62,261.89,270.62,261.89,270.62,270.62,261.89,270.62,261.89,270.62
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D862A-D863 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -15375,6 +17449,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D862B-HSU409BD86 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D862B     PMP_Edmons1.0000                                            
+LD        California Aqueduct Diversion to Edmonston Pumping Plant                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D862B-PMP_Edmons C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15385,18 +17460,22 @@ LINK      DIVR      D863      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D863      PMPChris  1.0000                                            
+LD        California Aqueduct Diversion to Chrisman Pumping Plant                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D863-PMPChris C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      Ext_CVPM19HGR19     0.4480                                            
+LD        return flows from CVPM19 exterior                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=Ext_CVPM19-HGR19 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM20HGR20     0.5000                                            
+LD        Return flow to GW                                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM20-HGR20 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM21HGR21     0.4650                                            
+LD        return flows from CVPM21 exterior                                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM21-HGR21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15407,6 +17486,7 @@ LINK      DIVR      GW_19     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_19     HGP19     1.0000                                            
+LD        Hidden GW pumping calibration link                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_19-HGP19 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15417,6 +17497,7 @@ LINK      DIVR      GW_21     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_21     HGP21     1.0000                                            
+LD        GW pumping calibration link                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_21-HGP21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15437,6 +17518,7 @@ LINK      DIVR      HAR19     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HAR19     GW_19     0.9500                                            
+LD        Artificial recharge from Kern R, California Aqueduct and Friant-Kern Canal      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HAR19-GW_19 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15453,6 +17535,7 @@ LINK      DIVR      HAR21     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HAR21     GW_21     0.9500                                            
+LD        Artificial recharge from Kern R, Frian-Kern Canal, California Aqueduct and Cross
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HAR21-GW_21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15463,6 +17546,7 @@ LINK      DIVR      HARKRN    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HARKRN    GW_KRN    0.9000    14.8000                                 
+LD        Recharge in GW-Kern-Semitropic-Arvin/Edison                                     
 BU        17.2,15.53,17.2,16.64,17.2,16.64,17.2,17.2,16.64,17.2,16.64,17.2
 QI        A=init B=HARKRN-GW_KRN C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15473,15 +17557,18 @@ LINK      DIVR      HGP19     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP19     A408A     1.0000    136.2000            213.6900            
+LD        Agricultural groundwater pumping GW-19 to CVPM 19 Demand                        
 QI        A=init B=HGP19-A408A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP19     A408B     1.0000    136.2000            213.6900            
 QI        A=init B=HGP19-A408B C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP19     D851      1.0000    101.8240            53.0000             
+LD        Semitrop water bank - pumping back to CA aqueduct.                              
 QI        A=init B=HGP19-D851 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP19     R401      1.0000    136.2000            0.0000              
+LD        Maximum historical monthly GW used as water supply source at Kern NWR. Source: T
 QI        A=init B=HGP19-R401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP19     U408      1.0000    136.2000                                
@@ -15494,9 +17581,11 @@ LINK      DIVR      HGP20     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP20     A407      1.0000    142.1400            125.2800            
+LD        Agricultural groundwater pumping GW-20 to CVPM 20 Demand                        
 QI        A=init B=HGP20-A407 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP20     U407      1.0000    142.1400                                
+LD        M&I pumping for CVPM 20                                                         
 QI        A=init B=HGP20-U407 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   HGP21     1                                                 
@@ -15506,6 +17595,7 @@ LINK      DIVR      HGP21     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP21     A409A     1.0000    119.5100            265.6500            
+LD        Agricultural groundwater pumping GW-21 to CVPM 21 Demand                        
 QI        A=init B=HGP21-A409A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP21     A409B     1.0000    119.5100            265.6500            
@@ -15515,6 +17605,7 @@ LINK      DIVR      HGP21     A409C     1.0000    119.5100            265.6500
 QI        A=init B=HGP21-A409C C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP21     C98       1.0000                        27.2500             
+LD        GW-21 _C98 (=pumping of KWB and AE), replaces GW-21_D860. JH 4/2006             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGP21-C98 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15522,6 +17613,7 @@ LINK      DIVR      HGP21     U409      1.0000    136.2000
 QI        A=init B=HGP21-U409 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP21     U410      1.0000    189.4400                                
+LD        GW-21 pumping to Bakersfield                                                    
 QI        A=init B=HGP21-U410 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   HGPKRN    1                                                 
@@ -15537,6 +17629,7 @@ LINK      DIVR      HGR19     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR19     GW_19     1.0000                                            
+LD        Link from hidden node for calibration of GW-19                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR19-GW_19 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15553,6 +17646,7 @@ LINK      DIVR      HGR21     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR21     GW_21     1.0000                                            
+LD        Link from hidden node for calibration of GW-21                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR21-GW_21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15563,10 +17657,12 @@ LINK      DIVR      HSD21     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSD21     C73       1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD21-C73 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD407    C73       1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD407-C73 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15577,6 +17673,7 @@ LINK      DIVR      HSD408A   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSD408A   C73       1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD408A-C73 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15591,6 +17688,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD408B-C73 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD408B   R401      1.0000                        0.0000              
+LD        Ag return flow supply for Kern Refuge. Assumed to be zero pending further invest
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD408B-R401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15631,6 +17729,7 @@ LINK      DIVR      HSU408AC74DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU408AC74A408A     0.9300                                            
+LD        Cross Valley Canal delivery to CVPM 19                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU408AC74-A408A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15641,6 +17740,7 @@ LINK      DIVR      HSU408AN10DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU408AN10A408A     0.9300                                            
+LD        Friant-Kern Canal delivery to CVPM 19 (DA 60F)                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU408AN10-A408A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15651,6 +17751,7 @@ LINK      DIVR      HSU408AN11DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU408AN11A408A     0.9300                                            
+LD        California Aqueduct to CVPM 19, includes Semitropic                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU408AN11-A408A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15661,6 +17762,7 @@ LINK      DIVR      HSU408AN12DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU408AN12A408A     0.9300                                            
+LD        California Aqueduct to CVPM 19, includes Semitropic                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU408AN12-A408A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15705,6 +17807,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU408BN12-A408B C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSU408BN12HSR401    0.9300                                            
+LD        California Aqueduct delivery into Kern Refuge                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU408BN12-HSR401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15715,6 +17818,7 @@ LINK      DIVR      HSU409AC65DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU409AC65A409A     0.9000                                            
+LD        Kern River diversions to CVPM 21 (DA 60H)                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU409AC65-A409A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15725,6 +17829,7 @@ LINK      DIVR      HSU409AC68DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU409AC68A409A     0.9300                                            
+LD        Friant-Kern Canal delivery to CVPM 21 (DA 60H)                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU409AC68-A409A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15735,6 +17840,7 @@ LINK      DIVR      HSU409AC74DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU409AC74A409A     0.9300                                            
+LD        Cross-Valley Canal delivery to CVPM 21 (DA 60H) (correct FXC to 80.5)           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU409AC74-A409A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15765,6 +17871,8 @@ LINK      DIVR      HSUR401   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSUR401   R_KER     1.0000                                            
+LD        Deliveries to Kern NWR. Full level 2 and level 4 deliveries are assumed with a  
+QC        A= B=HSUR401-R_KER C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSUR401-R_KER C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -15959,10 +18067,12 @@ PQ        MO=DEC A= B=HU409C-CVPM21CS C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=HU409C-CVPM21CS C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      INT_CVPM19HGR19     0.4480                                            
+LD        GW return flow from fixed CVPM urban pumping demand                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM19-HGR19 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      INT_CVPM21HGR21     0.4650                                            
+LD        GW return flow from fixed CVPM urban pumping demand                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM21-HGR21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16015,6 +18125,7 @@ LINK      DIVR      PMP_Buena DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_Buena D860      1.0000                                            
+LD        California Aqueduct Pumping Plant                                               
 BU        310.6,280.53,310.6,300.57,310.6,300.57,310.6,310.6,300.57,310.6,300.57,310.6
 QI        A=init B=PMP_Buena-D860 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16031,6 +18142,7 @@ LINK      DIVR      PMP_WheelrDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_WheelrD862A     1.0000                                            
+LD        California Aqueduct Pumping Plant                                               
 BU        270.62,244.43,270.62,261.89,270.62,261.89,270.62,270.62,261.89,270.62,261.89,270.62
 QI        A=init B=PMP_Wheelr-D862A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16041,6 +18153,7 @@ LINK      DIVR      PMPChris  DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMPChris  D862B     1.0000                                            
+LD        California Aqueduct Pumping Plant                                               
 BU        270.62,244.43,270.62,261.89,270.62,261.89,270.62,270.62,261.89,270.62,261.89,270.62
 QI        A=init B=PMPChris-D862B C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16051,6 +18164,7 @@ LINK      DIVR      R401      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      R401      HSUR401   1.0000                                            
+LD        On-site reuse within refuges. WMPs indicate presence of on-site operational loss
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R401-HSUR401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16061,6 +18175,7 @@ LINK      DIVR      R_KER     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      R_KER     C73       0.0010                                            
+LD        SW return flow from KernNWR                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R_KER-C73 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16071,10 +18186,12 @@ LINK      DIVR      SR_BVLB   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_BVLB   D859      1.0000                        14.5000             
+LD        New BV Lake pumping plant.  SR-BLV_ D859 (240 cfs,14.5 KAF/mo) -JH 4/2006       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_BVLB-D859 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_BAKER SINK      1.0000                                            
+LD        exterior urban return flows                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_BAKER-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16111,6 +18228,7 @@ LINK      DIVR      HXI410    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI410    EXT_BAKER 1.0000                                            
+LD        inflows to exterior urban                                                       
 QU        A= B=HXI410-EXT_BAKER C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI410-EXT_BAKER C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI410-EXT_BAKER C=Q(KAF)-P_EDT D= E=FEB F=
@@ -16133,6 +18251,7 @@ LINK      DIVR      INT_BAKER DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_BAKER WWP410    0.9000                                            
+LD        interior residential Return Flow TOTAL                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_BAKER-WWP410 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16147,6 +18266,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U410-HXI410 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U410      INT_BAKER 1.0000                                            
+LD        Interior Residential Urban Penalty Function                                     
 QU        A= B=U410-INT_BAKER C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U410-INT_BAKER C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U410-INT_BAKER C=Q(KAF)-P_EDT D= E=FEB F=
@@ -16202,10 +18322,12 @@ LINK      DIVR      U408      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      U408      Ext_CVPM191.0000                                            
+QC        A= B=U408-Ext_CVPM19 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U408-Ext_CVPM19 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U408      INT_CVPM191.0000                                            
+QC        A= B=U408-INT_CVPM19 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U408-INT_CVPM19 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16242,6 +18364,7 @@ LINK      DIVR      HXI407    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI407    EXT_CVPM201.0000                                            
+LD        diversion to CVPM20 exterior                                                    
 QU        A= B=HXI407-EXT_CVPM20 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI407-EXT_CVPM20 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI407-EXT_CVPM20 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -16264,6 +18387,7 @@ LINK      DIVR      INT_CVPM20DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_CVPM20WWP407    0.9000                                            
+LD        Return flows from urban applied water                                           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM20-WWP407 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16278,6 +18402,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U407-HXI407 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U407      INT_CVPM201.0000                                            
+LD        Urban penalty function for CVPM 20 urban- Delano and Wasco interior             
 QU        A= B=U407-INT_CVPM20 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U407-INT_CVPM20 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U407-INT_CVPM20 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -16333,23 +18458,28 @@ LINK      DIVR      U409      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      U409      EXT_CVPM211.0000                                            
+QC        A= B=U409-EXT_CVPM21 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U409-EXT_CVPM21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U409      INT_CVPM211.0000                                            
+QC        A= B=U409-INT_CVPM21 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U409-INT_CVPM21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP407    C73       1.0000    50.0000                                 
+LD        SW only return flow CVPM urban deliveries                                       
 QI        A=init B=WWP407-C73 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP407    HGR20     1.0000    50.0000                                 
 QI        A=init B=WWP407-HGR20 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP410    C73       1.0000    50.0000                                 
+LD        Bakersfield SW discharge to Kern River                                          
 QI        A=init B=WWP410-C73 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP410    HGR21     1.0000    50.0000             0.0000              
+LD        Bakersfield incidental recharge to groundwater                                  
 QI        A=init B=WWP410-HGR21 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   A404A     1                                                 
@@ -16359,6 +18489,7 @@ LINK      DIVR      A404A     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A404A     HU404A    1.0000                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A404A-HU404A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16403,6 +18534,7 @@ LINK      DIVR      A401      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A401      HU401     1.0820                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A401-HU401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16419,6 +18551,7 @@ LINK      DIVR      CVPM16S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM16S   HSD401    0.2660                                            
+LD        SW return flow from CVPM 16                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM16S-HSD401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16435,6 +18568,7 @@ LINK      DIVR      HSU401C49 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU401C49 A401      0.9300                                            
+LD        Friant-Kern Canal delivery to CVPM 16 (DA 60C)                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU401C49-A401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16445,6 +18579,7 @@ LINK      DIVR      HSU401C53 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU401C53 A401      0.8500                                            
+LD        Kings River diversion to CVPM 16 (DA 60C)                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU401C53-A401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16455,6 +18590,7 @@ LINK      DIVR      HSU401D606DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU401D606A401      0.8200                                            
+LD        San Joaquin River left bank riparian diversions between Friant dam and Gravelly 
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU401D606-A401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16503,6 +18639,7 @@ LINK      DIVR      A403      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A403      HU403     1.0000                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A403-HU403 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16519,6 +18656,7 @@ LINK      DIVR      CVPM17S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM17S   HSD403    0.2800                                            
+LD        SW return flow from CVPM 17                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM17S-HSD403 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16535,6 +18673,7 @@ LINK      DIVR      HSU403C53 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU403C53 A403      0.8800                                            
+LD        Kings River diversion to CVPM 17 (DA 60D)                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU403C53-A403 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16545,6 +18684,7 @@ LINK      DIVR      HSU403C76 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU403C76 A403      0.9300                                            
+LD        Friant-Kern Canal delivery to CVPM 17 (DA 60D)                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU403C76-A403 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16593,6 +18733,7 @@ LINK      DIVR      A405      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A405      HU405     1.0000                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A405-HU405 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16609,6 +18750,7 @@ LINK      DIVR      CVPM18S   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      CVPM18S   HSD405    0.2900                                            
+LD        SW return flow from CVPM 18                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM18S-HSD405 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16625,6 +18767,7 @@ LINK      DIVR      HSU405C56 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU405C56 A405      0.8300                                            
+LD        Kaweah River diversion to CVPM 18 (DA 60E)                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU405C56-A405 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16635,6 +18778,7 @@ LINK      DIVR      HSU405C58 DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU405C58 A405      0.8300                                            
+LD        Tule Diversion to CVPM 18 (DA 60E)                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU405C58-A405 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16645,6 +18789,7 @@ LINK      DIVR      HSU405C688DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU405C688A405      0.9300                                            
+LD        Friant-Kern Canal delivery to CVPM 18 (DA 60E)                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU405C688-A405 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16687,6 +18832,8 @@ PQ        MO=DEC A= B=HU405-CVPM18S C=Q(KAF)-P_EDT D= E=DEC F=
 QI        A=init B=HU405-CVPM18S C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C49       SINK      1.0000                                            
+LD        Friant-Kern Canal Losses                                                        
+QC        A= B=C49-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C49-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16697,20 +18844,25 @@ LINK      DIVR      C49       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C49       C76       1.0000                                            
+LD        Friant-Kern Canal Reach 2                                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C49-C76 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C49       HAR16     1.0000    6.5000                                  
+LD        Frian-Kern Canal to SR16 for spreading                                          
 QI        A=init B=C49-HAR16 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C49       HAR17     1.0000    6.5000                                  
+LD        Friant-Kern Canal to subregion 17 for spreading                                 
 QI        A=init B=C49-HAR17 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C49       HSU401C49 1.0000                        6.8000              
+LD        Surface delivery Friant-Kern Canal delivery CVPM 16                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C49-HSU401C49 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C49       HSU404AC491.0000                        0.0000              
+LD        Surface delivery Friant-Kern Canal delivery CVPM 15                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C49-HSU404AC49 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16718,6 +18870,8 @@ LINK      DIVR      C49       WTP401    1.0000    45.0000
 QI        A=init B=C49-WTP401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C52       SINK      1.0000                                            
+LD        Depletion from South Fork of Kings River                                        
+QC        A= B=C52-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C52-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16728,17 +18882,21 @@ LINK      DIVR      C52       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C52       C59       1.0000                                            
+LD        Kings River South Fork below Crescent Weir                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C52-C59 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C52       HAR15     1.0000    6.5000                                  
+LD        Kings River diversion for spreading                                             
 QI        A=init B=C52-HAR15 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C52       HSU404AC521.0000                        461.0000            
+LD        Surface delivery CVPM 15                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C52-HSU404AC52 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C54       SINK      1.0000                                            
+QC        A= B=C54-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C54-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16749,10 +18907,13 @@ LINK      DIVR      C54       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C54       C52       1.0000                                            
+LD        Kings River South Fork below Crescent Weir                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C54-C52 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C56       SINK      1.0000                                            
+LD        Depletion from Kaweah River                                                     
+QC        A= B=C56-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C56-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16763,17 +18924,21 @@ LINK      DIVR      C56       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C56       C59       1.0000                                            
+LD        Kaweah River flood flow to Tulare Lake                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C56-C59 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C56       HAR18     1.0000    6.5000                                  
+LD        Kaweah R to subregion 18 for spreading                                          
 QI        A=init B=C56-HAR18 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C56       HSU404AC561.0000                        29.7000             
+LD        Surface delivery CVPM 15                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C56-HSU404AC56 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C56       HSU405C56 1.0000                        197.6000            
+LD        Surface delivery CVPM 18                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C56-HSU405C56 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16787,10 +18952,13 @@ LINK      DIVR      C57       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C57       C58       1.0000                                            
+LD        Tule River Reach 2                                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C57-C58 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C58       SINK      1.0000                                            
+LD        Depletion from Tule River                                                       
+QC        A= B=C58-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C58-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16801,13 +18969,16 @@ LINK      DIVR      C58       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C58       C59       1.0000                                            
+LD        Tule River flood flow to Tulare Lake Reach 3                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C58-C59 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C58       HAR18     1.0000    6.5000                                  
+LD        Tule R riparian to subregion 18 for spreading                                   
 QI        A=init B=C58-HAR18 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C58       HSU405C58 1.0000                        25.4000             
+LD        Surface delivery CVPM 18                                                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C58-HSU405C58 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16818,10 +18989,13 @@ LINK      DIVR      C59       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C59       SR_TL     1.0000                                            
+LD        Flood flow to Tulare Lake Bed                                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C59-SR_TL C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C688      SINK      1.0000                                            
+LD        Friant-Kern Canal Losses                                                        
+QC        A= B=C688-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C688-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16832,13 +19006,16 @@ LINK      DIVR      C688      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C688      C57       0.9100                        0.0000              
+LD        Friant-Kern Canal discharge to Tule River                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C688-C57 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C688      HAR18     1.0000    6.5000                                  
+LD        Friant-Kern Canal to subregion 18 for spreading                                 
 QI        A=init B=C688-HAR18 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C688      HSU405C6881.0000                        172.3000            
+LD        Surface delivery Friant-Kern Canal to CVPM 18                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C688-HSU405C688 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16846,6 +19023,8 @@ LINK      DIVR      C688      WTP405    1.0000    45.0000             0.0000
 QI        A=init B=C688-WTP405 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C76       SINK      1.0000                                            
+LD        Friant-Kern Canal Losses (CUP2014)                                              
+QC        A= B=C76-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C76-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16856,15 +19035,18 @@ LINK      DIVR      C76       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C76       C688      1.0000                                            
+LD        Friant-Kern Canal Reach 3                                                       
 BU        277,250,277,268,277,268,277,277,268,277,268,277
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C76-C688 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C76       C89       0.9100                        0.0000              
+LD        Friant-Kern Canal discharge to Kaweah River                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C76-C89 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C76       HSU403C76 1.0000                        12.9000             
+LD        Surface delivery Friant-Kern Canal to CVPM 17                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C76-HSU403C76 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16875,6 +19057,7 @@ LINK      DIVR      C89       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C89       C56       1.0000                                            
+LD        Kaweah River Reach 2                                                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C89-C56 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16883,6 +19066,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM15AG-HGR15 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      CVPM15AS  HSD404A   0.2790                                            
+LD        SW return flow from CVPM 15                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM15AS-HSD404A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16907,6 +19091,8 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM18G-HGR18 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D605      SINK      1.0000                                            
+LD        Only for climate change studies, for historical case all flows are zero.        
+QC        A= B=D605-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D605-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16917,6 +19103,7 @@ LINK      DIVR      D605      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D605      D606      1.0000                                            
+LD        San Joaquin River between Friant Dam and Gravelly Ford Reach 2                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D605-D606 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16927,18 +19114,22 @@ LINK      DIVR      D606      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D606      HSU401D6061.0000                                            
+LD        Boundary Flow - SJ River Riparian export to CVPM 16 (C50)                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D606-HSU401D606 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM17HGR17     0.4700                                            
+LD        Return flow from Urban CVPM17                                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM17-HGR17 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_CVPM18HGR18     0.4680                                            
+LD        Urban Return Flow to GW                                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_CVPM18-HGR18 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      EXT_FRESN HGR16     0.1000                                            
+LD        Exterior urban residential return flows                                         
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=EXT_FRESN-HGR16 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16949,6 +19140,7 @@ LINK      DIVR      GW_15     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_15     HGP15     1.0000                                            
+LD        Hidden groundwater pumping calibration                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_15-HGP15 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16959,6 +19151,7 @@ LINK      DIVR      GW_16     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_16     HGP16     1.0000                                            
+LD        Link to hidden node for calibration of GW-16                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_16-HGP16 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16969,6 +19162,7 @@ LINK      DIVR      GW_17     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_17     HGP17     1.0000                                            
+LD        Link to hidden node for calibration of GW-17                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_17-HGP17 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16979,6 +19173,7 @@ LINK      DIVR      GW_18     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_18     HGP18     1.0000                                            
+LD        Link to hidden node for calibration of GW-18                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_18-HGP18 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -16995,6 +19190,7 @@ LINK      DIVR      HAR15     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HAR15     GW_15     0.9500                                            
+LD        Artificial recharge from Kings River                                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HAR15-GW_15 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17005,6 +19201,7 @@ LINK      DIVR      HAR16     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HAR16     GW_16     0.9500                                            
+LD        Artificial recharge                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HAR16-GW_16 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17015,6 +19212,7 @@ LINK      DIVR      HAR17     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HAR17     GW_17     0.9500                                            
+LD        Artificial recharge from Kings R and Friant-Kern Canal diversions               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HAR17-GW_17 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17025,6 +19223,7 @@ LINK      DIVR      HAR18     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HAR18     GW_18     0.9500                                            
+LD        Artificial recharge from Kaweah R, Tule R and Frian-Kern Canal                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HAR18-GW_18 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17035,6 +19234,7 @@ LINK      DIVR      HGP15     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP15     A404A     1.0000    74.3700             335.2500            
+LD        Agricultural groundwater pumping GW-15 to CVPM 15 Demand                        
 QI        A=init B=HGP15-A404A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP15     A404B     1.0000    74.3700             335.2500            
@@ -17047,9 +19247,11 @@ LINK      DIVR      HGP16     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP16     A401      1.0000    62.3700             61.7700             
+LD        Agricultural groundwater pumping GW-16 to CVPM 16 Demand                        
 QI        A=init B=HGP16-A401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP16     U401      1.0000    118.4000                                
+LD        GW-16 to Fresno GW pumping supply                                               
 QI        A=init B=HGP16-U401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   HGP17     1                                                 
@@ -17059,9 +19261,11 @@ LINK      DIVR      HGP17     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP17     A403      1.0000    55.2800             152.6200            
+LD        Agricultural groundwater pumping GW-17 to CVPM 17 Demand                        
 QI        A=init B=HGP17-A403 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP17     U403      1.0000    103.6000                                
+LD        M&I pumping for CVPM 17 urban - Sanger, Selma, Reedley and Dinuba               
 QI        A=init B=HGP17-U403 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   HGP18     1                                                 
@@ -17071,12 +19275,15 @@ LINK      DIVR      HGP18     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP18     A405      1.0000    76.0900             300.0000            
+LD        Agricultural groundwater pumping GW-18 to CVPM 18 Demand                        
 QI        A=init B=HGP18-A405 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP18     R402      1.0000    76.0900                                 
+LD        Pixley relies solely on GW for meeting its Level 2 and Level 4 deliveries. Histo
 QI        A=init B=HGP18-R402 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP18     U405      1.0000    140.6000                                
+LD        M&I pumping for CVPM 18 Urban                                                   
 QI        A=init B=HGP18-U405 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      DBUGSRC   HGR15     1                                                 
@@ -17086,6 +19293,7 @@ LINK      DIVR      HGR15     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR15     GW_15     1.0000                                            
+LD        Link from hidden node for calibration of GW-15                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR15-GW_15 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17096,6 +19304,7 @@ LINK      DIVR      HGR16     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR16     GW_16     1.0000                                            
+LD        Link from hidden node for calibration of GW-16                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR16-GW_16 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17106,6 +19315,7 @@ LINK      DIVR      HGR17     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR17     GW_17     1.0000                                            
+LD        Return flow to GW from Urban CVPM 17                                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR17-GW_17 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17116,14 +19326,17 @@ LINK      DIVR      HGR18     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR18     GW_18     1.0000                                            
+LD        Return flow to GW from urban CVPM18                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR18-GW_18 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD401    C59       1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD401-C59 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD403    C59       1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD403-C59 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17134,6 +19347,7 @@ LINK      DIVR      HSD404A   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSD404A   C59       1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD404A-C59 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17148,10 +19362,12 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD404B-C59 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD405    C59       1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD405-C59 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSD405    R402      1.0000                        0.0000              
+LD        Ag return flow supply for Pixley refuge. The refuge is not connected to the SW n
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD405-R402 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17162,6 +19378,7 @@ LINK      DIVR      HSR402    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSR402    R402      1.0000                        0.0000              
+LD        Friant-Kern Canal delivery into Pixley Refuge. USFWS in process of negotiating w
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSR402-R402 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17178,6 +19395,7 @@ LINK      DIVR      HSU404AC49DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU404AC49A404A     0.9300                                            
+LD        Friant-Kern Canal delivery to CVPM 15 (DA 60B)                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU404AC49-A404A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17188,6 +19406,7 @@ LINK      DIVR      HSU404AC52DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU404AC52A404A     0.8000                                            
+LD        Kings River Diversion to CVPM 15 (DA 60B)                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU404AC52-A404A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17198,6 +19417,7 @@ LINK      DIVR      HSU404AC56DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU404AC56A404A     0.8400                                            
+LD        Kaweah River diversion for CVPM 15                                              
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU404AC56-A404A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17208,6 +19428,7 @@ LINK      DIVR      HSU404AD60DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU404AD60A404A     0.8200                                            
+LD        Mendota Pool diversion to CVPM 15 (DA 60B)                                      
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU404AD60-A404A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17222,6 +19443,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU404BN9-A404B C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HSU405C688HSR402    0.9300                                            
+LD        Friant-Kern Canal delivery into Pixley Refuge                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU405C688-HSR402 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17232,6 +19454,8 @@ LINK      DIVR      HSUR402   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSUR402   R_PIX     1.0000                                            
+LD        Deliveries to Pixley NWR. Full level 2 and level 4 deliveries are assumed with a
+QC        A= B=HSUR402-R_PIX C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSUR402-R_PIX C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17328,6 +19552,7 @@ LINK      DIVR      R402      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      R402      HSUR402   1.0000                                            
+LD        On-site reuse within refuges. WMPs indicate presence of on-site operational loss
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R402-HSUR402 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17344,6 +19569,7 @@ LINK      DIVR      R_PIX     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      R_PIX     C59       0.0010                                            
+LD        SW return flow from PixleyNWR                                                   
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=R_PIX-C59 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17386,6 +19612,7 @@ LINK      DIVR      HXI403    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI403    EXT_CVPM171.0000                                            
+LD        Urban exterior penalty function for CVPM 17 Urban, including Sanger, Selma, Reed
 QU        A= B=HXI403-EXT_CVPM17 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI403-EXT_CVPM17 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI403-EXT_CVPM17 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -17408,6 +19635,7 @@ LINK      DIVR      INT_CVPM17DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_CVPM17WWP403    0.9000                                            
+LD        Return flows from CVPM 17 deliveries                                            
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM17-WWP403 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17422,6 +19650,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U403-HXI403 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U403      INT_CVPM171.0000                                            
+LD        Urban interior penalty function for CVPM 17 Urban, including Sanger, Selma, Reed
 QU        A= B=U403-INT_CVPM17 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U403-INT_CVPM17 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U403-INT_CVPM17 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -17482,6 +19711,7 @@ LINK      DIVR      HXI405    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI405    EXT_CVPM181.0000                                            
+LD        100% of DAU 242 & 243; includes cities of Visalia and Tulare, exterior          
 QU        A= B=HXI405-EXT_CVPM18 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI405-EXT_CVPM18 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI405-EXT_CVPM18 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -17504,6 +19734,7 @@ LINK      DIVR      INT_CVPM18DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_CVPM18WWP405    0.9000                                            
+LD        Return flow from urban applied water in CVPM 18 interior                        
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_CVPM18-WWP405 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17518,6 +19749,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U405-HXI405 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U405      INT_CVPM181.0000                                            
+LD        Urban penalty function for CVPM 18 interior - Visalia and Tulare                
 QU        A= B=U405-INT_CVPM18 C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U405-INT_CVPM18 C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U405-INT_CVPM18 C=Q(KAF)-P_EDT D= E=FEB F=
@@ -17587,6 +19819,7 @@ LINK      DIVR      HXI401    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI401    EXT_FRESN 1.0000                                            
+LD        Inflows exterior urban residential                                              
 QU        A= B=HXI401-EXT_FRESN C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=HXI401-EXT_FRESN C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=HXI401-EXT_FRESN C=Q(KAF)-P_EDT D= E=FEB F=
@@ -17609,6 +19842,7 @@ LINK      DIVR      INT_FRESN DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      INT_FRESN WWP401    0.9000                                            
+LD        Interior Residential return flow TOTAL                                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=INT_FRESN-WWP401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17623,6 +19857,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U401-HXI401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U401      INT_FRESN 1.0000                                            
+LD        Interior Residential Urban Penalty Function                                     
 QU        A= B=U401-INT_FRESN C=FLOW_UBT(KAF) D= E=1MON F=
 PQ        MO=JAN A= B=U401-INT_FRESN C=Q(KAF)-P_EDT D= E=JAN F=
 PQ        MO=FEB A= B=U401-INT_FRESN C=Q(KAF)-P_EDT D= E=FEB F=
@@ -17660,15 +19895,18 @@ LINK      DIVR      WWP401    HP401     1.0000    1800.0000           0.0000
 QI        A=init B=WWP401-HP401 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP401    D605      1.0000    50.0000                                 
+LD        City of Fresno return flow to SJR node D605 in Reg 3                            
 QI        A=init B=WWP401-D605 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP401    HGR16     1.0000    50.0000             0.0000              
+LD        Fresno incidental recharge to groundwater                                       
 QI        A=init B=WWP401-HGR16 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP403    HGR17     1.0000    50.0000                                 
 QI        A=init B=WWP403-HGR17 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP405    C59       1.0000    50.0000                                 
+LD        SW only return flow from CVPM 18 urban delivery                                 
 QI        A=init B=WWP405-C59 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      WWP405    HGR18     1.0000    50.0000                                 
@@ -17679,10 +19917,12 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=N9-HSU404AN9 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      PMP_BadgerD847      1.0000                                            
+LD        Coastal Aqueduct                                                                
 BU        574.9,519.3,574.9,556.4,574.9,556.4,574.9,574.9,556.4,574.9,556.4,574.9
 QI        A=init B=PMP_Badger-D847 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      PMP_EdmonsC103      1.0000                                            
+LD        California Aqueduct Pumping Plant                                               
 BU        270.62,244.43,270.62,261.89,270.62,261.89,270.62,270.62,261.89,270.62,261.89,270.62
 QI        A=init B=PMP_Edmons-C103 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17693,6 +19933,7 @@ LINK      DIVR      A402A     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      A402A     HU402A    1.0130                                            
+LD        Hidden ag delivery reuse calibration link                                       
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=A402A-HU402A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17737,6 +19978,7 @@ LINK      DIVR      C75       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C75       D845      1.0000                                            
+LD        California Aqueduct                                                             
 BU        498.18,449.97,498.18,482.11,498.18,482.11,498.18,498.18,482.11,498.18,482.11,498.18
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C75-D845 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -17746,6 +19988,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM14AG-HGR14 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      CVPM14AS  HSD402A   0.2450                                            
+LD        SW return flow from CVPM 14                                                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM14AS-HSD402A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17758,6 +20001,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=CVPM14BS-HSD402B C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D613      SINK      1.0000                                            
+LD        Evaporation ponds for CVPM 14 (Westlands WD) - no flow                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D613-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17774,11 +20018,14 @@ LINK      DIVR      D747      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D747      D749      1.0000                                            
+LD        California Aqueduct                                                             
 BU        513.4,463.7,513.4,496.9,513.4,496.9,513.4,513.4,496.9,513.4,496.9,513.4
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D747-D749 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D749      SINK      1.0000                                            
+LD        California Aqueduct losses R6                                                   
+QC        A= B=D749-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D749-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17789,11 +20036,13 @@ LINK      DIVR      D749      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D749      D750      1.0000                                            
+LD        California Aqueduct                                                             
 BU        513.4,463.7,513.4,496.9,513.4,496.9,513.4,513.4,496.9,513.4,496.9,513.4
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D749-D750 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D749      HSU402AD741.0000                                            
+LD        Surface delivery from California Aqueduct to CVPM 14                            
 BU        515.96,466.03,515.96,499.31,515.96,499.31,515.96,515.96,499.31,515.96,499.31,515.96
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D749-HSU402AD74 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -17805,6 +20054,7 @@ LINK      DIVR      D750      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D750      D751      1.0000                                            
+LD        California Aqueduct                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D750-D751 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17812,6 +20062,8 @@ LINK      DIVR      D750      WTP402    1.0000    45.0000
 QI        A=init B=D750-WTP402 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      D751      SINK      1.0000                                            
+LD        California Aqueduct losses R7                                                   
+QC        A= B=D751-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D751-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17822,6 +20074,7 @@ LINK      DIVR      D751      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D751      C75       1.0000                                            
+LD        California Aqueduct                                                             
 BU        498.18,449.97,498.18,482.11,498.18,482.11,498.18,498.18,482.11,498.18,482.11,498.18
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D751-C75 C=FLOW_DIV(KAF) D= E=1MON F=
@@ -17833,11 +20086,13 @@ LINK      DIVR      D845      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      D845      PMP_LPeril1.0000                                            
+LD        California Aqueduct diversion to Las Perillas Pumping Plant                     
 BU        574.9,519.3,574.9,556.4,574.9,556.4,574.9,574.9,556.4,574.9,556.4,574.9
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=D845-PMP_LPeril C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      Ext_CVPM14HGR14     0.5120                                            
+LD        return flows from cities of Huron and Coalinga                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=Ext_CVPM14-HGR14 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17848,6 +20103,7 @@ LINK      DIVR      GW_14     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      GW_14     HGP14     1.0000                                            
+LD        Link to hidden node for calibration of GW-14                                    
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=GW_14-HGP14 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17858,6 +20114,7 @@ LINK      DIVR      HGP14     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGP14     A402A     1.0000    176.9900            221.1300            
+LD        Agricultural groundwater pumping GW-14 to CVPM 14 Demand                        
 QI        A=init B=HGP14-A402A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      HGP14     A402B     1.0000    176.9900            221.1300            
@@ -17870,6 +20127,7 @@ LINK      DIVR      HGR14     DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HGR14     GW_14     1.0000                                            
+LD        Link from hidden node for calibration of GW-14                                  
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HGR14-GW_14 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17880,6 +20138,7 @@ LINK      DIVR      HSD402A   DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSD402A   D613      1.0000                                            
+LD        Hidden surface water return flow calibration link                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSD402A-D613 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -17900,6 +20159,7 @@ LINK      DIVR      HSU402AD74DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HSU402AD74A402A     0.9300                                            
+LD        California Aqueduct delivery to CVPM 14 (Westlands WD)                          
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HSU402AD74-A402A C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -18004,6 +20264,7 @@ LINK      DIVR      PMP_LPerilDBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      PMP_LPerilPMP_Badger1.0000                                            
+LD        Coastal Aqueduct Pumping Plant                                                  
 BU        574.9,519.3,574.9,556.4,574.9,556.4,574.9,574.9,556.4,574.9,556.4,574.9
 QI        A=init B=PMP_LPeril-PMP_Badger C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -18040,6 +20301,7 @@ LINK      DIVR      HXI402    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      HXI402    Ext_CVPM141.0000                                            
+QC        A= B=HXI402-Ext_CVPM14 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=HXI402-Ext_CVPM14 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -18064,6 +20326,7 @@ PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U402-HXI402 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U402      INT_CVPM141.0000                                            
+QC        A= B=U402-INT_CVPM14 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U402-INT_CVPM14 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -18107,10 +20370,12 @@ LINK      DIVR      U404      DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      U404      EXT_CVPM151.0000                                            
+QC        A= B=U404-EXT_CVPM15 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U404-EXT_CVPM15 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      U404      INT_CVPM151.0000                                            
+QC        A= B=U404-INT_CVPM15 C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=U404-INT_CVPM15 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -18118,14 +20383,17 @@ LINK      DIVR      WWP402    HGR14     1.0000    50.0000
 QI        A=init B=WWP402-HGR14 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_ISB    C65       1.0000                                            
+LD        Reservoir release from Isabella Dam to Kern River                               
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_ISB-C65 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_SCC    C57       1.0000                                            
+LD        Reservoir release from Lake Success/Success Dam to Tule River Reach 2           
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_SCC-C57 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      SR_TRM    C89       1.0000                                            
+LD        Reservoir release from Terminus Dam to Kaweah River Reach 1                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_TRM-C89 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -18142,10 +20410,13 @@ LINK      DIVR      C51       DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      C51       C53       1.0000                                            
+LD        Kings River Reach 2                                                             
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C51-C53 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
 LINK      DIVR      C53       SINK      1.0000                                            
+LD        Depletion from Kings River                                                      
+QC        A= B=C53-SINK C=FLOW_LBT(KAF) D= E=1MON F=
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=C53-SINK C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -18168,6 +20439,7 @@ LINK      DIVR      SR_PNF    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      SR_PNF    C51       1.0000                                            
+LD        Reservoir release from Pine Flat dam to Kings River Reach 1                     
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 QI        A=init B=SR_PNF-C51 C=FLOW_DIV(KAF) D= E=1MON F=
 ..
@@ -18184,4 +20456,5 @@ LINK      DIVR      SR_TRM    DBUGSNK   1
 PQ        MO=ALL A= B=DUMMY C=BLANK D= E= F=
 ..
 LINK      DIVR      WWP204    HGR08     0.0020    50.0000             0.0000              
+LD        Sacramento AR or RF to GW-8 from south of Am. River                             
 QI        A=init B=WWP204-HGR08 C=FLOW_DIV(KAF) D= E=1MON F=
